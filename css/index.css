@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.img_header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index:-1;
+   
+}
+.imgHead {
+    width: 100%;
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 0;
+    animation: pulse;
+    animation-duration: 2s;
+    
+}
+@-webkit-keyframes pulse {
+    0% { -webkit-transform: scale(1); }
+    50% { -webkit-transform: scale(1.1); }
+    100% { -webkit-transform: scale(1); }
+ }
+ 
+ @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+ }
+
+
+section {
+    width: 100%;
+    height: 1000px;
+    margin-top: 10px;
+    background-color: cadetblue;
+    color: white;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+    top:80%;
+}
+
+#header {
+    height: 80px;
+    background-color: #e0d1b2;
+    box-shadow:0px 2px 4px rgb(219, 219, 219);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    opacity: 0.8;
+}
+#header:hover {
+    opacity: 1;
+}
+#header a, #user__container {
+    text-decoration: none;
+    margin: 20px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-family: "Circular Std",sans-serif;
+    border: 0px solid black;
+    border-radius: 20px;
+    padding: 5px 10px 5px 10px;
+}
+#header a:hover {
+    color:rgba(2, 53, 25, 0.555);
+    opacity: 1;
+}
+
+.native:hover {
+    background-color: rgb(255, 255, 255);
+    opacity: 1;
+}
+
+#logo__main {
+    position: absolute;
+    left: 0;
+    background-color: none;
+    font-weight: 550;
+}
+#logo__main2 {
+    position: absolute;
+    left: 0;
+    background-color: none;
+    font-weight: 550;
+    cursor: pointer;
+    display: none;
+}
+
+#log {
+    border-left: 1px solid rgb(173, 131, 24) ;
+    border-right: 1px solid rgb(173, 131, 24) ;
+    padding: 10px;
+}
+
+#user__container {
+    position: absolute;
+    right: 0;
+    justify-content: space-evenly;
+
+}
+
+video {
+    width: 100%;
+}
+
+#mainFooter {
+    width: 1240px;
+    height: 454px;
+    background-color: rgb(170, 218, 218);
+    margin: auto;
+}
+
+.contact__container {
+    width: 1240px;
+    height: 380px;
+    background-color: rgba(67, 105, 70, 0.384);
+    color: white;
+    text-align: center;
+}
+#copyrightInfo {
+    width: 1240px;
+    height: 74px;
+    background-color: rgba(121, 120, 70, 0.171);
+    color: white;
+    text-align: center;
+}
+
+
+
+/* SECTION 1 CSS */
+.section__1 {
+    
+    padding: 5% ;
+    padding-top: 8%;
+    flex-direction: column;
+    background-color: white;
+    color: black;
+    margin-bottom: 20%;
+}
+
+h1 {
+    margin-top: 20px;
+    color: rgb(173, 131, 24);
+}
+
+#img1 {
+    width: 80%;
+}
+
+button {
+    color:rgb(173, 131, 24);
+    padding: 10px;
+    border-radius: 25px;
+    background-color: rgb(255, 248, 236);
+    border: 1px burlywood solid;
+
+}
+
+#cata {
+    display: none;
+}
+
+
+
+/* SECTION 4 CSS TUAN ANH */
+#section4__container1 {
+    background-color: rgb(255, 255, 255);
+    height: 500px;
+    width: 1240px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+}
+#section4__container1 a {
+    text-decoration: none;
+    color: black;
+}
+.product__item {
+    font-size: 18px;
+    font-family: "Circular Std",sans-serif;
+    color: black;
+
+}
+
+
+@media only screen and (max-width: 600px) {
+    #fashionSelections { 
+           font-size: 30px;
+    }
+
+#header a {
+
+    font-size: 10px;
+}
+#header {
+    height: 50px;
+}
+#logo__main {
+    display: none;
+}
+#logo__main2 {
+    display: inline-block;
+}
+}
+
+
+
+
+@media only screen and (max-width: 1000px) {
+ .native {
+
+     display: none;
+    }
+#cata {
+    display: inline-block;
+}
+.info {
+
+    display: none;
+}
+#log {
+    display: inline-block;
+    border: none;
+}
+    
+    #header a {
+
+        font-size: 15px;
+        
+    }
+}
+
+
+
+
+
+@media only screen and (max-width: 1300px) {
+.info {
+    font-size: 16px;
+}
+.native {
+
+    display: none;
+}
+#cata {
+display: inline-block;
+font-weight: bolder;
+}
+}
