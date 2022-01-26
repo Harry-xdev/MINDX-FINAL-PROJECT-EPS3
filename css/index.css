@@ -44,6 +44,14 @@ body {
 
 section {
     width: 100%;
+    height: 1200px;
+    margin-top: 0px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(247, 53, 53);
+}
+
+.section__1 {
+    width: 100%;
     height: 1000px;
     margin-top: 10px;
     background-color: cadetblue;
@@ -56,6 +64,7 @@ section {
     position: relative;
     top:80%;
 }
+
 
 #header {
     height: 80px;
@@ -184,7 +193,7 @@ button {
 
 
 /* SECTION 4 CSS TUAN ANH */
-#section4__container1 {
+.section4__container {
     background-color: rgb(255, 255, 255);
     height: 500px;
     width: 1240px;
@@ -192,8 +201,9 @@ button {
     flex-direction: row;
     justify-content: center;
     justify-content: space-between;
+    margin-left: 50px;
 }
-#section4__container1 a {
+.section4__container a {
     text-decoration: none;
     color: black;
 }
@@ -202,6 +212,14 @@ button {
     font-family: "Circular Std",sans-serif;
     color: black;
 
+}
+
+.section4__cap {
+    color: black;
+    margin: 20px;
+    font-size: 30px;
+    font-family: "Circular Std",sans-serif;
+    text-align: center;
 }
 
 

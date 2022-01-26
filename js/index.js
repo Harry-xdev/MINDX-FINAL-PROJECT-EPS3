@@ -95,7 +95,7 @@ function render_main_section () {
         <section id="" class="section__2">Section 2</section>
         `;
     };
-    render_section_2();
+    // render_section_2();
 
     // SECTION 3: ĐÔNG
     const section3 = document.querySelector('#section__container');
@@ -104,65 +104,164 @@ function render_main_section () {
         <section id="" class="section__3">Section 3</section>
         `;
     };
-    render_section_3();
+    // render_section_3();
 
     // SECTION 4: TUẤN ANH
     const section4 = document.querySelector('#section__container');
     function render_section_4() {
         section4.innerHTML += `
         <section id="" class="section__4"></section>
-        `;
-    };
+        `
+    }
     render_section_4();
 
     // RENDER SECTION 4 ITEMS
     const section4Item1 = document.querySelector('.section__4');
+
+    // SECTION 4 CAPTION
+    function render_section4_cap1() {
+        section4Item1.innerHTML += `
+        <div id="" class="section4__cap">MEN'S BAGS</div>
+        `
+    }
+    render_section4_cap1();
+
+    // SECTION 4 CONTAINER 1
     function section4__container1() {
         section4Item1.innerHTML += `
-        <div id="section4__container1" class="">Handbag</div>
-        `;
-    };
+        <div id="section4__container1" class="section4__container"></div>
+        `
+    }
     section4__container1();
 
-    const section41item = document.querySelector('#section4__container1');
-    function section4__container1_item() {
-        section41item.innerHTML += `
-        <div id="" class="handbag__product">Products</div>
-        `;
-    };
-    section4__container1_item();
+    function render_section4_cap2() {
+        section4Item1.innerHTML += `
+        <div id="" class="section4__cap">WOMEN'S BAGS</div>
+        `
+    }
+    render_section4_cap2();
 
-    // CREATING PRODUCT ARRAY OBJECTS
-    const handbagProductList = [
+    // CREATING MEN PRODUCT ARRAY OBJECTS
+    const handbagProductListM = [
         {
             name: "KAMPUS TIGER BACKPACK",
+            url: "#",
+            image: "./images/section 4/KAMPUS TIGER BACKPACK.jpg",
             price: "$265",
             gender: "MALE",
             color: "BLACK",
         },
         {
             name: "KENZO SPORT BELT BAG",
+            url: "#",
+            image: "./images/section 4/KENZO SPORT BELT BAG.jpg",
             price: "$275",
             gender: "MALE",
             color: "BLACK",
         },
         {
             name: "KENZO Sport backpack with strap",
+            url: "#",
+            image: "./images/section 4/KENZO Sport backpack with strap.jpg",
             price: "$295",
             gender: "MALE",
             color: "WHITE",
         },
         {
             name: "KENZO Sport tote bag",
+            url: "#",
+            image: "./images/section 4/KENZO Sport tote bag.jpg",
             price: "$340",
             gender: "MALE",
             color: "BLACK",
         },
-    ];
+    ]
 
+    // CREATING WOMEN PRODUCT ARRAY OBJECT
+    const handbagProductListW = [
+        {
+            name: "Small KENZO Kamera travel bag",
+            url: "#",
+            image: "./images/section 4/woman/Small KENZO Kamera travel bag.jpg",
+            price: "$200",
+            gender: "FEMAL",
+            color: "WHITE",
+        },
+        {
+            name: "Kenzogram mini messenger bag",
+            url: "#",
+            image: "./images/section 4/woman/Kenzogram mini messenger bag.jpg",
+            price: "$235",
+            gender: "FEMAL",
+            color: "BLACK",
+        },
+        {
+            name: "Kampus Tiger small bumbag",
+            url: "#",
+            image: "./images/section 4/woman/Kampus Tiger small bumbag.jpg",
+            price: "$245",
+            gender: "FEMAL",
+            color: "PINK",
+        },
+        {
+            name: "Canvas Kampus Tiger backpack",
+            url: "#",
+            image: "./images/section 4/woman/Canvas Kampus Tiger backpack.jpg",
+            price: "$340",
+            gender: "FEMAL",
+            color: "BLACK",
+        },
+    ]
 
-    
-};
+    function render_section4_product () {
+        for (let product of handbagProductListM) {
+            document.getElementById("section4__container1").innerHTML += `
+                <div class="product__item">
+                    <div class="product__image">
+                        <a href="#"><img src="` + product.image + `" alt=""></a>
+                    </div>
+                    <div class="product__info">
+                        <div class="product__name">
+                            <a href="#">`+ product.name +`</a>
+                        </div>
+                        <div class="product__price">` + product.price + `</div>
+                        <div class="product__color">` + product.color + `</div>
+                    </div>
+                </div>
+            `
+        }
+    }
+    render_section4_product();
+
+    // SECTION 4 CONTAINER 2    
+    function section4__container2() {
+        section4Item1.innerHTML += `
+        <div id="section4__container2" class="section4__container"></div>
+        `
+    }
+    section4__container2();
+
+    function render_section4_product_2 () {
+        for (let product2 of handbagProductListW) {
+            document.getElementById("section4__container2").innerHTML += `
+                <div class="product__item">
+                    <div class="product__image">
+                        <a href="#"><img src="` + product2.image + `" alt=""></a>
+                    </div>
+                    <div class="product__info">
+                        <div class="product__name">
+                            <a href="#">`+ product2.name +`</a>
+                        </div>
+                        <div class="product__price">` + product2.price + `</div>
+                        <div class="product__color">` + product2.color + `</div>
+                    </div>
+                </div>
+            `
+        }
+    }
+    render_section4_product_2();
+
+}
 render_main_section();
 
 // RENDER FOOTER
