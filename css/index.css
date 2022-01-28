@@ -206,7 +206,8 @@ button {
 }
 .section4__container a {
     text-decoration: none;
-    color:rgb(173, 131, 24);
+    color:rgb(117, 89, 19);
+    font-weight: 700;
 }
 .product__item {
     font-size: 18px;
