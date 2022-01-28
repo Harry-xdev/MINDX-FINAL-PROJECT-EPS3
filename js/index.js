@@ -147,6 +147,7 @@ function render_main_section () {
             name: "KAMPUS TIGER BACKPACK",
             url: "#",
             image: "./images/section 4/KAMPUS TIGER BACKPACK.jpg",
+            image2: "./images/section 4/KAMPUS TIGER BACKPACK 2.jpg",
             price: "$265",
             gender: "MALE",
             color: "BLACK",
@@ -155,6 +156,7 @@ function render_main_section () {
             name: "KENZO SPORT BELT BAG",
             url: "#",
             image: "./images/section 4/KENZO SPORT BELT BAG.jpg",
+            image2: "./images/section 4/KENZO SPORT BELT BAG 2.jpg",
             price: "$275",
             gender: "MALE",
             color: "BLACK",
@@ -163,6 +165,7 @@ function render_main_section () {
             name: "KENZO Sport backpack with strap",
             url: "#",
             image: "./images/section 4/KENZO Sport backpack with strap.jpg",
+            image2: "./images/section 4/KENZO Sport backpack with strap 2.jpg",
             price: "$295",
             gender: "MALE",
             color: "WHITE",
@@ -171,6 +174,7 @@ function render_main_section () {
             name: "KENZO Sport tote bag",
             url: "#",
             image: "./images/section 4/KENZO Sport tote bag.jpg",
+            image2: "./images/section 4/KENZO Sport tote bag 2.jpg",
             price: "$340",
             gender: "MALE",
             color: "BLACK",
@@ -183,6 +187,7 @@ function render_main_section () {
             name: "Small KENZO Kamera travel bag",
             url: "#",
             image: "./images/section 4/woman/Small KENZO Kamera travel bag.jpg",
+            image2: "./images/section 4/woman/Small KENZO Kamera travel bag 2.jpg",
             price: "$200",
             gender: "FEMAL",
             color: "WHITE",
@@ -191,6 +196,7 @@ function render_main_section () {
             name: "Kenzogram mini messenger bag",
             url: "#",
             image: "./images/section 4/woman/Kenzogram mini messenger bag.jpg",
+            image2: "./images/section 4/woman/Kenzogram mini messenger bag 2.jpg",
             price: "$235",
             gender: "FEMAL",
             color: "BLACK",
@@ -199,6 +205,7 @@ function render_main_section () {
             name: "Kampus Tiger small bumbag",
             url: "#",
             image: "./images/section 4/woman/Kampus Tiger small bumbag.jpg",
+            image2: "./images/section 4/woman/Kampus Tiger small bumbag 2.jpg",
             price: "$245",
             gender: "FEMAL",
             color: "PINK",
@@ -207,6 +214,7 @@ function render_main_section () {
             name: "Canvas Kampus Tiger backpack",
             url: "#",
             image: "./images/section 4/woman/Canvas Kampus Tiger backpack.jpg",
+            image2: "./images/section 4/woman/Canvas Kampus Tiger backpack 2.jpg",
             price: "$340",
             gender: "FEMAL",
             color: "BLACK",
@@ -218,7 +226,7 @@ function render_main_section () {
             document.getElementById("section4__container1").innerHTML += `
                 <div class="product__item">
                     <div class="product__image">
-                        <a href="#"><img src="` + product.image + `" alt=""></a>
+                        <a href="#"><img class="sub__images" onmouseover="on_mouse_over()" onmouseout="on_mouse_out()" src="` + product.image + `" alt=""></a>
                     </div>
                     <div class="product__info">
                         <div class="product__name">
@@ -232,6 +240,18 @@ function render_main_section () {
         }
     }
     render_section4_product();
+
+    // let product = 
+    // function on_mouse_over() {
+    //     document.querySelector(".sub__images").innerHTML +=`
+    //         <div class="product__image">
+    //             <a href="#"><img class="sub__images" onmouseover="on_mouse_over()" onmouseout="on_mouse_out()" src="` + product.image2 + `" alt=""></a>
+    //         </div>
+    //     `
+    // }
+    // on_mouse_over();
+
+
 
     // SECTION 4 CONTAINER 2    
     function section4__container2() {
