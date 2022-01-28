@@ -226,7 +226,7 @@ function render_main_section () {
             document.getElementById("section4__container1").innerHTML += `
                 <div class="product__item">
                     <div class="product__image">
-                        <a href="#"><img class="sub__images" onmouseover="on_mouse_over()" onmouseout="on_mouse_out()" src="` + product.image + `" alt=""></a>
+                        <a href="#"><img src="` + product.image + `" alt=""></a>
                     </div>
                     <div class="product__info">
                         <div class="product__name">
@@ -235,23 +235,12 @@ function render_main_section () {
                         <div class="product__price">` + product.price + `</div>
                         <div class="product__color">` + product.color + `</div>
                     </div>
+                    <div><button id="btn__cart" onclick="add_to_cart()">ADD TO CART</button></div>
                 </div>
             `
-        }
+        } 
     }
     render_section4_product();
-
-    // let product = 
-    // function on_mouse_over() {
-    //     document.querySelector(".sub__images").innerHTML +=`
-    //         <div class="product__image">
-    //             <a href="#"><img class="sub__images" onmouseover="on_mouse_over()" onmouseout="on_mouse_out()" src="` + product.image2 + `" alt=""></a>
-    //         </div>
-    //     `
-    // }
-    // on_mouse_over();
-
-
 
     // SECTION 4 CONTAINER 2    
     function section4__container2() {
@@ -275,6 +264,7 @@ function render_main_section () {
                         <div class="product__price">` + product2.price + `</div>
                         <div class="product__color">` + product2.color + `</div>
                     </div>
+                    <div><button id="btn__cart" onclick="add_to_cart()">ADD TO CART</button></div>
                 </div>
             `
         }

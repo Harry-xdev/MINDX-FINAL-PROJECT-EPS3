@@ -216,6 +216,16 @@ button {
 
 }
 
+#btn__cart {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+#btn__cart:hover {
+    background-color: burlywood;
+    color: white;
+}
+
 .section4__cap {
     color:rgb(117, 89, 19);
     margin: 20px;
