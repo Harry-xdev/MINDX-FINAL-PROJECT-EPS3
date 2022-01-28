@@ -31,7 +31,7 @@ function render_header() {
         function user(){
         userContainer.innerHTML += `
         <span class="info"> About Us </span>
-        <span id="log" class="info"> Login</span>
+        <span id="log" class="info" type="button" onclick="location.href='./login.html'"> Login</span>
         <span class="info"> Register </span>
 
         `;
@@ -273,6 +273,9 @@ function render_main_section () {
 
 }
 render_main_section();
+
+// LOGIN FUNCTION
+
 
 // RENDER FOOTER
 const mainFooter = document.querySelector('#mainFooter');
