@@ -12,7 +12,7 @@ function render_header() {
         <a id="logo__main" class="" 
         onclick="location.href='./index.html';"
         >
-        TEAM 1 - GROUP 6</a>
+        N.Y.E</a>
         <a id="logo__main2" class="" 
         onclick="location.href='./index.html';"
         >
@@ -20,7 +20,7 @@ function render_header() {
         <a id="menu" class="native" href="#">FASHION</a>
         <a id="menu" class="native" href="#">WATCHES</a>
         <a id="menu" class="native" href="#">SHOES</a>
-        <a id="menu" class="native" href="#">BAGS</a>
+        <a id="menu" class="native" href="#section4__container1">BAGS</a>
         <a id="cata" class="native" href="#">CATALOG</a>
         <span id="user__container" href="#"> </span>
 
