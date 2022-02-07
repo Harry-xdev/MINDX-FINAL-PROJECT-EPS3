@@ -16,8 +16,8 @@ function render_header() {
         <a id="logo__main2" class="" 
         onclick="location.href='./index.html';"
         >
-         GROUP 6</a>
-        <a id="menu" class="native" href="#">FASHION</a>
+        N.Y.E</a>
+        <a id="menu" class="native" href="#img1">FASHION</a>
         <a id="menu" class="native" href="#">WATCHES</a>
         <a id="menu" class="native" href="#">SHOES</a>
         <a id="menu" class="native" href="#section4__container1">BAGS</a>
@@ -25,8 +25,41 @@ function render_header() {
         <span id="user__container" href="#"> </span>
 
         `
+
     };
     render_header_native();
+
+    const dropCata = document.querySelector("#cata")
+    function drop() {
+        dropCata.innerHTML += `
+     <span class ="drop_content"> </span>
+        `
+     }
+     drop()
+
+     
+     
+               const dropContent = document.querySelector(".drop_content")
+              
+               function dropdown() {
+                   
+                   dropContent.innerHTML += `
+                   
+                   <button id="dropMenu" onclick="location.href='./Fashion.html';" >FASHION</button>
+                   <button id="dropMenu">WATCHES</button>
+                   <button id="dropMenu" >SHOES</button>
+                   <button id="dropMenu" >BAGS</button>
+                   `
+                  
+                }
+                dropdown()
+               
+                 
+               
+                   
+              
+          
+
         const userContainer = document.querySelector("#user__container")
         function user(){
         userContainer.innerHTML += `
@@ -41,6 +74,7 @@ function render_header() {
    
 };
 render_header();
+
 
 // RENDER MAIN SECTION
 function render_main_section () {
@@ -78,7 +112,7 @@ function render_main_section () {
       <img id ="img1" src = "https://www.chanel.com/images/q_auto,f_auto,fl_lossy,dpr_auto/w_1280/FSH-1641215403491-slideshowdesktop3.jpg"/>
          <h1>Fashion</h1>
         <div>
-        <button  type="button"  onclick="location.href='./Fashion.html';"> Find out more  </button>
+        <button class="button1" type="button"  onclick="location.href='./Fashion.html';"> Find out more  </button>
         </div>
       `}; 
       sec1();
