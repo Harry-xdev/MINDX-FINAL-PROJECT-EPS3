@@ -45,19 +45,19 @@ function render_login_form () {
   mainPage.innerHTML += `
   <div class= "img_header" > </div>
   <div class="login__form">
-    <form action="action_page.php" method="post">
+    <form name="loginForm" action="index.html" method="#" onsubmit="return validate()">
       <div class="caption">
         LOGIN
       </div>
     
       <div class="container">
         <label for="uname"><b>Username</b></label>
-        <input type="text" placeholder="Enter Username" name="uname" required>
+        <input id="user__name" type="text" placeholder="Enter Username" name="uname" required>
     
         <label for="psw"><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="psw" required>
+        <input id="password" type="password" placeholder="Enter Password" name="psw" required>
     
-        <button type="submit">Login</button>
+        <button type="submit" onclick="validate()">Submit</button>
         <label>
           <input type="checkbox" checked="checked" name="remember"> Remember me
         </label>
@@ -73,7 +73,31 @@ function render_login_form () {
 }
 render_login_form();
 
+// CHECK USER & PASSWORD FUNCTION
 
+function validate() {
+  let userEmail = document.getElementById("user__name").value;
+  let userPass = document.getElementById("password").value;
+
+  if (userEmail == "") {
+      alert(`Email is empty!`);
+      return false;
+  }
+  if (userPass =="") {
+      alert(`Password is empty!`);
+      return false;
+  } else if (userPass.length < 8) {
+      alert(`Password must has aleast 8 characters!`);
+      return false;        
+  }
+  if (userEmail == "anh@gmail.com" && userPass == "admin123") {
+      alert(`Welcome!`);
+      return true;
+  } else {
+      alert(`Unknown!`);
+      return false;
+  }
+}
 // RENDER FOOTER
 const mainFooter = document.querySelector('#mainFooter');
 function render_footer() {
