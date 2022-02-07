@@ -113,7 +113,7 @@ function main_page_fashion() {
             https://www.dior.com/couture/var/dior/storage/images/horizon/mens-fashion/man/block-cover-sacai-cover/block-cover-item-cover/28730917-15-eng-GB/cover_1440_1200.jpg" />
             
             </div>
-            
+
 <div id ="MFcontainer"> </div>
             `;
             };
@@ -125,10 +125,231 @@ main_page_fashion();
 
 
 
+const FashionProductListW = [
+    {
+        name: "123",
+        image: ".images/section 1/women/jackets/6.jpg",
+        price: "$200",
+        gender: "FEMAL",
+        color: "WHITE",
+    },
+    {
+        name: "123",
+        image: ".images/section 1/women/jackets/5.jpg",
+        price: "$200",
+        gender: "FEMAL",
+        color: "WHITE",
+    },
+    {
+        name: "123",
+        image: ".images/section 1/women/jackets/4.jpg",
+        price: "$200",
+        gender: "FEMAL",
+        color: "WHITE",
+    },
+     {
+        name: "123",
+        image: ".images/section 1/women/jackets/3.jpg",
+        price: "$200",
+        gender: "FEMAL",
+        color: "WHITE",
+    },
+     {
+        name: "123",
+        image: ".images/section 1/women/jackets/2.jpg",
+        price: "$200",
+        gender: "FEMAL",
+        color: "WHITE",
+    },
+     {
+        name: "123",
+        image: ".images/section 1/women/jackets/1.jpg",
+        price: "$200",
+        gender: "FEMAL",
+        color: "WHITE",
+    },
+    {
+        name: "123",
+        image: ".images/section 1/women/dresses/5.jpg",
+        price: "$200",
+        gender: "FEMAL",
+        color: "WHITE",
+    },
+    {
+        name: "123",
+        image: ".images/section 1/women/dresses/4.jpg",
+        price: "$200",
+        gender: "FEMAL",
+        color: "WHITE",
+    },
+    {
+        name: "123",
+        image: ".images/section 1/women/dresses/3.jpg",
+        price: "$200",
+        gender: "FEMAL",
+        color: "WHITE",
+    },
+    {
+        name: "123",
+        image: ".images/section 1/women/dresses/2.jpg",
+        price: "$200",
+        gender: "FEMAL",
+        color: "WHITE",
+    },
+    {
+        name: "123",
+        image: ".images/section 1/women/dresses/1.jpg",
+        price: "$200",
+        gender: "FEMAL",
+        color: "WHITE",
+    },
+    {
+        name: "123",
+        image: ".images/section 1/women/coats/6.jpg",
+        price: "$200",
+        gender: "FEMAL",
+        color: "WHITE",
+    },
+    {
+        name: "123",
+        image: ".images/section 1/women/coats/5.jpg",
+        price: "$200",
+        gender: "FEMAL",
+        color: "WHITE",
+    },
+    {
+        name: "123",
+        image: ".images/section 1/women/coats/4.jpg",
+        price: "$200",
+        gender: "FEMAL",
+        color: "WHITE",
+    },
+    {
+        name: "123",
+        image: ".images/section 1/women/coats/3.jpg",
+        price: "$200",
+        gender: "FEMAL",
+        color: "WHITE",
+    },
+    {
+        name: "123",
+        image: ".images/section 1/women/coats/2.jpg",
+        price: "$200",
+        gender: "FEMAL",
+        color: "WHITE",
+    },
+    {
+        name: "123",
+        image: ".images/section 1/women/coats/1.jpg",
+        price: "$200",
+        gender: "FEMAL",
+        color: "WHITE",
+    },
+
+]
 
 
+const FashionProductListM = [
+    {
+        name: "123",
+        image: ".images/section 1/men/outerwear/1.jpg",
+        price: "$200",
+        gender: "FEMAL",
+        color: "WHITE",
+    },
+    {
+        name: "123",
+        image: ".images/section 1/men/outerwear/2.jpg",
+        price: "$200",
+        gender: "FEMAL",
+        color: "WHITE",
+    },
+    {
+        name: "123",
+        image: ".images/section 1/men/outerwear/3.jpg",
+        price: "$200",
+        gender: "FEMAL",
+        color: "WHITE",
+    },
+    {
+        name: "123",
+        image: ".images/section 1/men/outerwear/4.jpg",
+        price: "$200",
+        gender: "FEMAL",
+        color: "WHITE",
+    },
+    {
+        name: "123",
+        image: ".images/section 1/men/outerwear/5.jpg",
+        price: "$200",
+        gender: "FEMAL",
+        color: "WHITE",
+    },
+    {
+        name: "123",
+        image: ".images/section 1/men/outerwear/6.jpg",
+        price: "$200",
+        gender: "FEMAL",
+        color: "WHITE",
+    },
+    {
+        name: "123",
+        image: ".images/section 1/men/outerwear/7.jpg",
+        price: "$200",
+        gender: "FEMAL",
+        color: "WHITE",
+    },
+    {
+        name: "123",
+        image: ".images/section 1/men/outerwear/8.jpg",
+        price: "$200",
+        gender: "FEMAL",
+        color: "WHITE",
+    },
+    {
+        name: "123",
+        image: ".images/section 1/men/outerwear/9.jpg",
+        price: "$200",
+        gender: "FEMAL",
+        color: "WHITE",
+    },
+    {
+        name: "123",
+        image: ".images/section 1/men/outerwear/10.jpg",
+        price: "$200",
+        gender: "FEMAL",
+        color: "WHITE",
+    },
+    {
+        name: "123",
+        image: ".images/section 1/men/jackets/1.jpg",
+        price: "$200",
+        gender: "FEMAL",
+        color: "WHITE",
+    },
+    {
+        name: "123",
+        image: ".images/section 1/men/jackets/2.jpg",
+        price: "$200",
+        gender: "FEMAL",
+        color: "WHITE",
+    },
+    {
+        name: "123",
+        image: ".images/section 1/men/jackets/3.jpg",
+        price: "$200",
+        gender: "FEMAL",
+        color: "WHITE",
+    },
+    {
+        name: "123",
+        image: ".images/section 1/men/jackets/4.jpg",
+        price: "$200",
+        gender: "FEMAL",
+        color: "WHITE",
+    },
 
-
+]
 
 
 
