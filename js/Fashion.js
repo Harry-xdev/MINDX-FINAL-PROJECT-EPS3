@@ -5,42 +5,76 @@ function render_header() {
     <div id="header"></div>
     `;
 
-      // RENDER HEADER NATIVE BUTTON - USER LOGIN
-      const headerNative = document.querySelector('#header');
-      function render_header_native() {
-          headerNative.innerHTML += `
-          <a id="logo__main" class="" 
-          onclick="location.href='./index.html';"
-          >
-          N.Y.E</a>
-          <a id="logo__main2" class="" 
-          onclick="location.href='./index.html';"
-          >
-           GROUP 6</a>
-          <a id="menu" class="native" href="#">FASHION</a>
-          <a id="menu" class="native" href="#">WATCHES</a>
-          <a id="menu" class="native" href="#">SHOES</a>
-          <a id="menu" class="native" href="#section4__container1">BAGS</a>
-          <a id="cata" class="native" href="#">CATALOG</a>
-          <span id="user__container" href="#"> </span>
-  
-          `
-      };
-      render_header_native();
-          const userContainer = document.querySelector("#user__container")
-          function user(){
-          userContainer.innerHTML += `
-          <span class="info"> About Us </span>
-          <span id="log" class="info" type="button" onclick="location.href='./login.html'"> Login</span>
-          <span class="info"> Register </span>
-  
-          `;
-         
-      };
-      user();
+    // RENDER HEADER NATIVE BUTTON - USER LOGIN
+    const headerNative = document.querySelector('#header');
+    function render_header_native() {
+        headerNative.innerHTML += `
+        <a id="logo__main" class="" 
+        onclick="location.href='./index.html';"
+        >
+        N.Y.E</a>
+        <a id="logo__main2" class="" 
+        onclick="location.href='./index.html';"
+        >
+        N.Y.E</a>
+        <a id="menu" class="native" href="#img1">FASHION</a>
+        <a id="menu" class="native" href="#">WATCHES</a>
+        <a id="menu" class="native" href="#">SHOES</a>
+        <a id="menu" class="native" href="#section4__container1">BAGS</a>
+        <a id="cata" class="native" href="#">CATALOG</a>
+        <span id="user__container" href="#"> </span>
+
+        `
+
+    };
+    render_header_native();
+
+    const dropCata = document.querySelector("#cata")
+    function drop() {
+        dropCata.innerHTML += `
+     <span class ="drop_content"> </span>
+        `
+     }
+     drop()
+
      
-  };
-  render_header();
+     
+               const dropContent = document.querySelector(".drop_content")
+              
+               function dropdown() {
+                   
+                   dropContent.innerHTML += `
+                   
+                   <button id="dropMenu" onclick="location.href='./Fashion.html';" >FASHION</button>
+                   <button id="dropMenu">WATCHES</button>
+                   <button id="dropMenu" >SHOES</button>
+                   <button id="dropMenu" >BAGS</button>
+                   `
+                  
+                }
+                dropdown()
+               
+                 
+               
+                   
+              
+          
+
+        const userContainer = document.querySelector("#user__container")
+        function user(){
+        userContainer.innerHTML += `
+        <span class="info"> About Us </span>
+        <span id="log" class="info" type="button" onclick="location.href='./login.html'"> Login</span>
+        <span class="info"> Register </span>
+
+        `;
+       
+    };
+    user();
+   
+};
+render_header();
+
 
 
 //Render Fashion page
