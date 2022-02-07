@@ -105,12 +105,16 @@ function main_page_fashion() {
             src = "https://www.chanel.com/images/q_auto,f_auto,fl_lossy,dpr_auto/w_1920/FSH-1639756228960-22pplpdrtw00header.jpg"
             /> WOMEN
             </div>
+<div id ="WFcontainer"> </div>
+
+
             <div id="menFashion"> MEN <img id=imgMenFashion
             src ="
             https://www.dior.com/couture/var/dior/storage/images/horizon/mens-fashion/man/block-cover-sacai-cover/block-cover-item-cover/28730917-15-eng-GB/cover_1440_1200.jpg" />
             
             </div>
             
+<div id ="MFcontainer"> </div>
             `;
             };
             fashion_selections()
