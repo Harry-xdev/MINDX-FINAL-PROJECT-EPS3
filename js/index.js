@@ -63,18 +63,22 @@ function render_header() {
         const userContainer = document.querySelector("#user__container")
         function user(){
         userContainer.innerHTML += `
-        <span class="info"> About Us </span>
-        <span id="log" class="info" type="button" onclick="location.href='./login.html'"> Login</span>
-        <span class="info"> Register </span>
+        <span id = "Ab" class="info"> About Us </span>
+        <span id = "log" class="info" type="button" onclick="location.href='./login.html'"> Login</span>
+        <span id = "register" class="info"> Register </span>
 
         `;
        
+        
     };
     user();
    
 };
 render_header();
-
+document.getElementById("Ab").onclick = function() {
+    alert("Hello world");
+    
+}
 
 // RENDER MAIN SECTION
 function render_main_section () {
@@ -90,6 +94,7 @@ function render_main_section () {
   function video1() {
   imgHeader.innerHTML += ` 
   <img class="imgHead" src="https://images.unsplash.com/photo-1468818519844-64bc429824de?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80"/>
+  
   `
   };
   video1();

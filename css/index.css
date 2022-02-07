@@ -31,6 +31,7 @@ body {
     z-index: 0;
     animation: pulse;
     animation-duration: 2s;
+    margin-bottom: 40px;
     
 }
 @-webkit-keyframes pulse {
@@ -66,7 +67,7 @@ section {
     align-items: center;
     z-index: 1;
     position: relative;
-    top:80%;
+    top:10%;
 }
 
 
@@ -96,7 +97,7 @@ section {
     border-radius: 20px;
     padding: 5px 10px 5px 10px;
 }
-#logo__main:hover, #logo__main2:hover, .native:hover {
+#logo__main:hover, #logo__main2:hover, .native:hover , #Ab:hover, #log:hover, #register:hover {
     color:rgba(2, 53, 25, 0.555);
     opacity: 1;
     font-weight: bolder;
@@ -104,6 +105,7 @@ section {
 
 .native:hover {
     background-color: rgb(255, 255, 255);
+    padding: 10px ;
     opacity: 1;
     font-weight: bolder;
 }
@@ -112,7 +114,9 @@ section {
     position: absolute;
     left: 80px;
     background-color: none;
-    font-weight: 550;
+    font-weight: bolder;
+    font-size: 40px;
+
 }
 #logo__main2 {
     position: absolute;
@@ -130,6 +134,9 @@ section {
 #log {
     border-left: 1px solid rgb(173, 131, 24) ;
     border-right: 1px solid rgb(173, 131, 24) ;
+    padding: 10px;
+}
+#Ab , #register {
     padding: 10px;
 }
 
@@ -159,10 +166,11 @@ video {
     cursor: pointer;
     padding: 15px;
     border-radius: 15px;
+    opacity: 0.8;
   }
   
   #myBtn:hover {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 233, 196);
     color:rgb(160, 123, 0) ;
     border:1px solid rgb(160, 123, 0);
   }
@@ -218,7 +226,78 @@ h1 {
     background-color: rgb(255, 248, 236);
     border: 1px burlywood solid;
     cursor: pointer;
+    text-transform: capitalize;
+    overflow: hidden!important;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    background: transparent!important;
+    position: relative;
 }
+
+    
+
+
+.button1:hover{
+    border: 1px solid rgb(173, 131, 24);
+    color: #ffffff!important;
+    font-weight: bolder;
+  }
+  .button1::before {
+    content: '';
+    width: 0%;
+    height: 100%;
+    display: inline-block;
+    background: rgb(187, 148, 50);
+    position: absolute;
+    -ms-transform: skewX(-20deg);
+    -webkit-transform: skewX(-20deg); 
+    transform: skewX(-20deg);   
+    left: -10%;
+    opacity: 1;
+    top: 0;
+    z-index: -12;
+    -moz-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+    -o-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+    -webkit-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+    transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+    box-shadow:2px 0px 14px rgba(0,0,0,.6);
+    
+    
+  } 
+  .button1::after {
+    content: ' ';
+    width: 0%;
+    height: 100%;
+    display: block;
+    background: #e9a931;
+    position: absolute;
+  -ms-transform: skewX(-20deg);
+    -webkit-transform: skewX(-20deg); 
+    transform: skewX(-20deg);   
+    left: -10%;
+    opacity: 0;
+    top: 0;
+    z-index: -15;
+    -webkit-transition: all .94s cubic-bezier(.2,.95,.57,.99);
+    -moz-transition: all .4s cubic-bezier(.2,.95,.57,.99);
+    -o-transition: all .4s cubic-bezier(.2,.95,.57,.99);
+    transition: all .4s cubic-bezier(.2,.95,.57,.99);
+    box-shadow: 2px 0px 14px rgba(0,0,0,.6);
+    
+  }
+  .button1:hover::before{
+    opacity:1;
+    width: 116%;
+  }
+  .button1:hover::after{
+    opacity:1;
+    width: 120%;
+  }
+
+
+
 
 #cata {
     display: none;
@@ -239,7 +318,7 @@ h1 {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     border-radius: 8px;
-    top:30px;
+    top:40px;
     
 }
 #dropMenu {
@@ -305,6 +384,70 @@ h1 {
 /* MEDIA SCREEN */
 
 
+
+
+@media only screen and (max-width: 1300px) {
+    .info {
+        font-size: 16px;
+    }
+    .native {
+    
+        display: none;
+    }
+    #cata {
+    display: inline-block;
+    font-weight: bolder;
+    }
+    .section__1{
+        height: 850px;
+        padding: 1px;
+        margin-bottom: 200px;
+    }
+    }
+    
+
+
+
+
+
+    @media only screen and (max-width: 1000px) {
+        .native {
+       
+            display: none;
+           }
+       #cata {
+           display: inline-block;
+       }
+       .info {
+       
+           display: none;
+       }
+       #log {
+           display: inline-block;
+           border: none;
+       }
+           
+           #header a {
+       
+               font-size: 28px;
+               
+           }
+           #logo__main, #logo__main2{
+               font-size: 30px;
+           }
+           .section__1 {
+               height: 600px;
+               padding: 1px;
+               margin-bottom: 150px;
+           }
+       }
+       
+       
+       
+       
+
+
+
 @media only screen and (max-width: 600px) {
     #fashionSelections { 
            font-size: 30px;
@@ -312,7 +455,7 @@ h1 {
 
 #header a {
 
-    font-size: 10px;
+    font-size: 20px;
 }
 #header {
     height: 50px;
@@ -322,50 +465,15 @@ h1 {
 }
 #logo__main2 {
     display: inline-block;
+    font-size: 25px;
 }
-}
-
-
-
-
-@media only screen and (max-width: 1000px) {
- .native {
-
-     display: none;
-    }
-#cata {
-    display: inline-block;
-}
-.info {
-
-    display: none;
-}
-#log {
-    display: inline-block;
-    border: none;
-}
-    
-    #header a {
-
-        font-size: 15px;
-        
-    }
+.section__1{
+    height: 450px;
+    padding: 1px;
+    margin-bottom: 150px;
 }
 
 
+}
 
 
-
-@media only screen and (max-width: 1300px) {
-.info {
-    font-size: 16px;
-}
-.native {
-
-    display: none;
-}
-#cata {
-display: inline-block;
-font-weight: bolder;
-}
-}
