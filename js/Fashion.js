@@ -102,7 +102,8 @@ function main_page_fashion() {
 
             function fashion_selections() {
                 fashionSelections.innerHTML +=`
-            <div id="womenFashion" > <img id=imgWomenFashion
+                <p class ="titF"><i> - READY TO WEAR - </i> </p>
+            <div id="womenFashion"> <img id=imgWomenFashion
             src = "https://www.chanel.com/images/q_auto,f_auto,fl_lossy,dpr_auto/w_1920/FSH-1639756228960-22pplpdrtw00header.jpg"
             />
             <a class="A" href="#">   WOMEN  <span></span>
@@ -111,7 +112,10 @@ function main_page_fashion() {
             <span></span>
         </a>
             </div>
-<div id ="WFcontainer"> </div>
+            <div id="FCon1" class="FCon" >
+<div id ="WFcontainer"> 
+<p class="titFC">Women's Fashion</p>
+ </div> </div>
 
 
             <div id="menFashion">
@@ -125,8 +129,10 @@ function main_page_fashion() {
             https://www.dior.com/couture/var/dior/storage/images/horizon/mens-fashion/man/block-cover-sacai-cover/block-cover-item-cover/28730917-15-eng-GB/cover_1440_1200.jpg" />
             
             </div>
-
-<div id ="MFcontainer"> </div>
+            <div id="FCon2" class="FCon" >
+<div id ="MFcontainer" >
+<p class="titFC">Men's Fashion</p> 
+ </div> </div>
             `;
             };
             fashion_selections()
@@ -429,9 +435,40 @@ function scrollFunction() {
 };
 topFunction()
 
+document.getElementById("menu0").onclick = function() {
+    document.getElementById("womenFashion").style.display = "flex";
+    document.getElementById("menFashion").style.display = "flex";
+    document.getElementById("FCon1").style.display = "none";
+    document.getElementById("FCon2").style.display = "none";
+}
 
+document.getElementById("menu1").onclick = function() {
+    document.getElementById("womenFashion").style.display = "none";
+    document.getElementById("menFashion").style.display = "none";
+    document.getElementById("FCon1").style.display = "flex";
+    document.getElementById("FCon2").style.display = "none";
+}
 
+document.getElementById("menu2").onclick = function() {
+    document.getElementById("womenFashion").style.display = "none";
+    document.getElementById("menFashion").style.display = "none";
+    document.getElementById("FCon1").style.display = "none";
+    document.getElementById("FCon2").style.display = "flex";
+}
 
+document.getElementById("womenFashion").onclick = function() {
+    document.getElementById("womenFashion").style.display = "none";
+    document.getElementById("menFashion").style.display = "none";
+    document.getElementById("FCon1").style.display = "flex";
+    document.getElementById("FCon2").style.display = "none";
+}
+
+document.getElementById("menFashion").onclick = function() {
+    document.getElementById("womenFashion").style.display = "none";
+    document.getElementById("menFashion").style.display = "none";
+    document.getElementById("FCon1").style.display = "none";
+    document.getElementById("FCon2").style.display = "flex";
+}
 
 
 
