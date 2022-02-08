@@ -39,10 +39,14 @@ body {
     border-radius: 20px;
     padding: 5px 10px 5px 10px;
 }
+#logo__main, #logo__main2, .native {
+    font-weight: bolder;
+}
+
 #logo__main:hover, #logo__main2:hover, .native:hover , #Ab:hover, #log:hover, #register:hover {
     color:rgba(2, 53, 25, 0.555);
     opacity: 1;
-    font-weight: bolder;
+    
 }
 
 .native:hover {
@@ -69,14 +73,10 @@ body {
     display: none;
 }
 
-#log {
-    border-left: 1px solid rgb(173, 131, 24) ;
-    border-right: 1px solid rgb(173, 131, 24) ;
-    padding: 10px;
-}
 
 
-#Ab , #register {
+
+#Ab , #register, #log {
     padding: 10px;
 }
 
@@ -169,7 +169,7 @@ video {
 }
  
 #womenFashion {
-    width: 90%;
+    width: 50%;
     display: flex;
     height: auto;
     float: left;
@@ -179,11 +179,11 @@ video {
     border: 3px solid #e7dfcf;
     padding: 20px;
     margin: 20px;
-    padding-left: 0px;
+    
     border-radius: 15px;
 }
 #imgWomenFashion {
-    width: 50%;
+    width: 100%;
    
     align-items: center;
     
@@ -203,7 +203,7 @@ video {
 
 #menFashion {
     float: right;
-    width: 90%;
+    width: 60%;
     display: flex;
     height: auto;
     align-items: center;
@@ -213,12 +213,12 @@ video {
     margin-bottom: 20px;
     margin-right: 20px;
     padding: 20px;
-    padding-right: 0;
+    
     border-radius: 15px;
 }
 
 #imgMenFashion {
-    width: 50%;
+    width: 100%;
     align-items: center;
 }
 
@@ -229,6 +229,99 @@ video {
 }
 
 
+.A{
+    position: absolute;
+    display: block;
+    padding: 20px 40px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    font-size: 100%;
+    letter-spacing: 2px;
+}
+
+.A span:nth-child(odd) {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    transition: 0.5s ease-in-out;
+}
+
+.A span:nth-child(1){
+    top: 0;
+    left: 50%;
+}
+
+.A span:nth-child(3){
+    bottom: 0;
+    right: 50%;
+}
+
+.A span:nth-child(even) {
+    position: absolute;
+    display: block;
+    width: 2px;
+    height: 100%;
+    background: #fff;
+    transition: 0.5s ease-in-out;
+}
+
+
+.A span:nth-child(2){
+    top: 50%;
+    left: 0;
+}
+
+.A span:nth-child(4){
+    bottom: 50%;
+    right: 0;
+}
+
+
+.A:hover span:nth-child(1){
+    top: 0;
+    left: -50%;
+}
+
+.A:hover span:nth-child(3){
+    bottom: 0;
+    right: -50%;
+}
+
+.A:hover span:nth-child(2){
+    top: -50%;
+    left: 0;
+}
+
+.A:hover span:nth-child(4){
+    bottom: -50%;
+    right: 0;
+}
+
+.A{
+    overflow: hidden;
+}
+
+.A:before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -100%;
+    background: #fff;
+    transition: 0.4s;
+    transition-delay: 0.4s;
+}
+
+.A:hover:before{
+    left: 100%;
+}
+
+
+
 
 /* FOOTER */
 
@@ -236,26 +329,30 @@ video {
 
 #mainFooter {
     width: 100%;
+   
     
-    background-color: rgb(255, 255, 255);
-  
-    
+    border-top:2px solid  rgb(248, 231, 183);
+    border-bottom:4px solid rgb(160, 123, 0);
+    margin-top: 50px;
 }
 
 .contact__container {
     width: 100%;
-    height: 180px;
-    background-color: rgb(248, 231, 183);
-    color: white;
+    height: 380px;
+    
+    border-bottom:2px solid rgb(160, 123, 0);
+    color: rgb(0, 0, 0);
     text-align: center;
 }
 #copyrightInfo {
     width: 100%;
-    height: 74px;
-    background-color: rgb(160, 123, 0);
-    color: white;
+    height: 100px;
+    background-color: rgb(247, 236, 205);
+    color: rgb(0, 0, 0);
     text-align: center;
 }
+
+
 
 #cata {
     display: none;

@@ -104,12 +104,23 @@ function main_page_fashion() {
                 fashionSelections.innerHTML +=`
             <div id="womenFashion" > <img id=imgWomenFashion
             src = "https://www.chanel.com/images/q_auto,f_auto,fl_lossy,dpr_auto/w_1920/FSH-1639756228960-22pplpdrtw00header.jpg"
-            /> WOMEN
+            />
+            <a class="A" href="#">   WOMEN  <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
             </div>
 <div id ="WFcontainer"> </div>
 
 
-            <div id="menFashion"> MEN <img id=imgMenFashion
+            <div id="menFashion">
+            <a class="A"  href="#">     MEN   <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+              <img id=imgMenFashion
             src ="
             https://www.dior.com/couture/var/dior/storage/images/horizon/mens-fashion/man/block-cover-sacai-cover/block-cover-item-cover/28730917-15-eng-GB/cover_1440_1200.jpg" />
             
@@ -364,7 +375,7 @@ const FashionProductListM = [
 const mybutton = document.getElementById("myBtn");
 window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
-  if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
+  if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
     mybutton.style.display = "block";
   } else {
     mybutton.style.display = "none";
