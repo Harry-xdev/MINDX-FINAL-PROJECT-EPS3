@@ -17,10 +17,10 @@ function render_header() {
         onclick="location.href='./index.html';"
         >
         N.Y.E</a>
-        <a id="menu" class="native" href="#img1">FASHION</a>
-        <a id="menu" class="native" href="#">WATCHES</a>
-        <a id="menu" class="native" href="#">SHOES</a>
-        <a id="menu" class="native" href="#section4__container1">BAGS</a>
+        <a id="menu1" class="native" href="#">Women's Fashion</a>
+        <a id="menu0" class="native" href="#">FASHION Page</a>
+        <a id="menu2" class="native" href="#">Men's Fashion</a>
+       
         <a id="cata" class="native" href="#">CATALOG</a>
         <span id="user__container" href="#"> </span>
 
@@ -45,10 +45,10 @@ function render_header() {
                    
                    dropContent.innerHTML += `
                    
-                   <button id="dropMenu" onclick="location.href='./Fashion.html';" >FASHION</button>
-                   <button id="dropMenu">WATCHES</button>
-                   <button id="dropMenu" >SHOES</button>
-                   <button id="dropMenu" >BAGS</button>
+                   <button id="dropMenu" href="#">Women's Fashion</button>
+                  
+                   <button id="dropMenu" href="#">Men's Fashion</button>
+                  
                    `
                   
                 }
@@ -63,9 +63,9 @@ function render_header() {
         const userContainer = document.querySelector("#user__container")
         function user(){
         userContainer.innerHTML += `
-        <span class="info"> About Us </span>
-        <span id="log" class="info" type="button" onclick="location.href='./login.html'"> Login</span>
-        <span class="info"> Register </span>
+        <span id = "Ab" class="info"> About Us </span>
+        <span id = "log" class="info" type="button" onclick="location.href='./login.html'"> Login</span>
+        <span id = "register" class="info"> Register </span>
 
         `;
        
@@ -81,6 +81,7 @@ render_header();
 function main_page_fashion() {
     mainPage.innerHTML += `
     <div id="mainPageFashion"> </div>
+    <a href="#"><button onclick="topFunction()" id="myBtn" title="Go to top">Top</button></a>
     `;
 
     // section Men's  Fashion, section Women's  Fashion
@@ -121,8 +122,8 @@ function main_page_fashion() {
        
 }
 
-main_page_fashion();
 
+main_page_fashion();
 
 
 const FashionProductListW = [
@@ -354,6 +355,26 @@ const FashionProductListM = [
 
 
 
+ // RUN ONCLICK FUNCTIONS 
+ document.getElementById("Ab").onclick = function() {
+    alert("We are group 6 at C4EJS126 of MindX.");
+    
+}
+
+const mybutton = document.getElementById("myBtn");
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+  if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+ function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+};
+topFunction()
 
 
 

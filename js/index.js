@@ -3,6 +3,7 @@ const mainPage = document.querySelector('#mainPage');
 function render_header() {
     mainPage.innerHTML += `
     <div id="header"></div>
+    <a href="#"><button onclick="topFunction()" id="myBtn" title="Go to top">Top</button></a>
     `;
 
     // RENDER HEADER NATIVE BUTTON - USER LOGIN
@@ -75,10 +76,7 @@ function render_header() {
    
 };
 render_header();
-document.getElementById("Ab").onclick = function() {
-    alert("Hello world");
-    
-}
+
 
 // RENDER MAIN SECTION
 function render_main_section () {
@@ -112,7 +110,7 @@ function render_main_section () {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
   };
-  
+  topFunction()
 
     // RENDER SECTION ITEMS
 
@@ -353,6 +351,19 @@ render_main_section();
 
 // LOGIN FUNCTION
 
+
+
+
+
+
+
+
+
+//  RUN ONCLICK FUNCTIONS 
+document.getElementById("Ab").onclick = function() {
+    alert("We are group 6 at C4EJS126 of MindX.");
+    
+}
 
 // RENDER FOOTER
 const mainFooter = document.querySelector('#mainFooter');
