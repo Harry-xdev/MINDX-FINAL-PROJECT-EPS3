@@ -45,9 +45,11 @@ function render_header() {
                    
                    dropContent.innerHTML += `
                    
-                   <button id="dropMenu" href="#">Women's Fashion</button>
+                   <button class="dropMenu" id="dropMenu1" href="#">Women's Fashion</button>
                   
-                   <button id="dropMenu" href="#">Men's Fashion</button>
+                   <button class="dropMenu" id="dropMenu2" href="#">Men's Fashion</button>
+
+                   <button class="dropMenu" id="dropMenu0" href="#">back to fashion page</button>
                   
                    `
                   
@@ -469,8 +471,24 @@ document.getElementById("menFashion").onclick = function() {
     document.getElementById("FCon1").style.display = "none";
     document.getElementById("FCon2").style.display = "flex";
 }
-
-
+document.getElementById("dropMenu1").onclick = function() {
+    document.getElementById("womenFashion").style.display = "none";
+    document.getElementById("menFashion").style.display = "none";
+    document.getElementById("FCon1").style.display = "flex";
+    document.getElementById("FCon2").style.display = "none";
+}
+document.getElementById("dropMenu2").onclick = function() {
+    document.getElementById("womenFashion").style.display = "none";
+    document.getElementById("menFashion").style.display = "none";
+    document.getElementById("FCon1").style.display = "none";
+    document.getElementById("FCon2").style.display = "flex";
+}
+document.getElementById("dropMenu0").onclick = function() {
+    document.getElementById("womenFashion").style.display = "flex";
+    document.getElementById("menFashion").style.display = "flex";
+    document.getElementById("FCon1").style.display = "none";
+    document.getElementById("FCon2").style.display = "none";
+}
 
 // RENDER FOOTER
 const mainFooter = document.querySelector('#mainFooter');

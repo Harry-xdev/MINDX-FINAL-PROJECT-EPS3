@@ -135,7 +135,7 @@ video {
     
 }
 
-#dropMenu {
+.dropMenu {
     border:0px solid rgb(173, 131, 24);
     background-color: #ffffff;
     color: rgb(173, 131, 24);
@@ -145,7 +145,7 @@ video {
     display: block;
     border-radius: 8px;
   }
-  #dropMenu:hover {
+  .dropMenu:hover {
     background-color:rgb(173, 131, 24);
     color: white;
     font-weight: bolder ;
