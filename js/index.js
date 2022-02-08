@@ -16,8 +16,8 @@ function render_header() {
         <a id="logo__main2" class="" 
         onclick="location.href='./index.html';"
         >
-         GROUP 6</a>
-        <a id="menu" class="native" href="#">FASHION</a>
+        N.Y.E</a>
+        <a id="menu" class="native" href="#img1">FASHION</a>
         <a id="menu" class="native" href="#">WATCHES</a>
         <a id="menu" class="native" href="#">SHOES</a>
         <a id="menu" class="native" href="#section4__container1">BAGS</a>
@@ -25,22 +25,60 @@ function render_header() {
         <span id="user__container" href="#"> </span>
 
         `
+
     };
     render_header_native();
+
+    const dropCata = document.querySelector("#cata")
+    function drop() {
+        dropCata.innerHTML += `
+     <span class ="drop_content"> </span>
+        `
+     }
+     drop()
+
+     
+     
+               const dropContent = document.querySelector(".drop_content")
+              
+               function dropdown() {
+                   
+                   dropContent.innerHTML += `
+                   
+                   <button id="dropMenu" onclick="location.href='./Fashion.html';" >FASHION</button>
+                   <button id="dropMenu">WATCHES</button>
+                   <button id="dropMenu" >SHOES</button>
+                   <button id="dropMenu" >BAGS</button>
+                   `
+                  
+                }
+                dropdown()
+               
+                 
+               
+                   
+              
+          
+
         const userContainer = document.querySelector("#user__container")
         function user(){
         userContainer.innerHTML += `
-        <span class="info"> About Us </span>
-        <span id="log" class="info" type="button" onclick="location.href='./login.html'"> Login</span>
-        <span class="info"> Register </span>
+        <span id = "Ab" class="info"> About Us </span>
+        <span id = "log" class="info" type="button" onclick="location.href='./login.html'"> Login</span>
+        <span id = "register" class="info"> Register </span>
 
         `;
        
+        
     };
     user();
    
 };
 render_header();
+document.getElementById("Ab").onclick = function() {
+    alert("Hello world");
+    
+}
 
 // RENDER MAIN SECTION
 function render_main_section () {
@@ -56,10 +94,24 @@ function render_main_section () {
   function video1() {
   imgHeader.innerHTML += ` 
   <img class="imgHead" src="https://images.unsplash.com/photo-1468818519844-64bc429824de?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80"/>
+  
   `
   };
   video1();
 
+  const mybutton = document.getElementById("myBtn");
+  window.onscroll = function() {scrollFunction()};
+  function scrollFunction() {
+    if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+   function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  };
   
 
     // RENDER SECTION ITEMS
@@ -78,7 +130,7 @@ function render_main_section () {
       <img id ="img1" src = "https://www.chanel.com/images/q_auto,f_auto,fl_lossy,dpr_auto/w_1280/FSH-1641215403491-slideshowdesktop3.jpg"/>
          <h1>Fashion</h1>
         <div>
-        <button  type="button"  onclick="location.href='./Fashion.html';"> Find out more  </button>
+        <button class="button1" type="button"  onclick="location.href='./Fashion.html';"> Find out more  </button>
         </div>
       `}; 
       sec1();

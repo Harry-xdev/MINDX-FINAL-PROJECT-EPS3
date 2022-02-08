@@ -1,6 +1,6 @@
 # MINDX-FINAL-PROJECT 
  NHÓM 1 
-  
+ 
 1/ NGUYỄN THỦY TIÊN<br>
 2/ NGUYỄN TUẤN ANH<br>
 3/ NGUYỄN VĂN TRUNG<br>
