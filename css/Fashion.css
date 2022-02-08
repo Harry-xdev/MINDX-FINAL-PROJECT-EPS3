@@ -127,11 +127,11 @@ video {
     display: none;
     position: absolute;
     background-color: #ffffff;
-    min-width: 80px;
+    min-width: 180px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     border-radius: 8px;
-    top:30px;
+    top:40px;
     
 }
 
@@ -267,7 +267,7 @@ video {
 #btn__cart {
     cursor: pointer;
     width: 70%;
-    padding: 17px;
+    padding: 10px;
     border: 0;
     font-family: "Circular Std",sans-serif;
     background-color:rgb(173, 131, 24);
@@ -275,7 +275,7 @@ video {
     border-radius: 25px;
     font-weight: bolder;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     font-size: 15px;
 }
 #btn__cart:hover {
@@ -415,7 +415,72 @@ video {
 
 
 
+
 /* MEDIA SCREEN */
+
+
+
+
+@media only screen and (max-width: 1300px) {
+    .info {
+        font-size: 16px;
+    }
+    .native {
+    
+        display: none;
+    }
+    #cata {
+    display: inline-block;
+    font-weight: bolder;
+    }
+    .section__1{
+        height: 850px;
+        padding: 1px;
+        margin-bottom: 200px;
+    }
+    }
+    
+
+
+
+
+
+    @media only screen and (max-width: 1000px) {
+        .native {
+       
+            display: none;
+           }
+       #cata {
+           display: inline-block;
+       }
+       .info {
+       
+           display: none;
+       }
+       #log {
+           display: inline-block;
+           border: none;
+       }
+           
+           #header a {
+       
+               font-size: 28px;
+               
+           }
+           #logo__main, #logo__main2{
+               font-size: 30px;
+           }
+           .section__1 {
+               height: 600px;
+               padding: 1px;
+               margin-bottom: 150px;
+           }
+       }
+       
+       
+       
+       
+
 
 
 @media only screen and (max-width: 600px) {
@@ -425,7 +490,7 @@ video {
 
 #header a {
 
-    font-size: 10px;
+    font-size: 20px;
 }
 #header {
     height: 50px;
@@ -435,49 +500,13 @@ video {
 }
 #logo__main2 {
     display: inline-block;
+    font-size: 25px;
 }
-}
-
-
-
-
-@media only screen and (max-width: 1000px) {
- .native {
-
-     display: none;
-    }
-#cata {
-    display: inline-block;
-}
-.info {
-
-    display: none;
-}
-#log {
-    display: inline-block;
-}
-    
-    #header a {
-
-        font-size: 15px;
-        
-    }
+.section__1{
+    height: 450px;
+    padding: 1px;
+    margin-bottom: 150px;
 }
 
 
-
-
-
-@media only screen and (max-width: 1300px) {
-.info {
-    font-size: 16px;
-}
-.native {
-
-    display: none;
-}
-#cata {
-display: inline-block;
-font-weight: bolder;
-}
 }

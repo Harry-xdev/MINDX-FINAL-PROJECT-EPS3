@@ -177,6 +177,33 @@ video {
     border:1px solid rgb(160, 123, 0);
   }
 
+  #tit1 {
+      font-family: Eina03,helvetica neue,helvetica;
+      color:white;
+      z-index: 3;
+     font-weight: lighter;
+      position: relative;
+      top : 550px;
+      display: flex;
+      justify-content: center;
+      font-size: 30px;
+      height: 0;
+  }
+
+#tit2{
+    font-family: Eina03,helvetica neue,helvetica;
+    color:white;
+      z-index: 3;
+      font-weight: bolder;
+      position: relative;
+      top : 600px;
+      display: flex;
+      justify-content: center;
+      font-size: 70px;
+      height: 0;
+}
+
+
   /*  FOOTER  */
 
 #mainFooter {
@@ -208,13 +235,14 @@ video {
 
 /* SECTION 1 CSS */
 .section__1 {
-    
+    width: auto;
     padding: 5% ;
     padding-top: 8%;
     flex-direction: column;
     background-color: white;
     color: black;
     margin-bottom: 20%;
+    border: 2px solid black;
 }
 
 h1 {
@@ -256,12 +284,12 @@ h1 {
     width: 0%;
     height: 100%;
     display: inline-block;
-    background: rgb(238, 184, 48);
+    background: rgb(226, 171, 32);
     position: absolute;
     -ms-transform: skewX(-20deg);
     -webkit-transform: skewX(-20deg); 
     transform: skewX(-20deg);   
-    left: -10%;
+    left: 1%;
     opacity: 1;
     top: 0;
     z-index: -12;
@@ -296,7 +324,7 @@ h1 {
   }
   .button1:hover::before{
     opacity:1;
-    width: 116%;
+    width: 100%;
   }
   .button1:hover::after{
     opacity:1;
@@ -376,7 +404,7 @@ p, a {
 .product__intro {
     font-size: 14px;
     color: black;
-    width: 600px;
+    width: 40%;
     height: 200px;
     background-color: rgb(255, 255, 255);
     position: relative;
@@ -386,7 +414,7 @@ p, a {
 .product__intro2 {
     font-size: 14px;
     color: black;
-    width: 600px;
+    width: 40%;
     height: 200px;
     background-color: rgb(255, 255, 255);
     position: absolute;
