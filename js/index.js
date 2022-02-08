@@ -179,12 +179,37 @@ function render_main_section () {
     render_section4_cap1();
 
     // SECTION 4 CONTAINER 1
-    function section4__container1() {
+    function section4_container1() {
         section4Item1.innerHTML += `
         <div id="section4__container1" class="section4__container"></div>
         `
     }
-    section4__container1();
+    section4_container1();
+
+    // SECTION 4 INTRODUCE
+    function section4_introduce() {
+        section4Item1.innerHTML += `
+        <div id="" class="section4__introduce"></div>
+        `
+    }
+    section4_introduce();
+
+    const section4IntroItem = document.querySelector('.section4__introduce');
+    function render_section4_intro() {
+        section4IntroItem.innerHTML += `
+        <div id="" class="product__intro">
+            <h2>WOMEN’S BAGS</h2>
+            <p>The KENZO bags for women are practical and sophisticated creations which will be the perfect finishing touch to your outfits. Backpacks, handbags, clutches, bumbags … These KENZO accessories will elevate your urban looks as well as your evening outfits. Carry around your essentials without compromising style with our iconic ONDA and ARCTIK collections, and vary your looks while giving them a playful twist thanks to our various shoulder straps.</p>
+            <p>View all our <a href="#">products.</a></p>
+        </div>
+        <div id="" class="product__intro2">
+        <h2>MEN’S BAGS</h2>
+        <p>The KENZO bags for women are practical and sophisticated creations which will be the perfect finishing touch to your outfits. Backpacks, handbags, clutches, bumbags … These KENZO accessories will elevate your urban looks as well as your evening outfits. Carry around your essentials without compromising style with our iconic ONDA and ARCTIK collections, and vary your looks while giving them a playful twist thanks to our various shoulder straps.</p>
+        <p>View all our <a href="#">products.</a></p>
+    </div>
+        `
+    }
+    render_section4_intro();
 
     function render_section4_cap2() {
         section4Item1.innerHTML += `
@@ -214,10 +239,10 @@ function render_main_section () {
             color: "BLACK",
         },
         {
-            name: "KENZO Sport backpack with strap",
+            name: "KENZO Sport backpack W strap",
             url: "#",
-            image: "./images/section 4/KENZO Sport backpack with strap.jpg",
-            image2: "./images/section 4/KENZO Sport backpack with strap 2.jpg",
+            image: "./images/section 4/KENZO Sport backpack W strap.jpg",
+            image2: "./images/section 4/KENZO Sport backpack W strap 2.jpg",
             price: "$295",
             gender: "MALE",
             color: "WHITE",

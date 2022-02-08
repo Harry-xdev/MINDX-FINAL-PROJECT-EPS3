@@ -339,6 +339,10 @@ h1 {
 
 
 /* SECTION 4 CSS TUAN ANH */
+.section__4 {
+    height: 1600px;
+}
+
 .section4__container {
     background-color: rgb(255, 255, 255);
     height: 500px;
@@ -346,8 +350,40 @@ h1 {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    justify-content: space-between;
-    margin-left: 50px;
+}
+
+.section4__introduce {
+    font-family: "Circular Std",sans-serif;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+    margin: 20px 0px 20px 0px;
+}
+
+h2, p {
+    margin-top: 20px;
+}
+p, a {
+    color: black;
+    line-height: 20px;
+}
+.product__intro {
+    font-size: 14px;
+    color: black;
+    width: 600px;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    left: 108px;    
+}
+
+.product__intro2 {
+    font-size: 14px;
+    color: black;
+    width: 600px;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    right: 90px;
 }
 .section4__container a {
     text-decoration: none;
@@ -358,13 +394,28 @@ h1 {
     font-size: 16px;
     font-family: "Circular Std",sans-serif;
     color:rgb(173, 131, 24);
+    margin: 0px 20px 0px 20px;
+    border: 2px solid black;
+    width: 250px;
+    height: 400px;
 
 }
 
+.product__info {
+    /* margin-top: 10px; */
+}
+
 #btn__cart {
-    display: flex;
-    justify-content: center;
     cursor: pointer;
+    width: 250px;
+    height: 30px;
+    border: 0;
+    font-family: "Circular Std",sans-serif;
+    background-color:rgb(173, 131, 24);
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-top: 10px;
 }
 #btn__cart:hover {
     background-color: burlywood;

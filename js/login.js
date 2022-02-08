@@ -45,7 +45,7 @@ function render_login_form () {
   mainPage.innerHTML += `
   <div class= "img_header" > </div>
   <div class="login__form">
-    <form name="loginForm" action="index.html" method="#" onsubmit="return validate()">
+    <form name="loginForm" action="index.html" method="#">
       <div class="caption">
         LOGIN
       </div>
@@ -57,7 +57,7 @@ function render_login_form () {
         <label for="psw"><b>Password</b></label>
         <input id="password" type="password" placeholder="Enter Password" name="psw" required>
     
-        <button type="submit" onclick="validate()">Submit</button>
+        <button type="submit" onclick="return validate()">Submit</button>
         <label>
           <input type="checkbox" checked="checked" name="remember"> Remember me
         </label>
