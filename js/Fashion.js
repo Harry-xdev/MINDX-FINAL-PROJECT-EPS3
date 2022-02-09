@@ -530,6 +530,16 @@ document.getElementById("dropMenu0").onclick = function () {
     document.getElementById("FCon2").style.display = "none";
 }
 
+
+
+
+
+
+// DROP BAR HOVER 
+// co the viet truc tiep bang html
+// ko can chay functions
+
+
 const dropBar = document.getElementById("filter")
 function drop1() {
     dropBar.innerHTML += `
