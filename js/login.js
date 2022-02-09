@@ -64,7 +64,7 @@ function render_header() {
         const userContainer = document.querySelector("#user__container")
         function user(){
         userContainer.innerHTML += `
-        <span id = "Ab" class="info"> About Us </span>
+        
         <span id = "log" class="info" type="button" onclick="location.href='./login.html'"> Login</span>
         <span id = "register" class="info" onclick="location.href='./login.html'"> Register </span>
 
@@ -82,8 +82,8 @@ render_header();
 function render_signup_form () {
   mainPage.innerHTML += `
   <div class= "img_header" > </div>
-  <div class="login__form">
-    <form name="loginForm" action="index.html" method="#" id="signUp">
+  <div class="signup__form" id="signUp">
+    <form name="loginForm" action="index.html" method="#" >
       <div class="caption">
         REGISTER
       </div>
@@ -103,7 +103,7 @@ function render_signup_form () {
           <input type="checkbox" checked="checked" name="remember"> Remember me
         </label>
         <p><div><i>Already have your account?
-        <a> <u>Log in</u>.</a>
+        <a id="goToLogIn" > <u>Log in</u>.</a>
         </i></div></p>
       </div>
     
@@ -123,8 +123,8 @@ render_signup_form();
 function render_login_form () {
   mainPage.innerHTML += `
   <div class= "img_header" > </div>
-  <div class="login__form">
-    <form name="loginForm" action="index.html" method="#" id = "logIn" >
+  <div class="login__form" id = "logIn">
+    <form name="loginForm" action="index.html" method="#"  >
       <div class="caption">
         LOG IN
       </div>
@@ -141,7 +141,7 @@ function render_login_form () {
           <input type="checkbox" checked="checked" name="remember"> Remember me
         </label>
         <p><div><i>Haven't got an account yet? 
-        <a> <u>Sign Up</u>.</a>
+        <a id="goToSignUp"> <u>Sign Up</u>.</a>
         </i></div></p>
       </div>
     
@@ -209,6 +209,27 @@ function validate2() {
       return false;
   }
 }
+
+// RUN ONCLICK FUNCTIONS
+
+document.getElementById("log").onclick = function() {
+  document.getElementById("logIn").style.display = "block";
+  document.getElementById("signUp").style.display = "none";
+}
+document.getElementById("register").onclick = function() {
+  document.getElementById("logIn").style.display = "none";
+  document.getElementById("signUp").style.display = "block";
+}
+
+document.getElementById("goToSignUp").onclick = function() {
+  document.getElementById("logIn").style.display = "none";
+  document.getElementById("signUp").style.display = "block";
+}
+document.getElementById("goToLogIn").onclick = function() {
+  document.getElementById("logIn").style.display = "block";
+  document.getElementById("signUp").style.display = "none";
+}
+
 
 
 // RENDER FOOTER

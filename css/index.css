@@ -179,7 +179,7 @@ video {
 
   #tit1 {
       font-family: Eina03,helvetica neue,helvetica;
-      color:white;
+      color:rgb(218, 218, 218);
       z-index: 3;
      font-weight: lighter;
       position: relative;
@@ -192,7 +192,7 @@ video {
 
 #tit2{
     font-family: Eina03,helvetica neue,helvetica;
-    color:white;
+    color:rgb(231, 231, 231);
       z-index: 3;
       font-weight: bolder;
       position: relative;
@@ -242,7 +242,7 @@ video {
     background-color: white;
     color: black;
     margin-bottom: 20%;
-    border: 2px solid black;
+    
 }
 
 h1 {
@@ -487,6 +487,15 @@ p, a {
         padding: 1px;
         margin-bottom: 200px;
     }
+#tit1 {
+    font-size: 20px;
+    top: 450px ;
+}
+#tit2 {
+    font-size: 50px;
+    top: 500px;
+}
+
     }
     
 
@@ -524,6 +533,14 @@ p, a {
                padding: 1px;
                margin-bottom: 150px;
            }
+           #tit1 {
+            font-size: 20px;
+            top:300px;
+        }
+        #tit2 {
+            font-size: 40px;
+            top:350px;
+        }
        }
        
        
@@ -556,7 +573,14 @@ p, a {
     padding: 1px;
     margin-bottom: 150px;
 }
-
+#tit1 {
+    font-size: 10px;
+    top:230px;
+}
+#tit2 {
+    font-size: 20px;
+    top:250px;
+}
 
 }
 
