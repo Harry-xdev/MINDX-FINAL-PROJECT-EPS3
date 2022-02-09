@@ -148,6 +148,11 @@ section {
     justify-content: space-evenly;
 
 }
+.material-icons {
+   
+    position: relative;
+    top:5px;
+}
 
 video {
     width: 100%;

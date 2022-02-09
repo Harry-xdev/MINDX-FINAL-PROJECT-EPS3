@@ -118,10 +118,30 @@ video {
     position: relative;
 }
 
-#cata:hover  .drop_content {
+
+/* DROP MENU HOVER */
+
+
+#cata:hover .drop_content {
     display: block;
 }
 
+#filter:hover, #sort:hover,
+#filter2:hover, #sort2:hover {
+    color: rgb(211, 166, 54);
+}
+#filter:hover .drop_content1 {
+    display: block; 
+}
+#filter2:hover .drop_content2 {
+    display: block;
+}
+#sort:hover .drop_content3 {
+    display: block;
+}
+#sort2:hover .drop_content4 {
+    display: block;
+}
 .drop_content {
     border:0.5px solid rgb(173, 131, 24);
     display: none;
@@ -129,13 +149,28 @@ video {
     background-color: #ffffff;
     min-width: 180px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    z-index: 2;
     border-radius: 8px;
     top:40px;
     
 }
+.drop_content1, .drop_content2 , .drop_content3 , .drop_content4 {
+    border:0.5px solid rgb(173, 131, 24);
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+    border-radius: 8px;
+    
+}
+.drop_content3 , .drop_content4 {
+    margin-left: 130px;
+}
 
-.dropMenu {
+
+.dropMenu , .dropMenu1 , .dropMenu2 , .dropMenu3 , .dropMenu4 {
     border:0px solid rgb(173, 131, 24);
     background-color: #ffffff;
     color: rgb(173, 131, 24);
@@ -145,11 +180,17 @@ video {
     display: block;
     border-radius: 8px;
   }
-  .dropMenu:hover {
+  .dropMenu:hover,
+  .dropMenu1:hover ,
+  .dropMenu2:hover,
+  .dropMenu3:hover,
+  .dropMenu4:hover{
     background-color:rgb(173, 131, 24);
     color: white;
     font-weight: bolder ;
   }
+
+
 
 
 
@@ -382,8 +423,25 @@ video {
     left: 100%;
 }
 
-
-
+.actionBar {
+  
+    width: 100%;
+    font-size: 20px;
+    margin-left: 10%;
+   font-weight: lighter;
+}
+#filter , #filter2{
+    cursor: pointer;
+    margin-right: 30px;
+}
+#sort , #sort2 {
+    cursor: pointer;
+}
+.material-icons {
+   
+    position: relative;
+    top:5px;
+}
 
 /* FOOTER */
 
