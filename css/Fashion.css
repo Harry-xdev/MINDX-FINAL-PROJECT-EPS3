@@ -292,11 +292,13 @@ video {
     font-family: "Circular Std",sans-serif;
     color:rgb(173, 131, 24);
     margin: 20px ;
-    border: 2px solid rgb(212, 176, 85);
+    
 }
 .product__image {
-    width: 100%;
+    width: AUTO;
+    height:497px;
     margin-bottom: 20px;
+    border: 2px solid rgb(212, 176, 85);
 }
 .product__info {
     margin-left: 20px;
