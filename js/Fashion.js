@@ -67,7 +67,7 @@ function render_header() {
         userContainer.innerHTML += `
         <span id = "Ab" class="info"> About Us </span>
         <span id = "log" class="info" type="button" onclick="location.href='./login.html'"> Login</span>
-        <span id = "register" class="info"> Register </span>
+        <span id = "register" class="info"> CART </span>
 
         `;
        
