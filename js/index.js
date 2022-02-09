@@ -90,9 +90,11 @@ function render_main_section () {
 
   const imgHeader = document.querySelector (".img_header")
   function video1() {
-  imgHeader.innerHTML += ` 
+  imgHeader.innerHTML += ` <div>
+   <div id="tit1"><i>HAUTE COUTURE</i></div>
+    <div id="tit2">SPRING-SUMMER 2022 SHOW</div>
   <img class="imgHead" src="https://images.unsplash.com/photo-1468818519844-64bc429824de?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80"/>
-  
+  </div>
   `
   };
   video1();

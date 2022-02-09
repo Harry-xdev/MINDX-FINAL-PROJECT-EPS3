@@ -39,10 +39,14 @@ body {
     border-radius: 20px;
     padding: 5px 10px 5px 10px;
 }
+#logo__main, #logo__main2, .native {
+    font-weight: bolder;
+}
+
 #logo__main:hover, #logo__main2:hover, .native:hover , #Ab:hover, #log:hover, #register:hover {
     color:rgba(2, 53, 25, 0.555);
     opacity: 1;
-    font-weight: bolder;
+    
 }
 
 .native:hover {
@@ -69,14 +73,10 @@ body {
     display: none;
 }
 
-#log {
-    border-left: 1px solid rgb(173, 131, 24) ;
-    border-right: 1px solid rgb(173, 131, 24) ;
-    padding: 10px;
-}
 
 
-#Ab , #register {
+
+#Ab , #register, #log {
     padding: 10px;
 }
 
@@ -127,15 +127,15 @@ video {
     display: none;
     position: absolute;
     background-color: #ffffff;
-    min-width: 80px;
+    min-width: 180px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     border-radius: 8px;
-    top:30px;
+    top:40px;
     
 }
 
-#dropMenu {
+.dropMenu {
     border:0px solid rgb(173, 131, 24);
     background-color: #ffffff;
     color: rgb(173, 131, 24);
@@ -145,7 +145,7 @@ video {
     display: block;
     border-radius: 8px;
   }
-  #dropMenu:hover {
+  .dropMenu:hover {
     background-color:rgb(173, 131, 24);
     color: white;
     font-weight: bolder ;
@@ -167,9 +167,27 @@ video {
     display: block;
    
 }
- 
+.titF {
+    display: flex;
+    margin: 30px;
+    margin-top: 70px;
+    font-weight: lighter;
+    justify-content: center;
+
+}
+.titFC {
+    font-size: 40px;
+    width: 100%;
+    margin: 30px;
+    justify-content: center;
+    display: flex;
+
+}
+.FCon {
+    display: none;
+}
 #womenFashion {
-    width: 90%;
+    width: 50%;
     display: flex;
     height: auto;
     float: left;
@@ -179,23 +197,17 @@ video {
     border: 3px solid #e7dfcf;
     padding: 20px;
     margin: 20px;
-    padding-left: 0px;
+    
     border-radius: 15px;
 }
 #imgWomenFashion {
-    width: 50%;
+    width: 100%;
    
     align-items: center;
     
 }
 
 
-#WFcontainer {
-    border: 2px solid black;
-    width: 30px;
-    height: 30px;
-    
-}
 
 
 
@@ -203,7 +215,7 @@ video {
 
 #menFashion {
     float: right;
-    width: 90%;
+    width: 60%;
     display: flex;
     height: auto;
     align-items: center;
@@ -213,20 +225,156 @@ video {
     margin-bottom: 20px;
     margin-right: 20px;
     padding: 20px;
-    padding-right: 0;
+    
     border-radius: 15px;
 }
 
 #imgMenFashion {
-    width: 50%;
+    width: 100%;
     align-items: center;
 }
 
-#MFcontainer {
-    border: 2px solid black;
-    width: 30px;
-    height: 30px;
+#MFcontainer , #WFcontainer{
+    
+    
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    color:rgb(117, 89, 19);
+    font-weight: 700;
+    justify-content: center;
 }
+
+.product__item {
+    font-size: 16px;
+    font-family: "Circular Std",sans-serif;
+    color:rgb(173, 131, 24);
+    margin: 20px ;
+    border: 2px solid rgb(212, 176, 85);
+}
+.product__image {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.product__info {
+    margin-left: 20px;
+}
+.btnC {
+    display: flex;
+    justify-content: center;
+}
+#btn__cart {
+    cursor: pointer;
+    width: 70%;
+    padding: 10px;
+    border: 0;
+    font-family: "Circular Std",sans-serif;
+    background-color:rgb(173, 131, 24);
+    color: white;
+    border-radius: 25px;
+    font-weight: bolder;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+#btn__cart:hover {
+    background-color: burlywood;
+    color: white;
+}
+
+.A{
+    position: absolute;
+    display: block;
+    padding: 20px 40px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color:rgb(255, 228, 161);
+    font-size: 100%;
+    letter-spacing: 2px;
+    font-weight: bolder;
+}
+
+.A span:nth-child(odd) {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: rgb(255, 228, 161);
+    transition: 0.5s ease-in-out;
+}
+
+.A span:nth-child(1){
+    top: 0;
+    left: 50%;
+}
+
+.A span:nth-child(3){
+    bottom: 0;
+    right: 50%;
+}
+
+.A span:nth-child(even) {
+    position: absolute;
+    display: block;
+    width: 2px;
+    height: 100%;
+    background: rgb(255, 228, 161);
+    transition: 0.5s ease-in-out;
+}
+
+
+.A span:nth-child(2){
+    top: 50%;
+    left: 0;
+}
+
+.A span:nth-child(4){
+    bottom: 50%;
+    right: 0;
+}
+
+
+.A:hover span:nth-child(1){
+    top: 0;
+    left: -50%;
+}
+
+.A:hover span:nth-child(3){
+    bottom: 0;
+    right: -50%;
+}
+
+.A:hover span:nth-child(2){
+    top: -50%;
+    left: 0;
+}
+
+.A:hover span:nth-child(4){
+    bottom: -50%;
+    right: 0;
+}
+
+.A{
+    overflow: hidden;
+}
+
+.A:before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -100%;
+    background: #fff;
+    transition: 0.4s;
+    transition-delay: 0.4s;
+}
+
+.A:hover:before{
+    left: 100%;
+}
+
 
 
 
@@ -236,25 +384,34 @@ video {
 
 #mainFooter {
     width: 100%;
+   
     
-    background-color: rgb(255, 255, 255);
-  
-    
+    border-top:2px solid  rgb(248, 231, 183);
+    border-bottom:4px solid rgb(160, 123, 0);
+    margin-top: 50px;
 }
 
 .contact__container {
     width: 100%;
-    height: 180px;
-    background-color: rgb(248, 231, 183);
-    color: white;
+    height: 380px;
+    
+    border-bottom:2px solid rgb(160, 123, 0);
+    color: rgb(0, 0, 0);
     text-align: center;
 }
 #copyrightInfo {
     width: 100%;
-    height: 74px;
-    background-color: rgb(160, 123, 0);
-    color: white;
+    height: 100px;
+    background-color: rgb(247, 236, 205);
+    color: rgb(0, 0, 0);
     text-align: center;
+}
+
+
+
+
+#cata {
+    display: none;
 }
 
 
@@ -264,6 +421,70 @@ video {
 /* MEDIA SCREEN */
 
 
+
+
+@media only screen and (max-width: 1300px) {
+    .info {
+        font-size: 16px;
+    }
+    .native {
+    
+        display: none;
+    }
+    #cata {
+    display: inline-block;
+    font-weight: bolder;
+    }
+    .section__1{
+        height: 850px;
+        padding: 1px;
+        margin-bottom: 200px;
+    }
+    }
+    
+
+
+
+
+
+    @media only screen and (max-width: 1000px) {
+        .native {
+       
+            display: none;
+           }
+       #cata {
+           display: inline-block;
+       }
+       .info {
+       
+           display: none;
+       }
+       #log {
+           display: inline-block;
+           border: none;
+       }
+           
+           #header a {
+       
+               font-size: 28px;
+               
+           }
+           #logo__main, #logo__main2{
+               font-size: 30px;
+           }
+           .section__1 {
+               height: 600px;
+               padding: 1px;
+               margin-bottom: 150px;
+           }
+       }
+       
+       
+       
+       
+
+
+
 @media only screen and (max-width: 600px) {
     #fashionSelections { 
            font-size: 30px;
@@ -271,7 +492,7 @@ video {
 
 #header a {
 
-    font-size: 10px;
+    font-size: 20px;
 }
 #header {
     height: 50px;
@@ -281,49 +502,13 @@ video {
 }
 #logo__main2 {
     display: inline-block;
+    font-size: 25px;
 }
-}
-
-
-
-
-@media only screen and (max-width: 1000px) {
- .native {
-
-     display: none;
-    }
-#cata {
-    display: inline-block;
-}
-.info {
-
-    display: none;
-}
-#log {
-    display: inline-block;
-}
-    
-    #header a {
-
-        font-size: 15px;
-        
-    }
+.section__1{
+    height: 450px;
+    padding: 1px;
+    margin-bottom: 150px;
 }
 
 
-
-
-
-@media only screen and (max-width: 1300px) {
-.info {
-    font-size: 16px;
-}
-.native {
-
-    display: none;
-}
-#cata {
-display: inline-block;
-font-weight: bolder;
-}
 }
