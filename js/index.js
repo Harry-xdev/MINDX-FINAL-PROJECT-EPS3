@@ -64,9 +64,9 @@ function render_header() {
         const userContainer = document.querySelector("#user__container")
         function user(){
         userContainer.innerHTML += `
-        <span id = "Ab" class="info"> About Us </span>
+        <span id = "Ab" class="info"> About Us <i class="material-icons">supervisor_account</i> </span>
         <span id = "log" class="info" type="button" onclick="location.href='./login.html'"> Login</span>
-        <span id = "register" class="info"> Register </span>
+        <span id = "register" class="info" > CART <i class="material-icons">shopping_cart</i></span>
 
         `;
        

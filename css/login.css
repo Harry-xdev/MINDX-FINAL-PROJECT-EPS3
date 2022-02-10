@@ -4,13 +4,25 @@
     background-color: rgb(255, 255, 255);
     margin: auto;
 }
-
+.signup__form{
+  display: none;
+  height: 500px;
+  width: 400px;
+  background-color: rgb(255, 255, 255);
+  margin: auto;
+  margin-bottom: 50px;
+}
+#goToLogIn, #goToSignUp {
+  cursor: pointer;
+  color: blue;
+}
 
 /* Bordered form */
 form {
     border: 5px solid #e7dfcf;
     border-radius: 40px;
     margin-top: 40px;
+    
     font-family: "Circular Std",sans-serif;
   }
 
@@ -68,6 +80,9 @@ form {
   }
   
   /* Change styles for span and cancel button on extra small screens */
+
+
+
   @media screen and (max-width: 300px) {
     span.psw {
       display: block;
