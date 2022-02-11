@@ -35,51 +35,51 @@ function render_header() {
         dropCata.innerHTML += `
      <span class ="drop_content"> </span>
         `
-     }
-     drop()
+    }
+    drop()
 
-     
-     
-               const dropContent = document.querySelector(".drop_content")
-              
-               function dropdown() {
-                   
-                   dropContent.innerHTML += `
+
+
+    const dropContent = document.querySelector(".drop_content")
+
+    function dropdown() {
+
+        dropContent.innerHTML += `
                    
                    <button id="dropMenu" onclick="location.href='./Fashion.html';" >FASHION</button>
                    <button id="dropMenu">WATCHES</button>
                    <button id="dropMenu" >SHOES</button>
                    <button id="dropMenu" >BAGS</button>
                    `
-                  
-                }
-                dropdown()
-               
-                 
-               
-                   
-              
-          
 
-        const userContainer = document.querySelector("#user__container")
-        function user(){
+    }
+    dropdown()
+
+
+
+
+
+
+
+    const userContainer = document.querySelector("#user__container")
+    function user() {
         userContainer.innerHTML += `
         <span id = "Ab" class="info"> About Us <i class="material-icons">supervisor_account</i> </span>
         <span id = "log" class="info" type="button" onclick="location.href='./login.html'"> Login</span>
-        <span id = "register" class="info" > CART <i class="material-icons">shopping_cart</i></span>
+        <span id = "register" class="info" ><i class="material-icons">shopping_cart</i></span>
 
         `;
-       
-        
+
+
     };
     user();
-   
+
 };
 render_header();
 
 
 // RENDER MAIN SECTION
-function render_main_section () {
+function render_main_section() {
     mainPage.innerHTML += `
    
     <div class= "img_header" > </div>
@@ -88,31 +88,31 @@ function render_main_section () {
 
     `;
 
-  const imgHeader = document.querySelector (".img_header")
-  function video1() {
-  imgHeader.innerHTML += ` <div>
+    const imgHeader = document.querySelector(".img_header")
+    function video1() {
+        imgHeader.innerHTML += ` <div>
    <div id="tit1"><i>HAUTE COUTURE</i></div>
     <div id="tit2">SPRING-SUMMER 2022 SHOW</div>
   <img class="imgHead" src="https://images.unsplash.com/photo-1468818519844-64bc429824de?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80"/>
   </div>
   `
-  };
-  video1();
+    };
+    video1();
 
-  const mybutton = document.getElementById("myBtn");
-  window.onscroll = function() {scrollFunction()};
-  function scrollFunction() {
-    if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
-      mybutton.style.display = "block";
-    } else {
-      mybutton.style.display = "none";
+    const mybutton = document.getElementById("myBtn");
+    window.onscroll = function () { scrollFunction() };
+    function scrollFunction() {
+        if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
     }
-  }
-   function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-  };
-  topFunction()
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    };
+    topFunction()
 
     // RENDER SECTION ITEMS
 
@@ -123,17 +123,17 @@ function render_main_section () {
         <section id="" class="section__1"></section>
         <div class ="space"> </div>
          `;
-      const section1 = document.querySelector(".section__1")
-      function sec1() {
-      section1.innerHTML += `
+        const section1 = document.querySelector(".section__1")
+        function sec1() {
+            section1.innerHTML += `
      
       <img id ="img1" src = "https://www.chanel.com/images/q_auto,f_auto,fl_lossy,dpr_auto/w_1280/FSH-1641215403491-slideshowdesktop3.jpg"/>
-         <h1>Fashion</h1>
+         <h1>COLLECTION</h1>
         <div>
         <button class="button1" type="button"  onclick="location.href='./Fashion.html';"> Find out more  </button>
         </div>
-      `}; 
-      sec1();
+      `};
+        sec1();
     };
     render_section_1();
 
@@ -173,7 +173,7 @@ function render_main_section () {
     // SECTION 4 CAPTION
     function render_section4_cap1() {
         section4Item1.innerHTML += `
-        <div id="" class="section4__cap">MEN'S BAGS</div>
+        <div id="" class="section4__cap">MEN's</div>
         `
     }
     render_section4_cap1();
@@ -197,23 +197,25 @@ function render_main_section () {
     const section4IntroItem = document.querySelector('.section4__introduce');
     function render_section4_intro() {
         section4IntroItem.innerHTML += `
-        <div id="" class="product__intro">
-            <h2>WOMEN’S BAGS</h2>
-            <p>The KENZO bags for women are practical and sophisticated creations which will be the perfect finishing touch to your outfits. Backpacks, handbags, clutches, bumbags … These KENZO accessories will elevate your urban looks as well as your evening outfits. Carry around your essentials without compromising style with our iconic ONDA and ARCTIK collections, and vary your looks while giving them a playful twist thanks to our various shoulder straps.</p>
-            <p>View all our <a href="#">products.</a></p>
+        <div id="intro__container">
+            <div id="" class="product__intro">
+                <h2>WOMEN'S BAGS</h2>
+                <p>The KENZO bags for women are practical and sophisticated creations which will be the perfect finishing touch to your outfits. Backpacks, handbags, clutches, bumbags … These KENZO accessories will elevate your urban looks as well as your evening outfits. Carry around your essentials without compromising style with our iconic ONDA and ARCTIK collections, and vary your looks while giving them a playful twist thanks to our various shoulder straps.</p>
+                <p>View all our <a href="#">products.</a></p>
+            </div>
+            <div id="" class="product__intro2">
+                <h2>MEN'S BAGS</h2>
+                <p>The KENZO bags for women are practical and sophisticated creations which will be the perfect finishing touch to your outfits. Backpacks, handbags, clutches, bumbags … These KENZO accessories will elevate your urban looks as well as your evening outfits. Carry around your essentials without compromising style with our iconic ONDA and ARCTIK collections, and vary your looks while giving them a playful twist thanks to our various shoulder straps.</p>
+                <p>View all our <a href="#">products.</a></p>
+            </div>
         </div>
-        <div id="" class="product__intro2">
-        <h2>MEN’S BAGS</h2>
-        <p>The KENZO bags for women are practical and sophisticated creations which will be the perfect finishing touch to your outfits. Backpacks, handbags, clutches, bumbags … These KENZO accessories will elevate your urban looks as well as your evening outfits. Carry around your essentials without compromising style with our iconic ONDA and ARCTIK collections, and vary your looks while giving them a playful twist thanks to our various shoulder straps.</p>
-        <p>View all our <a href="#">products.</a></p>
-    </div>
         `
     }
     render_section4_intro();
 
     function render_section4_cap2() {
         section4Item1.innerHTML += `
-        <div id="" class="section4__cap">WOMEN'S BAGS</div>
+        <div id="" class="section4__cap">WOMEN's</div>
         `
     }
     render_section4_cap2();
@@ -298,7 +300,7 @@ function render_main_section () {
         },
     ]
 
-    function render_section4_product () {
+    function render_section4_product() {
         for (let product of handbagProductListM) {
             document.getElementById("section4__container1").innerHTML += `
                 <div class="product__item">
@@ -307,15 +309,15 @@ function render_main_section () {
                     </div>
                     <div class="product__info">
                         <div class="product__name">
-                            <a href="#">`+ product.name +`</a>
+                            <a href="#">`+ product.name + `</a>
                         </div>
                         <div class="product__price">` + product.price + `</div>
                         <div class="product__color">` + product.color + `</div>
                     </div>
-                    <div><button id="btn__cart" onclick="add_to_cart()">ADD TO CART</button></div>
+                    <div><button id="btn__cart" onclick="add_to_cart()">Add to cart</button></div>
                 </div>
             `
-        } 
+        }
     }
     render_section4_product();
 
@@ -327,7 +329,7 @@ function render_main_section () {
     }
     section4__container2();
 
-    function render_section4_product_2 () {
+    function render_section4_product_2() {
         for (let product2 of handbagProductListW) {
             document.getElementById("section4__container2").innerHTML += `
                 <div class="product__item">
@@ -336,12 +338,12 @@ function render_main_section () {
                     </div>
                     <div class="product__info">
                         <div class="product__name">
-                            <a href="#">`+ product2.name +`</a>
+                            <a href="#">`+ product2.name + `</a>
                         </div>
                         <div class="product__price">` + product2.price + `</div>
                         <div class="product__color">` + product2.color + `</div>
                     </div>
-                    <div><button id="btn__cart" onclick="add_to_cart()">ADD TO CART</button></div>
+                    <div><button id="btn__cart" onclick="add_to_cart()">Add to cart</button></div>
                 </div>
             `
         }
@@ -362,9 +364,9 @@ render_main_section();
 
 
 //  RUN ONCLICK FUNCTIONS 
-document.getElementById("Ab").onclick = function() {
+document.getElementById("Ab").onclick = function () {
     alert("We are group 6 at C4EJS126 of MindX.");
-    
+
 }
 
 // RENDER FOOTER

@@ -252,7 +252,11 @@ video {
 
 h1 {
     margin-top: 20px;
-    color: rgb(173, 131, 24);
+    color: rgb(117, 89, 19);
+}
+h2 {
+    font-size: 30px;
+    color: rgb(117, 89, 19);
 }
 
 #img1 {
@@ -380,7 +384,7 @@ h1 {
 
 /* SECTION 4 CSS TUAN ANH */
 .section__4 {
-    height: 1600px;
+    height: 1800px;
 }
 
 .section4__container {
@@ -394,9 +398,9 @@ h1 {
 
 .section4__introduce {
     font-family: "Circular Std",sans-serif;
-    height: 400px;
+    height: 460px;
     background-color: rgb(255, 255, 255);
-    margin: 20px 0px 20px 0px;
+    margin: 40px 0px 40px 0px;
 }
 
 h2, p {
@@ -413,17 +417,23 @@ p, a {
     height: 200px;
     background-color: rgb(255, 255, 255);
     position: relative;
-    left: 108px;    
+    left: 0px;
 }
-
+#intro__container {
+    height: 460px;
+    width: 1126px;
+    background-color: rgb(255, 255, 255);
+    padding:20px;
+    margin: auto;
+}
 .product__intro2 {
     font-size: 14px;
     color: black;
     width: 40%;
     height: 200px;
     background-color: rgb(255, 255, 255);
-    position: absolute;
-    right: 90px;
+    position: relative;
+    left: 677px;
 }
 .section4__container a {
     text-decoration: none;
@@ -435,18 +445,31 @@ p, a {
     font-family: "Circular Std",sans-serif;
     color:rgb(173, 131, 24);
     margin: 0px 20px 0px 20px;
-    border: 2px solid black;
+    border-radius: 10px;
     width: 250px;
     height: 400px;
 
 }
+.product__image {
+    border: 2px solid black;
+    height: 400px;
+    width: 250px;
+    border-radius: 10px;
+    overflow-y: hidden;
+}
 
-
+.product__info {
+    margin: 5px 0px 5px 0px;
+}
+.product__price {
+    font-size: 22px;
+    color: red;
+}
 
 #btn__cart {
     cursor: pointer;
     width: 250px;
-    height: 30px;
+    height: 40px;
     border: 0;
     font-family: "Circular Std",sans-serif;
     background-color:rgb(173, 131, 24);
@@ -463,9 +486,10 @@ p, a {
 .section4__cap {
     color:rgb(117, 89, 19);
     margin: 20px;
-    font-size: 30px;
-    font-family: Impact;
+    font-size: 45px;
+    font-family: "Circular Std",sans-serif;
     text-align: center;
+    font-weight:600;
 }
 
 

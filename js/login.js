@@ -64,18 +64,15 @@ function render_signup_form () {
     
       <div class="container">
         <label for="uname"><b>Username</b></label>
-        <input id="user__name" type="text" placeholder="Enter Username" name="uname" required>
+        <input id="user__name2" type="text" placeholder="Enter Username" name="uname" required>
     
         <label for="psw"><b>Password</b></label>
-        <input id="password" type="password" placeholder="Enter Password" name="psw" required>
+        <input id="password2" type="password" placeholder="Enter Password" name="psw" required>
 
         <label for="psw"><b>Confirm Password</b></label>
-        <input id="password" type="password" placeholder="Enter Password" name="psw" required>
+        <input id="password3" type="password" placeholder="Enter Password" name="psw" required>
     
-        <button type="submit" onclick="return validate1()">Submit</button>
-        <label>
-          <input type="checkbox" checked="checked" name="remember"> Remember me
-        </label>
+        <button type="submit" onclick="return validate2()">Submit</button>
         <p><div><i>Already have your account?
         <a id="goToLogIn" > <u>Log in</u>.</a>
         </i></div></p>
@@ -94,7 +91,7 @@ function render_signup_form () {
 render_signup_form();
 
 // RENDER LOGIN FORM
-function render_login_form () {
+function render_login_form() {
   mainPage.innerHTML += `
   <div class= "img_header" > </div>
   <div class="login__form" id = "logIn">
@@ -109,21 +106,18 @@ function render_login_form () {
     
         <label for="psw"><b>Password</b></label>
         <input id="password" type="password" placeholder="Enter Password" name="psw" required>
-    
-        <button type="submit" onclick="return validate2()">Submit</button>
         <label>
           <input type="checkbox" checked="checked" name="remember"> Remember me
         </label>
+        <button type="submit" onclick="return validate1()">Submit</button>
         <p><div><i>Haven't got an account yet? 
-        <a id="goToSignUp"> <u>Sign Up</u>.</a>
+        <a id="goToSignUp"> <u>Register</u>.</a>
         </i></div></p>
       </div>
     
       <div class="container">
-        <a href = "./index.html"> 
-        <button type="button" class="cancelbtn">Cancel</button> 
-        </a>
-        <span class="psw"><i> Forgot <a href="#">password?</a></i></span>
+        <a href = "./index.html">
+        <span class="psw"><i><a href="#">Forgot password?</a></i></span>
       </div>
     </form>
   </div>
@@ -140,47 +134,42 @@ function validate1() {
   let userPass = document.getElementById("password").value;
 
   if (userEmail == "") {
-      alert(`Email is empty!`);
-      return false;
+    alert(`Email is empty!`);
+    return false;
   }
   if (userPass =="") {
-      alert(`Password is empty!`);
-      return false;
+    alert(`Password is empty!`);
+    return false;
   } else if (userPass.length < 8) {
-      alert(`Password must has aleast 8 characters!`);
-      return false;        
+    alert(`Password must has aleast 8 characters!`);
+    return false;        
   }
   if (userEmail == "anh@gmail.com" && userPass == "admin123") {
-      alert(`Welcome!`);
-      return true;
+    alert(`Welcome!`);
+    return true;
   } else {
-      alert(`Unknown!`);
-      return false;
+    alert(`Unknown!`);
+    return false;
   }
 }
 
-
 function validate2() {
-  let userEmail = document.getElementById("user__name").value;
-  let userPass = document.getElementById("password").value;
+  let userEmail2 = document.getElementById("user__name2").value;
+  let userPass2 = document.getElementById("password2").value;
 
-  if (userEmail == "") {
+  if (userEmail2 == "") {
       alert(`Email is empty!`);
       return false;
   }
-  if (userPass =="") {
+  if (userPass2 =="") {
       alert(`Password is empty!`);
       return false;
-  } else if (userPass.length < 8) {
+  } else if (userPass2.length < 8) {
       alert(`Password must has aleast 8 characters!`);
       return false;        
-  }
-  if (userEmail == "anh@gmail.com" && userPass == "admin123") {
-      alert(`Welcome!`);
-      return true;
   } else {
-      alert(`Unknown!`);
-      return false;
+      alert(`You are registered!`);
+      return true;
   }
 }
 
