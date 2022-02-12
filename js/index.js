@@ -7,8 +7,8 @@ mainPage.innerHTML += `
         <a id="logo__main2" class="" 
         onclick="location.href='./index.html';" > N.Y.E</a>
         <a  class="native" href="#img1">FASHION</a>
-        <a  class="native" href="#">WATCHES</a>
-        <a  class="native" href="#">SHOES</a>
+        <a  class="native" href="#section2__container">WATCHES</a>
+        <a  class="native" href="#section3__container">SHOES</a>
         <a  class="native" href="#section4__container1">BAGS</a>
         <a id="cata" class="native" href="#">CATALOG</a>
         <span id="user__container" href="#"> </span> </div>
@@ -51,17 +51,209 @@ topFunction()
 const sections = document.querySelector('#section__container');
 // SECTION 1: THỦY TIÊN
 sections.innerHTML += `
-        <section id="" class="section__1"></section>
-        <div class ="space"> </div> `;
+        <section id="" class="section__1">
+        <h1>FASHION</h1></section> `;
 const section1 = document.querySelector(".section__1")
 section1.innerHTML += `
       <img id ="img1" src = "https://www.chanel.com/images/q_auto,f_auto,fl_lossy,dpr_auto/w_1280/FSH-1641215403491-slideshowdesktop3.jpg"/>
-         <h1>COLLECTION</h1>
         <div><button class="button1" type="button"  onclick="location.href='./Fashion.html';"> Find out more  </button> </div> `
 // SECTION 2: 
-sections.innerHTML += `<section id="" class="section__2"> </section> `;
+sections.innerHTML += `<section id="" class="section__2">
+<div class="section2_cap"> WATCHES </div>
+<div id= "section2__container"></div> </section> `;
+const watchesProductList = [
+    {
+        name: "Caliber 12.1, 38 mm",
+        url: "#",
+        image: "./images/section 2/1.jpg",
+        image2: "./images/section 2/1.1.jpg",
+        price: "$189",
+        gender: "MALE",
+        color: "White",
+    },
+    {
+        name: "Caliber 12.1, 38 mm",
+        url: "#",
+        image: "./images/section 2/2.jpg",
+        image2: "./images/section 2/2.1.jpg",
+        price: "$189",
+        gender: "MALE",
+        color: "Black",
+    },
+    {
+        name: "Paradoxe caliber 12.1, 38 mm",
+        url: "#",
+        image: "./images/section 2/3.jpg",
+        image2: "./images/section 2/3.1.jpg",
+        price: "$245",
+        gender: "MALE",
+        color: "Black and White",
+    },
+    {
+        name: "Mademoiselle j12 acte ii, 33 mm",
+        url: "#",
+        image: "./images/section 2/4.jpg",
+        image2: "./images/section 2/4.1.jpg",
+        price: "$686",
+        gender: "MALE",
+        color: "Black and White",
+    }
+]
+function render_section2_product() {
+    for (let product of watchesProductList) {
+        document.getElementById("section2__container").innerHTML += `
+                <div class="product__item">
+                    <div class="product__image">
+                        <a><img class="product__img" src="` + product.image + `" 
+                        onmouseover="this.src='`+product.image2+`'"
+                        onmouseout="this.src='`+product.image+`'"
+                        alt=""/></a>
+                    </div>
+                    <div class="product__info">
+                        <div >
+                            <a id="product__name">`+ product.name + `</a>
+                        </div>
+                        <div class="product__color">` + product.color + `</div>
+                        <div class="product__price">` + product.price + `</div>
+                       
+                    </div>
+                    <div><button id="btn__cart" onclick="add_to_cart()">ADD TO CART</button></div>
+                </div>
+            `
+        }
+}
+render_section2_product();
 // SECTION 3: 
-sections.innerHTML += `<section id="" class="section__3"> </section> `;
+sections.innerHTML += `<section id="" class="section__3">
+<div class="section3_cap"> SHOES </div>
+<div id= "section3__container"></div> 
+<div id= "section3__container2"></div> </section> `;
+const shoesProductList = [
+    {
+        name: "Vibe Sneaker",
+        url: "#",
+        image: "./images/section 3/1.jpg",
+        image2: "./images/section 3/1.1.jpg",
+        price: "$286",
+        gender: "MALE",
+        color: "White Mesh and Gold-Tone",
+    },
+    {
+        name: "D-Connect Sneaker",
+        url: "#",
+        image: "./images/section 3/2.jpg",
+        image2: "./images/section 3/2.1.jpg",
+        price: "$286",
+        gender: "MALE",
+        color: "Red and Black Cupidon Print",
+    },
+    {
+        name: "D-Connect Sneaker",
+        url: "#",
+        image: "./images/section 3/3.jpg",
+        image2: "./images/section 3/3.1.jpg",
+        price: "$286",
+        gender: "MALE",
+        color: "White and Butterfly Motif",
+    },
+    {
+        name: "D-Connect Sneaker",
+        url: "#",
+        image: "./images/section 3/4.jpg",
+        image2: "./images/section 3/4.1.jpg",
+        price: "$286",
+        gender: "MALE",
+        color: "Blue and White Fabric",
+    },
+    
+]
+function render_section3_product() {
+    for (let product of shoesProductList) {
+        document.getElementById("section3__container").innerHTML += `
+                <div class="product__item">
+                    <div class="product__image">
+                        <a><img class="product__img" src="` + product.image + `" 
+                        onmouseover="this.src='`+product.image2+`'"
+                        onmouseout="this.src='`+product.image+`'"
+                        alt=""/></a>
+                    </div>
+                    <div class="product__info">
+                        <div >
+                            <a id="product__name">`+ product.name + `</a>
+                        </div>
+                        <div class="product__color">` + product.color + `</div>
+                        <div class="product__price">` + product.price + `</div>
+                       
+                    </div>
+                    <div><button id="btn__cart" onclick="add_to_cart()">ADD TO CART</button></div>
+                </div>
+            `
+        }
+}
+render_section3_product();
+const shoesProductList2 = [
+    {
+        name: "B24 Sneaker",
+        url: "#",
+        image: "./images/section 3/5.jpg",
+        image2: "./images/section 3/5.1.jpg",
+        price: "$286",
+        gender: "MALE",
+        color: "White Oblique Canvas",
+    },
+    {
+        name: "B28 High-Top Sneaker",
+        url: "#",
+        image: "./images/section 3/6.jpg",
+        image2: "./images/section 3/6.1.jpg",
+        price: "$300",
+        gender: "MALE",
+        color: "Jacquard and Black Rubber",
+    },
+    {
+        name: "B28 High-Top Sneaker",
+        url: "#",
+        image: "./images/section 3/7.jpg",
+        image2: "./images/section 3/7.1.jpg",
+        price: "$300",
+        gender: "MALE",
+        color: "Jacquard and White Rubber",
+    },   {
+        name: "B28 Low-Top Sneaker",
+        url: "#",
+        image: "./images/section 3/8.jpg",
+        image2: "./images/section 3/8.1.jpg",
+        price: "$286",
+        gender: "MALE",
+        color: "Black Jacquard and Rubber",
+    },
+]
+function render_section3_product2() {
+    for (let product of shoesProductList2) {
+        document.getElementById("section3__container2").innerHTML += `
+                <div class="product__item">
+                    <div class="product__image">
+                        <a><img class="product__img" src="` + product.image + `" 
+                        onmouseover="this.src='`+product.image2+`'"
+                        onmouseout="this.src='`+product.image+`'"
+                        alt=""/></a>
+                    </div>
+                    <div class="product__info">
+                        <div >
+                            <a id="product__name">`+ product.name + `</a>
+                        </div>
+                        <div class="product__color">` + product.color + `</div>
+                        <div class="product__price">` + product.price + `</div>
+                       
+                    </div>
+                    <div><button id="btn__cart" onclick="add_to_cart()">ADD TO CART</button></div>
+                </div>
+            `
+        }
+}
+render_section3_product2();
+
+
 // SECTION 4: TUẤN ANH
 sections.innerHTML += ` <section id="" class="section__4"></section> `
 // RENDER SECTION 4 ITEMS
@@ -128,6 +320,7 @@ const handbagProductListM = [
     },
 ]
 
+
 // CREATING WOMEN PRODUCT ARRAY OBJECT
 const handbagProductListW = [
     {
@@ -173,14 +366,18 @@ function render_section4_product() {
         document.getElementById("section4__container1").innerHTML += `
                 <div class="product__item">
                     <div class="product__image">
-                        <a href="#"><img id="product__img" src="` + product.image + `" alt=""</a>
+                        <a ><img id="product__img" src="` + product.image + `" alt=""
+                        onmouseover="this.src='`+product.image2+`'"
+                        onmouseout="this.src='`+product.image+`'"
+                        /></a>
                     </div>
                     <div class="product__info">
                         <div class="product__name">
                             <a href="#">`+ product.name + `</a>
                         </div>
-                        <div class="product__price">` + product.price + `</div>
                         <div class="product__color">` + product.color + `</div>
+                        <div class="product__price">` + product.price + `</div>
+                        
                     </div>
                     <div><button id="btn__cart" onclick="add_to_cart()">ADD TO CART</button></div>
                 </div>
@@ -195,14 +392,18 @@ function render_section4_product_2() {
         document.getElementById("section4__container2").innerHTML += `
                 <div class="product__item">
                     <div class="product__image">
-                        <a href="#"><img src="` + product2.image + `" alt=""></a>
+                        <a ><img src="` + product2.image + `" alt=""
+                        onmouseover="this.src='`+product2.image2+`'"
+                        onmouseout="this.src='`+product2.image+`'"
+                        /></a>
                     </div>
                     <div class="product__info">
                         <div class="product__name">
                             <a href="#">`+ product2.name + `</a>
                         </div>
-                        <div class="product__price">` + product2.price + `</div>
                         <div class="product__color">` + product2.color + `</div>
+                        <div class="product__price">` + product2.price + `</div>
+                       
                     </div>
                     <div><button id="btn__cart" onclick="add_to_cart()">ADD TO CART</button></div>
                 </div>

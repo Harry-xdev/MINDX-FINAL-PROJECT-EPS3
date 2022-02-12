@@ -1,28 +1,43 @@
 .login__form {
-  height: 500px;
+  height: auto;
   width: 400px;
   background-color: rgb(255, 255, 255);
   margin: auto;
+  display: flex;
+  margin-bottom: 144px;
+  margin-top: 40px;
+  border-radius: 40px;
 }
 .signup__form{
   display: none;
-  height: 500px;
+  height: 499px;
   width: 400px;
   background-color: rgb(255, 255, 255);
   margin: auto;
-  margin-bottom: 50px;
+ margin-top: 40px;
+  border-radius: 40px;
 }
 #goToLogIn, #goToSignUp {
   cursor: pointer;
   color: blue;
 }
-
+#bgLogin {
+  width: 100%;
+  z-index: -1;
+  height: 670px;
+  display: flex;
+  position: fixed;
+  top :0px;
+  opacity: 0.9;
+  
+}
 /* Bordered form */
 form {
+  z-index: 1;
   border: 5px solid #e7dfcf;
   border-radius: 40px;
-  margin-top: 40px;
   
+  padding-bottom: 10px;
   font-family: "Circular Std",sans-serif;
 }
 

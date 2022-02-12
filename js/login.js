@@ -2,6 +2,7 @@
 const mainPage = document.querySelector('#mainPage');
  mainPage.innerHTML += `
     <div id="header"></div>
+   
     <a href="#"><button onclick="topFunction()" id="myBtn" title="Go to top">Top</button></a> `;
 // RENDER HEADER NATIVE BUTTON - USER LOGIN
  const headerNative = document.querySelector('#header');
@@ -10,7 +11,7 @@ const mainPage = document.querySelector('#mainPage');
         onclick="location.href='./index.html';">N.Y.E</a>
         <a id="logo__main2" class="" 
         onclick="location.href='./index.html';"> N.Y.E</a>
-        <a class="native" href="#img1">FORM</a>
+        <a class="native" >FORM</a>
         <a id="cata" class="native" href="#">FORM</a>
         <span id="user__container" href="#"> 
         <span id = "log" class="info" type="button" onclick="location.href='./login.html'"> Login</span>
@@ -77,7 +78,7 @@ const mainPage = document.querySelector('#mainPage');
       </div>
     </form>
   </div>`
-
+mainPage.innerHTML += ` <img src="./images/bg-login.jpg" id="bgLogin"/>`
 // CHECK USER & PASSWORD FUNCTION
 
 function validate1() {
