@@ -57,7 +57,7 @@ function render_signup_form () {
   mainPage.innerHTML += `
   <div class= "img_header" > </div>
   <div class="signup__form" id="signUp">
-    <form name="loginForm" action="index.html" method="#" >
+    <form name="loginForm" action="login.html" method="#" onsubmit="sign_up()" >
       <div class="caption">
         REGISTER
       </div>
@@ -95,7 +95,7 @@ function render_login_form() {
   mainPage.innerHTML += `
   <div class= "img_header" > </div>
   <div class="login__form" id = "logIn">
-    <form name="loginForm" action="index.html" method="#"  >
+    <form name="loginForm" action="index.html" method="#" onsubmit="">
       <div class="caption">
         LOG IN
       </div>
@@ -142,10 +142,9 @@ function validate1() {
     return false;
   } else if (userPass.length < 8) {
     alert(`Password must has aleast 8 characters!`);
-    return false;        
-  }
-  if (userEmail == "anh@gmail.com" && userPass == "admin123") {
-    alert(`Welcome!`);
+    return false;     
+  } else if (sign_in() == true) {
+    alert(`Welcome to the fashion world!`)
     return true;
   } else {
     alert(`Unknown!`);
@@ -176,6 +175,29 @@ function validate2() {
       return true;
   }
 }
+
+// FUNCTION SIGNUP WITH LOCAL STORAGE
+function sign_up() {
+  let userEmail2 = document.getElementById("user__name2").value;
+  let userPass2 = document.getElementById("password2").value;
+
+  localStorage.setItem(userEmail2, userPass2);
+}
+// sign_up();
+
+function sign_in() {
+  let userEmail2 = document.getElementById("user__name").value;
+  let userPass2 = document.getElementById("password").value;
+
+  if (localStorage.getItem(userEmail2) == userPass2) {
+    alert(`Sign in successed!`);
+    return true;
+  } else {
+    alert(`Your account have not registered!`)
+    return false;
+  }
+}
+// sign_in();
 
 // RUN ONCLICK FUNCTIONS
 

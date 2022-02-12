@@ -305,7 +305,7 @@ function render_main_section() {
             document.getElementById("section4__container1").innerHTML += `
                 <div class="product__item">
                     <div class="product__image">
-                        <a href="#"><img id="product__img" src="` + product.image + `" alt="" onmouseover="sub_img()"></a>
+                        <a href="#"><img id="product__img" src="` + product.image + `" alt=""</a>
                     </div>
                     <div class="product__info">
                         <div class="product__name">
