@@ -73,9 +73,9 @@ function render_signup_form () {
         <input id="password3" type="password" placeholder="Enter Password" name="psw" required>
     
         <button type="submit" onclick="return validate2()">Submit</button>
-        <p><div><i>Already have your account?
+        <div><i>Already have your account?
         <a id="goToLogIn" > <u>Log in</u>.</a>
-        </i></div></p>
+        </i></div>
       </div>
     
       <div class="container">
@@ -110,9 +110,9 @@ function render_login_form() {
           <input type="checkbox" checked="checked" name="remember"> Remember me
         </label>
         <button type="submit" onclick="return validate1()">Submit</button>
-        <p><div><i>Haven't got an account yet? 
+        <div><i>Haven't got an account yet? 
         <a id="goToSignUp"> <u>Register</u>.</a>
-        </i></div></p>
+        </i></div>
       </div>
     
       <div class="container">
@@ -156,6 +156,7 @@ function validate1() {
 function validate2() {
   let userEmail2 = document.getElementById("user__name2").value;
   let userPass2 = document.getElementById("password2").value;
+  let userPass3 = document.getElementById("password3").value;
 
   if (userEmail2 == "") {
       alert(`Email is empty!`);
@@ -166,7 +167,10 @@ function validate2() {
       return false;
   } else if (userPass2.length < 8) {
       alert(`Password must has aleast 8 characters!`);
-      return false;        
+      return false;
+  } else if (userPass2 != userPass3) {
+      alert(`Password are not match!`);
+      return false;
   } else {
       alert(`You are registered!`);
       return true;

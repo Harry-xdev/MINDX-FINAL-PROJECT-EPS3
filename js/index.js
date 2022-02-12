@@ -305,7 +305,7 @@ function render_main_section() {
             document.getElementById("section4__container1").innerHTML += `
                 <div class="product__item">
                     <div class="product__image">
-                        <a href="#"><img src="` + product.image + `" alt=""></a>
+                        <a href="#"><img id="product__img" src="` + product.image + `" alt="" onmouseover="sub_img()"></a>
                     </div>
                     <div class="product__info">
                         <div class="product__name">
@@ -314,7 +314,7 @@ function render_main_section() {
                         <div class="product__price">` + product.price + `</div>
                         <div class="product__color">` + product.color + `</div>
                     </div>
-                    <div><button id="btn__cart" onclick="add_to_cart()">Add to cart</button></div>
+                    <div><button id="btn__cart" onclick="add_to_cart()">ADD TO CART</button></div>
                 </div>
             `
         }
@@ -343,7 +343,7 @@ function render_main_section() {
                         <div class="product__price">` + product2.price + `</div>
                         <div class="product__color">` + product2.color + `</div>
                     </div>
-                    <div><button id="btn__cart" onclick="add_to_cart()">Add to cart</button></div>
+                    <div><button id="btn__cart" onclick="add_to_cart()">ADD TO CART</button></div>
                 </div>
             `
         }
