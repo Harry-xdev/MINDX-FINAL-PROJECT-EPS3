@@ -1,189 +1,83 @@
 // RENDER HEADER
 const mainPage = document.querySelector('#mainPage');
-function render_header() {
     mainPage.innerHTML += `
-    <div id="header"></div>
-    `;
-
+    <div id="header"></div> `;
     // RENDER HEADER NATIVE BUTTON - USER LOGIN
     const headerNative = document.querySelector('#header');
-    function render_header_native() {
         headerNative.innerHTML += `
         <a id="logo__main" class="" 
-        onclick="location.href='./index.html';"
-        >
-        N.Y.E</a>
+        onclick="location.href='./index.html';"> N.Y.E</a>
         <a id="logo__main2" class="" 
-        onclick="location.href='./index.html';"
-        >
-        N.Y.E</a>
+        onclick="location.href='./index.html';"> N.Y.E</a>
         <a id="menu1" class="native" href="#">Women's Fashion</a>
         <a id="menu0" class="native" href="#">FASHION Page</a>
         <a id="menu2" class="native" href="#">Men's Fashion</a>
-       
         <a id="cata" class="native" href="#">CATALOG</a>
-        <span id="user__container" href="#"> </span>
-
-        `
-
-    };
-    render_header_native();
-
+        <span id="user__container" href="#"> </span> `
     const dropCata = document.querySelector("#cata")
-    function drop() {
-        dropCata.innerHTML += `
-     <span class ="drop_content"> </span>
-        `
-    }
-    drop()
-
-
-
-    const dropContent = document.querySelector(".drop_content")
-
-    function dropdown() {
-
-        dropContent.innerHTML += `
-                   
-                   <button class="dropMenu" id="dropMenu1" href="#">Women's Fashion</button>
-                  
-                   <button class="dropMenu" id="dropMenu2" href="#">Men's Fashion</button>
-
-                   <button class="dropMenu" id="dropMenu0" href="#">back to fashion page</button>
-                  
-                   `
-
-    }
-    dropdown()
-
-
-
-
-
-
-
+        dropCata.innerHTML += ` <span class ="drop_content"> 
+        <button class="dropMenu" id="dropMenu1" href="#">Women's Fashion</button>
+        <button class="dropMenu" id="dropMenu2" href="#">Men's Fashion</button>
+        <button class="dropMenu" id="dropMenu0" href="#">back to fashion page</button></span> `
     const userContainer = document.querySelector("#user__container")
-    function user() {
         userContainer.innerHTML += `
-        <span id = "Ab" class="info"> About Us <i class="material-icons">supervisor_account</i></span>
+        <span id = "Ab" class="info"> <i class="material-icons">supervisor_account</i></span>
         <span id = "log" class="info" type="button" onclick="location.href='./login.html'"> Login</span>
-        <span id = "register" class="info"> CART<i class="material-icons">shopping_cart</i></span>
-
-        `;
-
-    };
-    user();
-
-};
-render_header();
-
-
-
+        <span id = "register" class="info"> <i class="material-icons">shopping_cart</i></span> `;
 //Render Fashion page
-function main_page_fashion() {
-    mainPage.innerHTML += `
+mainPage.innerHTML += `
     <div id="mainPageFashion"> </div>
-    <a href="#"><button onclick="topFunction()" id="myBtn" title="Go to top">Top</button></a>
-    `;
-
-    // section Men's  Fashion, section Women's  Fashion
+    <a href="#"><button onclick="topFunction()" id="myBtn" title="Go to top">Top</button></a>`;
+ // section Men's  Fashion, section Women's  Fashion
     const mainPageFashion = document.querySelector('#mainPageFashion');
-    function fashion_header() {
         mainPageFashion.innerHTML += `
             <video  controls autoplay muted loop="" playsinline=""> <source
             src = "https://www.dior.com/couture/var/dior/storage/original/video/0fdbdfb57a18fb353efd235ba5df5de1.mp4"> 
-            poster="https://www.dior.com/couture/var/dior/storage/images/30536758/25-eng-GB/fashion-show-banner2_1440_1200.jpg"</video>
-            `
-    };
-    fashion_header()
-
-
-
+            poster="https://www.dior.com/couture/var/dior/storage/images/30536758/25-eng-GB/fashion-show-banner2_1440_1200.jpg"</video>`
     mainPageFashion.innerHTML += `<div id="fashionSelections"> </div>`
     const fashionSelections = document.querySelector('#fashionSelections');
-
-    function fashion_selections() {
         fashionSelections.innerHTML += `
                 <p class ="titF"><i> - READY TO WEAR - </i> </p>
-            <div id="womenFashion"> <img id=imgWomenFashion
-            src = "https://www.chanel.com/images/q_auto,f_auto,fl_lossy,dpr_auto/w_1920/FSH-1639756228960-22pplpdrtw00header.jpg"
-            />
+            <div id="womenFashion">
+             <img id=imgWomenFashion
+            src = "https://www.chanel.com/images/q_auto,f_auto,fl_lossy,dpr_auto/w_1920/FSH-1639756228960-22pplpdrtw00header.jpg"/>
             <a class="A" href="#">   WOMEN  <span></span>
             <span></span>
             <span></span>
             <span></span>
-        </a>
-            </div>
-
-
+            </a> </div>
             <div id="FCon1" class="FCon" >
-<div id ="WFcontainer"> 
-<p class="titFC">Women's Fashion</p>
-
-<div class="actionBar"> 
-<span id="filter"> 
-<i class="material-icons">menu</i> 
-Filter 
-<i class="material-icons">unfold_more</i>
-
-
-</span>
-
-<span id="sort"> 
-Sort 
-<i class="material-icons">unfold_more</i>
-</span>
- </div>
-
- </div> 
- 
- </div>
-
-
+               <div id ="WFcontainer"> 
+                  <p class="titFC">Women's Fashion</p>
+                     <div class="actionBar"> 
+                         <span id="filter"> 
+                            <i class="material-icons">menu</i> Filter <i class="material-icons">unfold_more</i>
+                         </span>
+                          <span id="sort"> Sort <i class="material-icons">unfold_more</i>
+                         </span>
+                         </div>
+               </div> 
+             </div>
             <div id="menFashion">
             <a class="A"  href="#">     MEN   <span></span>
             <span></span>
             <span></span>
             <span></span>
-        </a>
-              <img id=imgMenFashion
-            src ="
-            https://www.dior.com/couture/var/dior/storage/images/horizon/mens-fashion/man/block-cover-sacai-cover/block-cover-item-cover/28730917-15-eng-GB/cover_1440_1200.jpg" />
-            
+            </a>
+              <img id=imgMenFashion src ="https://www.dior.com/couture/var/dior/storage/images/horizon/mens-fashion/man/block-cover-sacai-cover/block-cover-item-cover/28730917-15-eng-GB/cover_1440_1200.jpg" />
             </div>
-
             <div id="FCon2" class="FCon" >
-<div id ="MFcontainer" >
-<p class="titFC">Men's Fashion</p> 
-
-<div class="actionBar"> 
-<span id="filter2"> <i class="material-icons">menu</i> 
-Filter 
-<i class="material-icons">unfold_more</i>
-</span>
-<span id="sort2"> 
-Sort 
-<i class="material-icons">unfold_more</i>
-</span>
- </div>
-
- </div> 
- 
- </div>
-            `;
-    };
-    fashion_selections()
-
-}
-
-
-main_page_fashion();
-
-
-
+                 <div id ="MFcontainer" >
+                    <p class="titFC">Men's Fashion</p> 
+                       <div class="actionBar"> 
+                          <span id="filter2"> <i class="material-icons">menu</i> Filter <i class="material-icons">unfold_more</i>
+                           </span>
+                           <span id="sort2"> Sort <i class="material-icons">unfold_more</i>
+                           </span>
+                           </div>
+                       </div> 
+             </div> `;
 // RENDER PRODUCTS LIST 
-
-
 const FashionProductListW = [
     {
         name: "Marlène Jacket",
@@ -305,8 +199,6 @@ const FashionProductListW = [
     },
 
 ]
-
-
 const FashionProductListM = [
     {
         name: "Selvedge MKII Blouson",
@@ -408,9 +300,6 @@ const FashionProductListM = [
     },
 
 ]
-
-
-
 function render_section1_Wproduct() {
     for (let product of FashionProductListW) {
         document.getElementById("WFcontainer").innerHTML += `
@@ -427,8 +316,7 @@ function render_section1_Wproduct() {
                     
                 </div>
                 <div class ="btnC"><button id="btn__cart" onclick="add_to_cart()">ADD TO CART</button></div>
-            </div>
-        `
+            </div> `
     }
 }
 render_section1_Wproduct()
@@ -449,19 +337,13 @@ function render_section1_Mproduct() {
                     
                 </div>
                 <div class ="btnC"><button id="btn__cart" onclick="add_to_cart()">ADD TO CART</button></div>
-            </div>
-        `
+            </div> `
     }
 }
 render_section1_Mproduct()
 
 
-// RUN ONCLICK FUNCTIONS 
-document.getElementById("Ab").onclick = function () {
-    alert("We are group 6 at C4EJS126 of MindX.");
-
-}
-
+// RUN FUNCTIONS 
 const mybutton = document.getElementById("myBtn");
 window.onscroll = function () { scrollFunction() };
 function scrollFunction() {
@@ -530,148 +412,35 @@ document.getElementById("dropMenu0").onclick = function () {
     document.getElementById("FCon2").style.display = "none";
 }
 
-
-
-
-
-
-// DROP BAR HOVER 
-// co the viet truc tiep bang html
-// ko can chay functions
-
-
+// DROP BAR HOVER CSS
 const dropBar = document.getElementById("filter")
-function drop1() {
     dropBar.innerHTML += `
- <span class ="drop_content1"> </span>
-    `
-}
-drop1()
-
-
-
-const dropContent1 = document.querySelector(".drop_content1")
-
-function dropdown1() {
-
-    dropContent1.innerHTML += `
-               
-               <button class="dropMenu1"  href="#"> Coats </button>
-              
-               <button class="dropMenu1"  href="#"> Dresses </button>
-
-               <button class="dropMenu1"  href="#"> Jackets </button>
-              
-               `
-
-}
-dropdown1()
-
-
-
+ <span class ="drop_content1">
+ <button class="dropMenu1"  href="#"> Coats </button>
+ <button class="dropMenu1"  href="#"> Dresses </button>
+ <button class="dropMenu1"  href="#"> Jackets </button> </span> `
 const dropBar2 = document.getElementById("filter2")
-function drop2() {
-    dropBar2.innerHTML += `
- <span class ="drop_content2"> </span>
-    `
-}
-drop2()
-
-
-
-const dropContent2 = document.querySelector(".drop_content2")
-
-function dropdown2() {
-
-    dropContent2.innerHTML += `
-               
-              
-              
-               <button class="dropMenu2"  href="#"> Outerwear </button>
-
-               <button class="dropMenu2"  href="#"> Jackets </button>
-              
-               `
-
-}
-dropdown2()
-
-
-
-
+ dropBar2.innerHTML += `
+ <span class ="drop_content2">
+ <button class="dropMenu2"  href="#"> Outerwear </button>
+ <button class="dropMenu2"  href="#"> Jackets </button>  </span>`
 const dropBar3 = document.getElementById("sort")
-function drop3() {
     dropBar3.innerHTML += `
- <span class ="drop_content3"> </span>
-    `
-}
-drop3()
-
-
-
-const dropContent3 = document.querySelector(".drop_content3")
-
-function dropdown3() {
-
-    dropContent3.innerHTML += `
-               
-              
-              
-               <button class="dropMenu3"  href="#"> Highest Price </button>
-
-               <button class="dropMenu3"  href="#"> Best Price </button>
-              
-               `
-
-}
-dropdown3()
-
-
-
+ <span class ="drop_content3"> 
+ <button class="dropMenu3"  href="#"> Highest Price </button>
+ <button class="dropMenu3"  href="#"> Best Price </button></span>`
 const dropBar4 = document.getElementById("sort2")
-function drop4() {
     dropBar4.innerHTML += `
- <span class ="drop_content4"> </span>
-    `
-}
-drop4()
-
-
-
-const dropContent4= document.querySelector(".drop_content4")
-
-function dropdown4() {
-
-    dropContent4.innerHTML += `
-               
-              
-              
-               <button class="dropMenu4"  href="#"> Highest Price </button>
-
-               <button class="dropMenu4"  href="#"> Best Price </button>
-              
-               `
-
-}
-dropdown4()
-
-
-
-
-
+ <span class ="drop_content4">
+ <button class="dropMenu4"  href="#"> Highest Price </button>
+ <button class="dropMenu4"  href="#"> Best Price </button> </span>`
 // RENDER FOOTER
 const mainFooter = document.querySelector('#mainFooter');
-function render_footer() {
     mainFooter.innerHTML += `
-    <div id="footer"></div>
-    `;
+    <div id="footer"></div> `;
     const contactContainer = document.querySelector('#footer');
-    function render_contact_container() {
         contactContainer.innerHTML += `
         <div class="contact__container">CONTACT INFORMATION DIV</div>
-        <div id="copyrightInfo">Copyright | MindX | C4EJS126</div>
-        `;
-    };
-    render_contact_container();
-};
-render_footer();
+        <div id="copyrightInfo">Copyright | MindX | C4EJS126</div> `;
+  
+

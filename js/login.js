@@ -1,59 +1,21 @@
 // RENDER HEADER
 const mainPage = document.querySelector('#mainPage');
-function render_header() {
-    mainPage.innerHTML += `
+ mainPage.innerHTML += `
     <div id="header"></div>
-    <a href="#"><button onclick="topFunction()" id="myBtn" title="Go to top">Top</button></a>
-    `;
-
-    // RENDER HEADER NATIVE BUTTON - USER LOGIN
-    const headerNative = document.querySelector('#header');
-    function render_header_native() {
-        headerNative.innerHTML += `
+    <a href="#"><button onclick="topFunction()" id="myBtn" title="Go to top">Top</button></a> `;
+// RENDER HEADER NATIVE BUTTON - USER LOGIN
+ const headerNative = document.querySelector('#header');
+     headerNative.innerHTML += `
         <a id="logo__main" class="" 
-        onclick="location.href='./index.html';"
-        >
-        N.Y.E</a>
+        onclick="location.href='./index.html';">N.Y.E</a>
         <a id="logo__main2" class="" 
-        onclick="location.href='./index.html';"
-        >
-        N.Y.E</a>
-        <a id="menu" class="native" href="#img1">FORM</a>
-       
+        onclick="location.href='./index.html';"> N.Y.E</a>
+        <a class="native" href="#img1">FORM</a>
         <a id="cata" class="native" href="#">FORM</a>
-        <span id="user__container" href="#"> </span>
-
-        `
-
-    };
-    render_header_native();
-
-               
-                 
-               
-                   
-              
-          
-
-        const userContainer = document.querySelector("#user__container")
-        function user(){
-        userContainer.innerHTML += `
-        
+        <span id="user__container" href="#"> 
         <span id = "log" class="info" type="button" onclick="location.href='./login.html'"> Login</span>
-        <span id = "register" class="info" onclick="location.href='./login.html'"> Register </span>
-
-        `;
-       
-        
-    };
-    user();
-   
-};
-render_header();
-
+        <span id = "register" class="info" onclick="location.href='./login.html'"> Register </span></span> `
 // RENDER SIGNUP FORM
-
-function render_signup_form () {
   mainPage.innerHTML += `
   <div class= "img_header" > </div>
   <div class="signup__form" id="signUp">
@@ -61,7 +23,6 @@ function render_signup_form () {
       <div class="caption">
         REGISTER
       </div>
-    
       <div class="container">
         <label for="uname"><b>Username</b></label>
         <input id="user__name2" type="text" placeholder="Enter Username" name="uname" required>
@@ -85,13 +46,8 @@ function render_signup_form () {
         <span class="psw"><i>  <a href="#"></a></i></span>
       </div>
     </form>
-  </div>
-  `
-}
-render_signup_form();
-
+  </div> `
 // RENDER LOGIN FORM
-function render_login_form() {
   mainPage.innerHTML += `
   <div class= "img_header" > </div>
   <div class="login__form" id = "logIn">
@@ -120,12 +76,7 @@ function render_login_form() {
         <span class="psw"><i><a href="#">Forgot password?</a></i></span>
       </div>
     </form>
-  </div>
-  `
-}
-render_login_form();
-
-
+  </div>`
 
 // CHECK USER & PASSWORD FUNCTION
 
@@ -183,7 +134,7 @@ function sign_up() {
 
   localStorage.setItem(userEmail2, userPass2);
 }
-// sign_up();
+
 
 function sign_in() {
   let userEmail2 = document.getElementById("user__name").value;
@@ -197,8 +148,6 @@ function sign_in() {
     return false;
   }
 }
-// sign_in();
-
 // RUN ONCLICK FUNCTIONS
 
 document.getElementById("log").onclick = function() {
@@ -218,25 +167,15 @@ document.getElementById("goToLogIn").onclick = function() {
   document.getElementById("logIn").style.display = "block";
   document.getElementById("signUp").style.display = "none";
 }
-
-
-
 // RENDER FOOTER
 const mainFooter = document.querySelector('#mainFooter');
-function render_footer() {
     mainFooter.innerHTML += `
-    <div id="footer"></div>
-    `;
+    <div id="footer"></div> `;
     const contactContainer = document.querySelector('#footer');
-    function render_contact_container() {
         contactContainer.innerHTML += `
         <div class="contact__container">CONTACT INFORMATION DIV</div>
-        <div id="copyrightInfo">Copyright | MindX | C4EJS126</div>
-        `;
-    };
-    render_contact_container();
-};
-render_footer();
+        <div id="copyrightInfo">Copyright | MindX | C4EJS126</div> `;
+  
 
 
 
