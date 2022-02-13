@@ -58,7 +58,7 @@ body {
     background-color: none;
     font-weight: bolder;
     font-size: 40px;
-
+    font-family: 'Pacifico', cursive;
 }
 #logo__main2 {
     position: absolute;
@@ -67,6 +67,7 @@ body {
     font-weight: 550;
     cursor: pointer;
     display: none;
+    font-family: 'Pacifico', cursive;
 }
 
 

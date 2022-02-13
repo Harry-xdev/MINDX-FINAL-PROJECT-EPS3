@@ -3,9 +3,9 @@ const mainPage = document.querySelector('#mainPage');
 mainPage.innerHTML += `
     <div id="header">
     <a id="logo__main" class="" 
-        onclick="location.href='./index.html';"> N.Y.E</a>
+        onclick="location.href='./index.html';"> <i>nYe</i></a>
         <a id="logo__main2" class="" 
-        onclick="location.href='./index.html';" > N.Y.E</a>
+        onclick="location.href='./index.html';" ><i> nYe</i></a>
         <a  class="native" href="#img1">FASHION</a>
         <a  class="native" href="#section2__container">WATCHES</a>
         <a  class="native" href="#section3__container">SHOES</a>
@@ -413,11 +413,42 @@ function render_section4_product_2() {
 render_section4_product_2();
 // RENDER FOOTER
 const mainFooter = document.querySelector('#mainFooter');
-mainFooter.innerHTML += ` <div id="footer"></div>`;
-const contactContainer = document.querySelector('#footer');
-contactContainer.innerHTML += `
-        <div class="contact__container">CONTACT INFORMATION DIV</div>
-        <div id="copyrightInfo">Copyright | MindX | C4EJS126</div>`;
+mainFooter.innerHTML += ` <div id="footer"><div class="contact__container">
+<div>
+        <span id="CorpInfo"> Corporate Info </span>
+        <span> Help </span>
+         </div>
+</div>
+<div id="copyrightInfo">Copyright | MindX | C4EJS126</div></div>`;
+const corpInfo = document.querySelector('#CorpInfo');
+const FooterList1 = [
+    {
+        tag: "Career at nYe",
+    },
+    {
+        tag: "About nYe group",
+    },
+    {
+        tag: "Sustainability",
+    },
+    {
+        tag: "Press",
+    },
+    {
+        tag: "Investor Relations",
+    },
+    {
+        tag: "Corporate Governance",
+    },
+]
+function renderFooter1() {
+for (let CoList of FooterList1) {
+corpInfo.innerHTML += `
+          <div>`+ CoList.tag +`</div>`
+        
+}
+}
+        
 
 
 

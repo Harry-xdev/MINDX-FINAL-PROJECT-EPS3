@@ -6,9 +6,9 @@ const mainPage = document.querySelector('#mainPage');
     const headerNative = document.querySelector('#header');
         headerNative.innerHTML += `
         <a id="logo__main" class="" 
-        onclick="location.href='./index.html';"> N.Y.E</a>
+        onclick="location.href='./index.html';"> <i>nYe</i></a>
         <a id="logo__main2" class="" 
-        onclick="location.href='./index.html';"> N.Y.E</a>
+        onclick="location.href='./index.html';"> <i>nYe</i></a>
         <a id="menu1" class="native" href="#">Women's Fashion</a>
         <a id="menu0" class="native" href="#">FASHION Page</a>
         <a id="menu2" class="native" href="#">Men's Fashion</a>

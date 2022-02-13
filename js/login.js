@@ -2,15 +2,14 @@
 const mainPage = document.querySelector('#mainPage');
  mainPage.innerHTML += `
     <div id="header"></div>
-   
     <a href="#"><button onclick="topFunction()" id="myBtn" title="Go to top">Top</button></a> `;
 // RENDER HEADER NATIVE BUTTON - USER LOGIN
  const headerNative = document.querySelector('#header');
      headerNative.innerHTML += `
         <a id="logo__main" class="" 
-        onclick="location.href='./index.html';">N.Y.E</a>
+        onclick="location.href='./index.html';"><i>nYe</i></a>
         <a id="logo__main2" class="" 
-        onclick="location.href='./index.html';"> N.Y.E</a>
+        onclick="location.href='./index.html';"><i>nYe</i></a>
         <a class="native" >FORM</a>
         <a id="cata" class="native" href="#">FORM</a>
         <span id="user__container" href="#"> 
