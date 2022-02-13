@@ -73,25 +73,22 @@ section {
 
 #header {
     height: 80px;
-    background-color: #e0d1b2;
-    box-shadow:0px 2px 4px rgb(219, 219, 219);
+    background-color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
     position: sticky;
     top: 0;
     z-index: 2;
-    opacity: 0.8;
+    border-bottom: 1px solid rgb(160, 123, 31);;
+    
 }
-#header:hover {
-    opacity: 1;
-}
-#logo__main, #logo__main2, .native , #user__container {
+#logo__main, #logo__main2, #logo__main3,.native , #user__container {
     text-decoration: none;
     cursor: pointer;
     margin: 20px;
     font-size: 20px;
-    color: rgb(255, 255, 255); 
+    color: rgb(160, 123, 31); 
     font-family: "Circular Std",sans-serif;
     border: 0px solid black;
     border-radius: 20px;
@@ -122,7 +119,7 @@ section {
     background-color: none;
     font-weight: bolder;
     font-size: 40px;
-
+    font-family: 'Pacifico', cursive;
 }
 #logo__main2 {
     position: absolute;
@@ -131,9 +128,14 @@ section {
     font-weight: 550;
     cursor: pointer;
     display: none;
+    font-family: 'Pacifico', cursive;
 }
 
-
+#logo__main3 {
+    font-size: 40px;
+    font-weight: 550;
+    font-family: 'Pacifico', cursive;
+}
 
 
 
@@ -188,7 +190,7 @@ video {
       z-index: 3;
      font-weight: lighter;
       position: relative;
-      top : 550px;
+      top : 450px;
       display: flex;
       justify-content: center;
       font-size: 30px;
@@ -201,7 +203,7 @@ video {
       z-index: 3;
       font-weight: bolder;
       position: relative;
-      top : 600px;
+      top : 500px;
       display: flex;
       justify-content: center;
       font-size: 70px;
@@ -213,46 +215,92 @@ video {
 
 #mainFooter {
     width: 100%;
-   
-    
-    border-top:2px solid  rgb(248, 231, 183);
-    border-bottom:4px solid rgb(160, 123, 0);
-    margin-top: 50px;
+    margin-top: 80px;
+
 }
 
 .contact__container {
     width: 100%;
-    height: 380px;
-    
-    border-bottom:2px solid rgb(160, 123, 0);
-    color: rgb(0, 0, 0);
+    height: 280px;
+    background-color: rgb(247, 236, 205);;
     text-align: center;
 }
 #copyrightInfo {
     width: 100%;
-    height: 100px;
+    height:auto;
     background-color: rgb(247, 236, 205);
-    color: rgb(0, 0, 0);
+    color: rgb(87, 66, 0);
+    display: flex;
+    align-items: center;
     text-align: center;
+    justify-content: center;
+    flex-direction: column;
+   
 }
-
-
+.footerCon {
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+}
+#CorpInfo , #help {
+    color: rgb(148, 121, 34);
+    height: 300px;
+    margin: 20px;
+    display: flex;
+   width: 200px;
+   flex-direction: column;
+}
+.CorpInfo1 , .help1{
+    display: flex;
+    justify-self: start;
+    font-weight: bolder;
+    margin-bottom: 18px;
+    color: rgb(87, 66, 0);
+}
+.coList1 , .coList2 {
+    display: flex;
+    justify-content: left;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+.coList1:hover , .coList2:hover, .iconFooter i:hover {
+    color:rgba(2, 53, 25, 0.555);
+}
+.footText {
+    
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+.iconFooter {
+    width: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
 
 /* SECTION 1 CSS */
 .section__1 {
     width: auto;
-    padding: 5% ;
-    padding-top: 8%;
+   
+  height: auto;
     flex-direction: column;
     background-color: white;
     color: black;
-    margin-bottom: 20%;
+    margin-bottom: 50px;
     
 }
 
 h1 {
-    margin-top: 20px;
-    color: rgb(117, 89, 19);
+    position: relative;
+    color:rgb(117, 89, 19);
+    margin: 20px;
+    font-size: 45px;
+    margin-top: 60px;
+   
 }
 h2 {
     font-size: 30px;
@@ -260,7 +308,7 @@ h2 {
 }
 
 #img1 {
-    width: 80%;
+    width: 60%;
 }
 
 .button1 {
@@ -278,6 +326,9 @@ h2 {
     transition: all .3s ease-in-out;
     background: transparent!important;
     position: relative;
+    margin-bottom: 40px;
+    z-index: 1;
+    font-size: 40%;
 }
 
     
@@ -293,12 +344,12 @@ h2 {
     width: 0%;
     height: 100%;
     display: inline-block;
-    background: rgb(226, 171, 32);
+    background: rgb(235, 185, 60);
     position: absolute;
     -ms-transform: skewX(-20deg);
     -webkit-transform: skewX(-20deg); 
     transform: skewX(-20deg);   
-    left: 1%;
+    left: -1%;
     opacity: 1;
     top: 0;
     z-index: -12;
@@ -333,7 +384,7 @@ h2 {
   }
   .button1:hover::before{
     opacity:1;
-    width: 100%;
+    width: 110%;
   }
   .button1:hover::after{
     opacity:1;
@@ -344,6 +395,7 @@ h2 {
 
 
 #cata {
+   
     display: none;
     cursor: pointer;
     position: relative;
@@ -365,7 +417,7 @@ h2 {
     top:40px;
     
 }
-#dropMenu {
+.dropMenu {
     border:0px solid rgb(173, 131, 24);
     background-color: #ffffff;
     color: rgb(173, 131, 24);
@@ -375,12 +427,24 @@ h2 {
     display: block;
     border-radius: 8px;
   }
-  #dropMenu:hover {
+.dropMenu:hover {
     background-color:rgb(173, 131, 24);
     color: white;
     font-weight: bolder ;
   }
-
+.product__img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+#section2__container, #section3__container, #section3__container2 {
+    background-color: rgb(255, 255, 255);
+    height: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 
 /* SECTION 4 CSS TUAN ANH */
 .section__4 {
@@ -394,6 +458,7 @@ h2 {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    
 }
 
 .section4__introduce {
@@ -451,19 +516,28 @@ p, a {
 
 }
 .product__image {
-    border: 2px solid black;
+    border: 2px solid rgb(190, 151, 51);
     height: 400px;
     width: 250px;
     border-radius: 10px;
     overflow-y: hidden;
+    justify-content:center ;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
 }
 
 .product__info {
     margin: 5px 0px 5px 0px;
 }
+#product__name {
+    color:rgb(117, 89, 19);
+    font-size: 16px;
+    font-weight: bolder;
+}
 .product__price {
-    font-size: 22px;
-    color: red;
+    font-size: 17px;
+    color: rgb(117, 89, 19);
 }
 
 #btn__cart {
@@ -483,13 +557,14 @@ p, a {
     color: white;
 }
 
-.section4__cap {
+.section4__cap , .section2_cap , .section3_cap{
     color:rgb(117, 89, 19);
     margin: 20px;
     font-size: 45px;
     font-family: "Circular Std",sans-serif;
     text-align: center;
     font-weight:600;
+    padding-top: 60px;
 }
 
 
@@ -539,6 +614,7 @@ p, a {
            }
        #cata {
            display: inline-block;
+           font-size: 15px;
        }
        .info {
        
@@ -609,6 +685,9 @@ p, a {
 #tit2 {
     font-size: 20px;
     top:250px;
+}
+#cata{
+    font-size: 12px;
 }
 
 }

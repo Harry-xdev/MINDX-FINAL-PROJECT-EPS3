@@ -1,59 +1,21 @@
 // RENDER HEADER
 const mainPage = document.querySelector('#mainPage');
-function render_header() {
-    mainPage.innerHTML += `
+ mainPage.innerHTML += `
     <div id="header"></div>
-    <a href="#"><button onclick="topFunction()" id="myBtn" title="Go to top">Top</button></a>
-    `;
-
-    // RENDER HEADER NATIVE BUTTON - USER LOGIN
-    const headerNative = document.querySelector('#header');
-    function render_header_native() {
-        headerNative.innerHTML += `
+    <a href="#"><button onclick="topFunction()" id="myBtn" title="Go to top">Top</button></a> `;
+// RENDER HEADER NATIVE BUTTON - USER LOGIN
+ const headerNative = document.querySelector('#header');
+     headerNative.innerHTML += `
         <a id="logo__main" class="" 
-        onclick="location.href='./index.html';"
-        >
-        N.Y.E</a>
+        onclick="location.href='./index.html';"><i>nYe</i></a>
         <a id="logo__main2" class="" 
-        onclick="location.href='./index.html';"
-        >
-        N.Y.E</a>
-        <a id="menu" class="native" href="#img1">FORM</a>
-       
+        onclick="location.href='./index.html';"><i>nYe</i></a>
+        <a class="native" >FORM</a>
         <a id="cata" class="native" href="#">FORM</a>
-        <span id="user__container" href="#"> </span>
-
-        `
-
-    };
-    render_header_native();
-
-               
-                 
-               
-                   
-              
-          
-
-        const userContainer = document.querySelector("#user__container")
-        function user(){
-        userContainer.innerHTML += `
-        
+        <span id="user__container" href="#"> 
         <span id = "log" class="info" type="button" onclick="location.href='./login.html'"> Login</span>
-        <span id = "register" class="info" onclick="location.href='./login.html'"> Register </span>
-
-        `;
-       
-        
-    };
-    user();
-   
-};
-render_header();
-
+        <span id = "register" class="info" onclick="location.href='./login.html'"> Register </span></span> `
 // RENDER SIGNUP FORM
-
-function render_signup_form () {
   mainPage.innerHTML += `
   <div class= "img_header" > </div>
   <div class="signup__form" id="signUp">
@@ -61,7 +23,6 @@ function render_signup_form () {
       <div class="caption">
         REGISTER
       </div>
-    
       <div class="container">
         <label for="uname"><b>Username</b></label>
         <input id="user__name2" type="text" placeholder="Enter Username" name="uname" required>
@@ -85,13 +46,8 @@ function render_signup_form () {
         <span class="psw"><i>  <a href="#"></a></i></span>
       </div>
     </form>
-  </div>
-  `
-}
-render_signup_form();
-
+  </div> `
 // RENDER LOGIN FORM
-function render_login_form() {
   mainPage.innerHTML += `
   <div class= "img_header" > </div>
   <div class="login__form" id = "logIn">
@@ -120,13 +76,8 @@ function render_login_form() {
         <span class="psw"><i><a href="#">Forgot password?</a></i></span>
       </div>
     </form>
-  </div>
-  `
-}
-render_login_form();
-
-
-
+  </div>`
+mainPage.innerHTML += ` <img src="./images/bg-login.jpg" id="bgLogin"/>`
 // CHECK USER & PASSWORD FUNCTION
 
 function validate1() {
@@ -183,7 +134,7 @@ function sign_up() {
 
   localStorage.setItem(userEmail2, userPass2);
 }
-// sign_up();
+
 
 function sign_in() {
   let userEmail2 = document.getElementById("user__name").value;
@@ -197,8 +148,6 @@ function sign_in() {
     return false;
   }
 }
-// sign_in();
-
 // RUN ONCLICK FUNCTIONS
 
 document.getElementById("log").onclick = function() {
@@ -218,25 +167,74 @@ document.getElementById("goToLogIn").onclick = function() {
   document.getElementById("logIn").style.display = "block";
   document.getElementById("signUp").style.display = "none";
 }
-
-
-
 // RENDER FOOTER
 const mainFooter = document.querySelector('#mainFooter');
-function render_footer() {
-    mainFooter.innerHTML += `
-    <div id="footer"></div>
-    `;
-    const contactContainer = document.querySelector('#footer');
-    function render_contact_container() {
-        contactContainer.innerHTML += `
-        <div class="contact__container">CONTACT INFORMATION DIV</div>
-        <div id="copyrightInfo">Copyright | MindX | C4EJS126</div>
-        `;
-    };
-    render_contact_container();
-};
-render_footer();
+mainFooter.innerHTML += ` <div id="footer"><div class="contact__container">
+<div class="footerCon">
+        <span id="CorpInfo"> <p class="CorpInfo1"> Corporate Info </p> </span>
+        <span id="help"> <p class="help1"> Help </p> </span>
+         </div>
+</div>
+<div id="copyrightInfo"><p><i id="logo__main3"> nYe </i></p>
+<div class="footText"> "nYe’s business concept is to offer fashion and quality at the best price in
+ a sustainable way. nYe has since it was founded in 19xx grown into one of the world’s
+  leading fashion companies. The content of this site is copyright-protected and is the 
+  property of XXX".</div>
+  <div class="iconFooter"><i class="fa fa-facebook-square" style="font-size:24px"></i> 
+  <i class="fa fa-twitter" style="font-size:24px"></i>
+  <i class="fa fa-instagram" style="font-size:24px"></i>
+  <i class="fa fa-youtube-play" style="font-size:24px"></i>
+  </div>
+</div>`;
+const corpInfo = document.querySelector('#CorpInfo');
+const help = document.getElementById("help")
+const FooterList1 = [
+    {
+        tag: "Career at nYe",
+    },
+    {
+        tag: "About nYe group",
+    },
+    {
+        tag: "Sustainability",
+    },
+    {
+        tag: "Press",
+    },
+    {
+        tag: "Investor Relations",
+    },
+    {
+        tag: "Corporate Governance",
+    },
+]
+function renderFooter1() {
+for (let CoList of FooterList1) {
+corpInfo.innerHTML += `
+          <div class ="coList1">`+ CoList.tag +`</div>`    
+}
+}
+renderFooter1()      
+const FooterList2 = [
+    {
+        tag: "Customer Service"
+    },
+    {
+        tag: "Privacy Notice"
+    },
+    {
+        tag: "Enable high contrast mode"
+    },
+]
+function renderFooter2() {
+    for (let CoList of FooterList2) {
+    help.innerHTML += `
+              <div class="coList2">`+ CoList.tag +`</div>`    
+    }
+    }
+    renderFooter2()  
+
+
 
 
 
