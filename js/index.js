@@ -246,7 +246,7 @@ function render_section3_product2() {
         document.getElementById("section3__container2").innerHTML += `
                 <div class="product__item">
                     <div class="product__image">
-                        <a><img class="product__img" src="` + product.image + `" 
+                        <a class="product__a"><img class="product__img" src="` + product.image + `" 
                         onmouseover="this.src='`+product.image2+`'"
                         onmouseout="this.src='`+product.image+`'"
                         alt=""/></a>
