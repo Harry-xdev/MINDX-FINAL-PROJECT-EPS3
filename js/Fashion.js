@@ -23,7 +23,7 @@ const mainPage = document.querySelector('#mainPage');
         userContainer.innerHTML += `
         <span id = "Ab" class="info"> <i class="material-icons">supervisor_account</i></span>
         <span id = "log" class="info" type="button" onclick="location.href='./login.html'"> Login</span>
-        <span id = "register" class="info"> <i class="material-icons">shopping_cart</i></span> `;
+        <a href="./cart.html" id="cart__icon"><span id = "register" class="info"><i class="material-icons">shopping_cart</i><span class="cart__number">0</span></span></a> `;
 //Render Fashion page
 mainPage.innerHTML += `
     <div id="mainPageFashion"> </div>
@@ -475,6 +475,39 @@ const FooterList1 = [
         tag: "Corporate Governance",
     },
 ]
+
+// FUNCTION ADD TO CART
+let carts = document.querySelectorAll("#btn__cart");
+for (let i=0; i < carts.length; i++) {
+    carts[i].addEventListener('click', () => {
+        cart_number();
+        
+    })
+}
+// function change_button_color() {
+//     document.querySelector('#btn__cart').style.background = 'gray';
+// }
+
+function cart_number() {
+    let productNumbers = localStorage.getItem('cartNumbers');
+    productNumbers = parseInt(productNumbers);
+
+    if (productNumbers) {
+        localStorage.setItem('cartNumbers', productNumbers + 1);
+        document.querySelector('.cart__number').textContent = productNumbers + 1;
+    } else {
+        localStorage.setItem('cartNumbers', 1);
+        document.querySelector('.cart__number').textContent = 1;
+    }
+}
+// FUNCTION SHOW HOW CART NUMBERS AT LOCAL STORAGE
+function keep_status_of_cart() {
+    let productNumbers = localStorage.getItem('cartNumbers');
+    document.querySelector('.cart__number').textContent = productNumbers;
+}
+keep_status_of_cart();
+
+
 function renderFooter1() {
 for (let CoList of FooterList1) {
 corpInfo.innerHTML += `

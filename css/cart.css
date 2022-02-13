@@ -4,8 +4,12 @@
 }
 html {
     scroll-behavior: smooth;
-   }
+}
 
+#cart__icon, span {
+    text-decoration: none;
+    color: rgb(160, 123, 31);
+}
 body {
     margin: 0;
     padding: 0;
@@ -83,11 +87,6 @@ section {
     border-bottom: 1px solid rgb(160, 123, 31);;
     
 }
-
-#cart__icon, span {
-    text-decoration: none;
-    color: rgb(160, 123, 31);
-}
 #logo__main, #logo__main2, #logo__main3,.native , #user__container {
     text-decoration: none;
     cursor: pointer;
@@ -104,7 +103,7 @@ section {
     font-weight: bolder;
 }
 
-#logo__main:hover, #logo__main2:hover, .native:hover , #Ab:hover, #log:hover, #register:hover, .material-icons:hover, span:hover {
+#logo__main:hover, #logo__main2:hover, .native:hover , #Ab:hover, #log:hover, #register:hover,.material-icons:hover, span:hover {
     color:rgba(2, 53, 25, 0.555);
     opacity: 1;
     
@@ -156,7 +155,7 @@ section {
 
 }
 .material-icons {
-    color: rgb(160, 123, 31);
+   
     position: relative;
     top:5px;
 }
@@ -290,11 +289,12 @@ video {
 /* SECTION 1 CSS */
 .section__1 {
     width: auto;
-    height: auto;
+   
+  height: auto;
     flex-direction: column;
     background-color: white;
     color: black;
-    margin-bottom: 0px;
+    margin-bottom: 50px;
     
 }
 
@@ -563,7 +563,7 @@ p, a {
 
 .section4__cap , .section2_cap , .section3_cap{
     color:rgb(117, 89, 19);
-    margin-bottom: 40px;
+    margin: 20px;
     font-size: 45px;
     font-family: "Circular Std",sans-serif;
     text-align: center;

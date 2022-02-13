@@ -38,8 +38,12 @@ body {
 #logo__main, #logo__main2, .native {
     font-weight: bolder;
 }
+#cart__icon, span {
+    text-decoration: none;
+    color: rgb(160, 123, 31);
+}
 
-#logo__main:hover, #logo__main2:hover, .native:hover , #Ab:hover, #log:hover, #register:hover {
+#logo__main:hover, #logo__main2:hover, .native:hover , #Ab:hover, #log:hover, #register:hover, .material-icons:hover, span:hover {
     color:rgba(2, 53, 25, 0.555);
     opacity: 1;
     

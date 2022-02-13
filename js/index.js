@@ -23,7 +23,7 @@ const userContainer = document.querySelector("#user__container")
 userContainer.innerHTML += `
         <span id = "Ab" class="info"><i class="material-icons">supervisor_account</i> </span>
         <span id = "log" class="info" type="button" onclick="location.href='./login.html'"> Login</span>
-        <span id = "register" class="info" ><i class="material-icons">shopping_cart</i></span> `;
+        <a href="./cart.html" id="cart__icon"><span id = "register" class="info"><i class="material-icons">shopping_cart</i><span class="cart__number">0</span></span></a> `;
 // RENDER MAIN SECTION
 mainPage.innerHTML += `
    <div class= "img_header" > </div>
@@ -63,6 +63,7 @@ sections.innerHTML += `<section id="" class="section__2">
 <div id= "section2__container"></div> </section> `;
 const watchesProductList = [
     {
+        inCart: 0,
         name: "Caliber 12.1, 38 mm",
         url: "#",
         image: "./images/section 2/1.jpg",
@@ -72,6 +73,7 @@ const watchesProductList = [
         color: "White",
     },
     {
+        inCart: 0,
         name: "Caliber 12.1, 38 mm",
         url: "#",
         image: "./images/section 2/2.jpg",
@@ -81,6 +83,7 @@ const watchesProductList = [
         color: "Black",
     },
     {
+        inCart: 0,
         name: "Paradoxe caliber 12.1, 38 mm",
         url: "#",
         image: "./images/section 2/3.jpg",
@@ -90,6 +93,7 @@ const watchesProductList = [
         color: "Black and White",
     },
     {
+        inCart: 0,
         name: "Mademoiselle j12 acte ii, 33 mm",
         url: "#",
         image: "./images/section 2/4.jpg",
@@ -117,7 +121,7 @@ function render_section2_product() {
                         <div class="product__price">` + product.price + `</div>
                        
                     </div>
-                    <div><button id="btn__cart" onclick="add_to_cart()">ADD TO CART</button></div>
+                    <div><button id="btn__cart">ADD TO CART</button></div>
                 </div>
             `
         }
@@ -130,6 +134,7 @@ sections.innerHTML += `<section id="" class="section__3">
 <div id= "section3__container2"></div> </section> `;
 const shoesProductList = [
     {
+        inCart: 0,
         name: "Vibe Sneaker",
         url: "#",
         image: "./images/section 3/1.jpg",
@@ -139,6 +144,7 @@ const shoesProductList = [
         color: "White Mesh and Gold-Tone",
     },
     {
+        inCart: 0,
         name: "D-Connect Sneaker",
         url: "#",
         image: "./images/section 3/2.jpg",
@@ -148,6 +154,7 @@ const shoesProductList = [
         color: "Red and Black Cupidon Print",
     },
     {
+        inCart: 0,
         name: "D-Connect Sneaker",
         url: "#",
         image: "./images/section 3/3.jpg",
@@ -157,6 +164,7 @@ const shoesProductList = [
         color: "White and Butterfly Motif",
     },
     {
+        inCart: 0,
         name: "D-Connect Sneaker",
         url: "#",
         image: "./images/section 3/4.jpg",
@@ -185,7 +193,7 @@ function render_section3_product() {
                         <div class="product__price">` + product.price + `</div>
                        
                     </div>
-                    <div><button id="btn__cart" onclick="add_to_cart()">ADD TO CART</button></div>
+                    <div><button id="btn__cart" onclick="">ADD TO CART</button></div>
                 </div>
             `
         }
@@ -193,6 +201,7 @@ function render_section3_product() {
 render_section3_product();
 const shoesProductList2 = [
     {
+        inCart: 0,
         name: "B24 Sneaker",
         url: "#",
         image: "./images/section 3/5.jpg",
@@ -202,6 +211,7 @@ const shoesProductList2 = [
         color: "White Oblique Canvas",
     },
     {
+        inCart: 0,
         name: "B28 High-Top Sneaker",
         url: "#",
         image: "./images/section 3/6.jpg",
@@ -211,6 +221,7 @@ const shoesProductList2 = [
         color: "Jacquard and Black Rubber",
     },
     {
+        inCart: 0,
         name: "B28 High-Top Sneaker",
         url: "#",
         image: "./images/section 3/7.jpg",
@@ -218,7 +229,9 @@ const shoesProductList2 = [
         price: "$300",
         gender: "MALE",
         color: "Jacquard and White Rubber",
-    },   {
+    },
+    {
+        inCart: 0,
         name: "B28 Low-Top Sneaker",
         url: "#",
         image: "./images/section 3/8.jpg",
@@ -246,7 +259,7 @@ function render_section3_product2() {
                         <div class="product__price">` + product.price + `</div>
                        
                     </div>
-                    <div><button id="btn__cart" onclick="add_to_cart()">ADD TO CART</button></div>
+                    <div><button id="btn__cart">ADD TO CART</button></div>
                 </div>
             `
         }
@@ -283,6 +296,7 @@ const section4IntroItem = document.querySelector('.section4__introduce');
 // CREATING MEN PRODUCT ARRAY OBJECTS
 const handbagProductListM = [
     {
+        inCart: 0,
         name: "KAMPUS TIGER BACKPACK",
         url: "#",
         image: "./images/section 4/KAMPUS TIGER BACKPACK.jpg",
@@ -292,6 +306,7 @@ const handbagProductListM = [
         color: "BLACK",
     },
     {
+        inCart: 0,
         name: "KENZO SPORT BELT BAG",
         url: "#",
         image: "./images/section 4/KENZO SPORT BELT BAG.jpg",
@@ -301,6 +316,7 @@ const handbagProductListM = [
         color: "BLACK",
     },
     {
+        inCart: 0,
         name: "KENZO Sport backpack W strap",
         url: "#",
         image: "./images/section 4/KENZO Sport backpack W strap.jpg",
@@ -310,6 +326,7 @@ const handbagProductListM = [
         color: "WHITE",
     },
     {
+        inCart: 0,
         name: "KENZO Sport tote bag",
         url: "#",
         image: "./images/section 4/KENZO Sport tote bag.jpg",
@@ -324,6 +341,7 @@ const handbagProductListM = [
 // CREATING WOMEN PRODUCT ARRAY OBJECT
 const handbagProductListW = [
     {
+        inCart: 0,
         name: "Small KENZO Kamera travel bag",
         url: "#",
         image: "./images/section 4/woman/Small KENZO Kamera travel bag.jpg",
@@ -333,6 +351,7 @@ const handbagProductListW = [
         color: "WHITE",
     },
     {
+        inCart: 0,
         name: "Kenzogram mini messenger bag",
         url: "#",
         image: "./images/section 4/woman/Kenzogram mini messenger bag.jpg",
@@ -342,6 +361,7 @@ const handbagProductListW = [
         color: "BLACK",
     },
     {
+        inCart: 0,
         name: "Kampus Tiger small bumbag",
         url: "#",
         image: "./images/section 4/woman/Kampus Tiger small bumbag.jpg",
@@ -351,6 +371,7 @@ const handbagProductListW = [
         color: "PINK",
     },
     {
+        inCart: 0,
         name: "Canvas Kampus Tiger backpack",
         url: "#",
         image: "./images/section 4/woman/Canvas Kampus Tiger backpack.jpg",
@@ -379,7 +400,7 @@ function render_section4_product() {
                         <div class="product__price">` + product.price + `</div>
                         
                     </div>
-                    <div><button id="btn__cart" onclick="add_to_cart()">ADD TO CART</button></div>
+                    <div><button id="btn__cart">ADD TO CART</button></div>
                 </div>
             `
     }
@@ -405,12 +426,44 @@ function render_section4_product_2() {
                         <div class="product__price">` + product2.price + `</div>
                        
                     </div>
-                    <div><button id="btn__cart" onclick="add_to_cart()">ADD TO CART</button></div>
+                    <div><button id="btn__cart">ADD TO CART</button></div>
                 </div>
             `
     }
 }
 render_section4_product_2();
+
+// FUNCTION ADD TO CART
+let carts = document.querySelectorAll("#btn__cart");
+for (let i=0; i < carts.length; i++) {
+    carts[i].addEventListener('click', () => {
+        cart_number();
+        
+    })
+}
+// function change_button_color() {
+//     document.querySelector('#btn__cart').style.background = 'gray';
+// }
+
+function cart_number() {
+    let productNumbers = localStorage.getItem('cartNumbers');
+    productNumbers = parseInt(productNumbers);
+
+    if (productNumbers) {
+        localStorage.setItem('cartNumbers', productNumbers + 1);
+        document.querySelector('.cart__number').textContent = productNumbers + 1;
+    } else {
+        localStorage.setItem('cartNumbers', 1);
+        document.querySelector('.cart__number').textContent = 1;
+    }
+}
+// FUNCTION SHOW HOW CART NUMBERS AT LOCAL STORAGE
+function keep_status_of_cart() {
+    let productNumbers = localStorage.getItem('cartNumbers');
+    document.querySelector('.cart__number').textContent = productNumbers;
+}
+keep_status_of_cart();
+
 // RENDER FOOTER
 const mainFooter = document.querySelector('#mainFooter');
 mainFooter.innerHTML += ` <div id="footer"><div class="contact__container">
@@ -453,10 +506,10 @@ const FooterList1 = [
     },
 ]
 function renderFooter1() {
-for (let CoList of FooterList1) {
-corpInfo.innerHTML += `
-          <div class ="coList1">`+ CoList.tag +`</div>`    
-}
+    for (let CoList of FooterList1) {
+    corpInfo.innerHTML += `
+            <div class ="coList1">`+ CoList.tag +`</div>`    
+    }
 }
 renderFooter1()      
 const FooterList2 = [
@@ -475,7 +528,7 @@ function renderFooter2() {
     help.innerHTML += `
               <div class="coList2">`+ CoList.tag +`</div>`    
     }
-    }
-    renderFooter2()  
+}
+renderFooter2()
 
 
