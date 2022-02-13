@@ -436,11 +436,71 @@ const dropBar4 = document.getElementById("sort2")
  <button class="dropMenu4"  href="#"> Best Price </button> </span>`
 // RENDER FOOTER
 const mainFooter = document.querySelector('#mainFooter');
-    mainFooter.innerHTML += `
-    <div id="footer"></div> `;
-    const contactContainer = document.querySelector('#footer');
-        contactContainer.innerHTML += `
-        <div class="contact__container">CONTACT INFORMATION DIV</div>
-        <div id="copyrightInfo">Copyright | MindX | C4EJS126</div> `;
-  
+mainFooter.innerHTML += ` <div id="footer"><div class="contact__container">
+<div class="footerCon">
+        <span id="CorpInfo"> <p class="CorpInfo1"> Corporate Info </p> </span>
+        <span id="help"> <p class="help1"> Help </p> </span>
+         </div>
+</div>
+<div id="copyrightInfo"><p><i id="logo__main3"> nYe </i></p>
+<div class="footText"> "nYe’s business concept is to offer fashion and quality at the best price in
+ a sustainable way. nYe has since it was founded in 19xx grown into one of the world’s
+  leading fashion companies. The content of this site is copyright-protected and is the 
+  property of XXX".</div>
+  <div class="iconFooter"><i class="fa fa-facebook-square" style="font-size:24px"></i> 
+  <i class="fa fa-twitter" style="font-size:24px"></i>
+  <i class="fa fa-instagram" style="font-size:24px"></i>
+  <i class="fa fa-youtube-play" style="font-size:24px"></i>
+  </div>
+</div>`;
+const corpInfo = document.querySelector('#CorpInfo');
+const help = document.getElementById("help")
+const FooterList1 = [
+    {
+        tag: "Career at nYe",
+    },
+    {
+        tag: "About nYe group",
+    },
+    {
+        tag: "Sustainability",
+    },
+    {
+        tag: "Press",
+    },
+    {
+        tag: "Investor Relations",
+    },
+    {
+        tag: "Corporate Governance",
+    },
+]
+function renderFooter1() {
+for (let CoList of FooterList1) {
+corpInfo.innerHTML += `
+          <div class ="coList1">`+ CoList.tag +`</div>`    
+}
+}
+renderFooter1()      
+const FooterList2 = [
+    {
+        tag: "Customer Service"
+    },
+    {
+        tag: "Privacy Notice"
+    },
+    {
+        tag: "Enable high contrast mode"
+    },
+]
+function renderFooter2() {
+    for (let CoList of FooterList2) {
+    help.innerHTML += `
+              <div class="coList2">`+ CoList.tag +`</div>`    
+    }
+    }
+    renderFooter2()  
+
+
+
 
