@@ -185,6 +185,7 @@ video {
     text-decoration: none;
     display: block;
     border-radius: 8px;
+    cursor:pointer;
   }
   .dropMenu:hover,
   .dropMenu1:hover ,
@@ -194,6 +195,7 @@ video {
     background-color:rgb(173, 131, 24);
     color: white;
     font-weight: bolder ;
+    cursor:pointer;
   }
 
 
