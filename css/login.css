@@ -10,11 +10,11 @@
 }
 .signup__form{
   display: none;
-  height: 545px;
+  height: auto;
   width: 400px;
   background-color: rgb(255, 255, 255);
   margin: auto;
- margin-top: 40px;
+  margin-top: 40px;
   border-radius: 40px;
 }
 #goToLogIn, #goToSignUp {

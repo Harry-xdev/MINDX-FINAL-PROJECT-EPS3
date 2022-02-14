@@ -16,7 +16,7 @@ const mainPage = document.querySelector('#mainPage');
         <span id="user__container" href="#"> </span> `
     const dropCata = document.querySelector("#cata")
         dropCata.innerHTML += ` <span class ="drop_content"> 
-        <button class="dropMenu" id="dropMenu1" href="#">Women's Fashion</button>
+        <button class="dropMenu" id="dropMenu1" onclick="allW()" href="#">Women's Fashion</button>
         <button class="dropMenu" id="dropMenu2" href="#">Men's Fashion</button>
         <button class="dropMenu" id="dropMenu0" href="#">back to fashion page</button></span> `
     const userContainer = document.querySelector("#user__container")
@@ -46,9 +46,12 @@ mainPage.innerHTML += `
             <span></span>
             <span></span>
             </a> </div>
+
             <div id="FCon1" class="FCon" >
+
                <div id ="WFcontainer"> 
                   <p class="titFC">Women's Fashion</p>
+
                      <div class="actionBar"> 
                          <span id="filter"> 
                             <i class="material-icons">menu</i> Filter <i class="material-icons">unfold_more</i>
@@ -56,8 +59,16 @@ mainPage.innerHTML += `
                           <span id="sort"> Sort <i class="material-icons">unfold_more</i>
                          </span>
                          </div>
+
+                         <div id ="WFcontainer1"> </div>
+                         <div id ="WFcontainerCoat"> </div>
+                         <div id ="WFcontainerDress"> </div>
+                         <div id ="WFcontainerJacket"> </div>
+
                </div> 
+
              </div>
+
             <div id="menFashion">
             <a class="A"  href="#">     MEN   <span></span>
             <span></span>
@@ -75,17 +86,22 @@ mainPage.innerHTML += `
                            <span id="sort2"> Sort <i class="material-icons">unfold_more</i>
                            </span>
                            </div>
+                           <div id ="MFcontainer1"> </div>
+                           <div id ="MFcontainerOuterwear"> </div>
+                           <div id ="MFcontainerJacket"> </div>
                        </div> 
              </div> `;
 // RENDER PRODUCTS LIST 
-const FashionProductListW = [
+var FashionProductListW = [
     {
+        class: "jacket",
         name: "Marlène Jacket",
         image: "./images/section 1/women/jackets/6.jpg",
         price: "$300",
         color: "Navy Blue Bonded",
     },
     {
+        class: "jacket",
         name: "Marinière Marlène Jacket",
         image: "./images/section 1/women/jackets/5.jpg",
         price: "$300",
@@ -93,6 +109,7 @@ const FashionProductListW = [
         color: "Navy Blue and Ecru",
     },
     {
+        class: "jacket",
         name: "Marlène Belted Jacket",
         image: "./images/section 1/women/jackets/4.jpg",
         price: "$300",
@@ -100,6 +117,7 @@ const FashionProductListW = [
         color: "Blue and White Striped",
     },
     {
+        class: "jacket",
         name: "Marlène Belted Jacket",
         image: "./images/section 1/women/jackets/3.jpg",
         price: "$300",
@@ -107,6 +125,7 @@ const FashionProductListW = [
         color: "White Wool and Silk",
     },
     {
+        class: "jacket",
         name: "Macrocannage Bar Jacket",
         image: "./images/section 1/women/jackets/2.jpg",
         price: "$350",
@@ -114,6 +133,7 @@ const FashionProductListW = [
         color: "Black Quilted Technical Taffeta",
     },
     {
+        class: "jacket",
         name: "Macrocannage Bar Jacket",
         image: "./images/section 1/women/jackets/1.jpg",
         price: "$350",
@@ -121,6 +141,7 @@ const FashionProductListW = [
         color: "Beige Quilted Technical Taffeta",
     },
     {
+        class: "dress",
         name: "Mid-Length Dress",
         image: "./images/section 1/women/dresses/5.jpg",
         price: "$400",
@@ -128,6 +149,7 @@ const FashionProductListW = [
         color: "Black Technical Taffeta",
     },
     {
+        class: "dress",
         name: "Short Hooded Dress",
         image: "./images/section 1/women/dresses/4.jpg",
         price: "$200",
@@ -135,6 +157,7 @@ const FashionProductListW = [
         color: "Gold-Tone Technical Taffeta",
     },
     {
+        class: "dress",
         name: "Short Hooded Dress",
         image: "./images/section 1/women/dresses/3.jpg",
         price: "$200",
@@ -142,6 +165,7 @@ const FashionProductListW = [
         color: "Navy Blue Technical Taffeta",
     },
     {
+        class: "dress",
         name: "Mid-Length Dress",
         image: "./images/section 1/women/dresses/2.jpg",
         price: "$400",
@@ -149,6 +173,7 @@ const FashionProductListW = [
         color: "White and Black Under The Sea",
     },
     {
+        class: "dress",
         name: "Long Dress",
         image: "./images/section 1/women/dresses/1.jpg",
         price: "$350",
@@ -156,6 +181,7 @@ const FashionProductListW = [
         color: "Navy Blue Cotton with Toile de",
     },
     {
+        class: "coat",
         name: "Sleeveless Belted Coat",
         image: "./images/section 1/women/coats/6.jpg",
         price: "$300",
@@ -163,6 +189,7 @@ const FashionProductListW = [
         color: "Navy Blue Double-Sided",
     },
     {
+        class: "coat",
         name: "Cropped Coat with Hood and Belt",
         image: "./images/section 1/women/coats/5.jpg",
         price: "$300",
@@ -170,6 +197,7 @@ const FashionProductListW = [
         color: "Navy Blue Double-Sided Wool",
     },
     {
+        class: "coat",
         name: "Peacoat",
         image: "./images/section 1/women/coats/4.jpg",
         price: "$350",
@@ -177,6 +205,7 @@ const FashionProductListW = [
         color: "White Double-Sided Cashmere",
     },
     {
+        class: "coat",
         name: "Hooded Jacket Macrocannage Lining",
         image: "./images/section 1/women/coats/3.jpg",
         price: "$350",
@@ -184,6 +213,7 @@ const FashionProductListW = [
         color: "Gray Technical Cotton Drill",
     },
     {
+        class: "coat",
         name: "Macrocannage Peacot",
         image: "./images/section 1/women/coats/2.jpg",
         price: "$300",
@@ -191,6 +221,7 @@ const FashionProductListW = [
         color: "Black Quilted Technical Taffeta",
     },
     {
+        class: "coat",
         name: "Peacoat",
         image: "./images/section 1/women/coats/1.jpg",
         price: "$350",
@@ -199,8 +230,9 @@ const FashionProductListW = [
     },
 
 ]
-const FashionProductListM = [
+let FashionProductListM = [
     {
+        class: "outerwear",
         name: "Selvedge MKII Blouson",
         image: "./images/section 1/men/outerwear/1.jpg",
         price: "$250",
@@ -208,6 +240,7 @@ const FashionProductListM = [
         color: "Blue Raw Cotton Denim",
     },
     {
+        class: "outerwear",
         name: "Double-Breasted Coat",
         image: "./images/section 1/men/outerwear/2.jpg",
         price: "$550",
@@ -215,6 +248,7 @@ const FashionProductListM = [
         color: "Multicolor Cotton Jacquard",
     },
     {
+        class: "outerwear",
         name: "Blouson with Removable Collar",
         image: "./images/section 1/men/outerwear/3.jpg",
         price: "$390",
@@ -222,6 +256,7 @@ const FashionProductListM = [
         color: "Black Cashmere Cloth",
     },
     {
+        class: "outerwear",
         name: "Fabric Overlay Coat",
         image: "./images/section 1/men/outerwear/4.jpg",
         price: "$450",
@@ -229,6 +264,7 @@ const FashionProductListM = [
         color: "Blue Wool and Mohair Canvas",
     },
     {
+        class: "outerwear",
         name: "Hybrid Bomber Jacket",
         image: "./images/section 1/men/outerwear/5.jpg",
         price: "$300",
@@ -236,6 +272,7 @@ const FashionProductListM = [
         color: "Black Technical Twill",
     },
     {
+        class: "outerwear",
         name: "Reversible Blouson",
         image: "./images/section 1/men/outerwear/6.jpg",
         price: "$390",
@@ -243,6 +280,7 @@ const FashionProductListM = [
         color: "Gray Technical Wool Jacquard",
     },
     {
+        class: "outerwear",
         name: "Bomber Jacket with Sheepskin Collar",
         image: "./images/section 1/men/outerwear/7.jpg",
         price: "$300",
@@ -250,6 +288,7 @@ const FashionProductListM = [
         color: "Gray Suede Lambskin",
     },
     {
+        class: "outerwear",
         name: "Knit Hybrid Jacket",
         image: "./images/section 1/men/outerwear/8.jpg",
         price: "$350",
@@ -257,6 +296,7 @@ const FashionProductListM = [
         color: "Cream Technical Wool",
     },
     {
+        class: "outerwear",
         name: "Classic Coat",
         image: "./images/section 1/men/outerwear/9.jpg",
         price: "$500",
@@ -264,6 +304,7 @@ const FashionProductListM = [
         color: "Black Cashmere Cloth",
     },
     {
+        class: "outerwear",
         name: "Peacoat",
         image: "./images/section 1/men/outerwear/10.jpg",
         price: "$400",
@@ -271,6 +312,7 @@ const FashionProductListM = [
         color: "Navy Blue Cashmere Cloth",
     },
     {
+        class: "jacket",
         name: "Oblique Jacket",
         image: "./images/section 1/men/jackets/1.jpg",
         price: "$300",
@@ -278,13 +320,15 @@ const FashionProductListM = [
         color: "Black Wool Drill",
     },
     {
-        name: "Double-Breasted Jacket with Button Placket",
+        class: "jacket",
+        name: "Double-Breasted Jacket",
         image: "./images/section 1/men/jackets/2.jpg",
         price: "$500",
         gender: "FEMAL",
         color: "Deep Blue Wool Ottoman",
     },
     {
+        class: "jacket",
         name: "Officer Collar Jacket",
         image: "./images/section 1/men/jackets/3.jpg",
         price: "$300",
@@ -292,17 +336,17 @@ const FashionProductListM = [
         color: "Ecru Vintage Wool Twill",
     },
     {
+        class: "jacket",
         name: "Sleeveless Jacket",
         image: "./images/section 1/men/jackets/4.jpg",
         price: "$200",
         gender: "FEMAL",
         color: "Navy Blue Vintage Wool Twill",
     },
-
 ]
-function render_section1_Wproduct() {
+ function render_section1_Wproduct() {
     for (let product of FashionProductListW) {
-        document.getElementById("WFcontainer").innerHTML += `
+        document.getElementById("WFcontainer1").innerHTML += `
             <div class="product__item">
                 <div class="product__image">
                     <a><img src="` + product.image + `" alt=""></a>
@@ -321,9 +365,11 @@ function render_section1_Wproduct() {
 }
 render_section1_Wproduct()
 
+
+ 
 function render_section1_Mproduct() {
     for (let product of FashionProductListM) {
-        document.getElementById("MFcontainer").innerHTML += `
+        document.getElementById("MFcontainer1").innerHTML += `
             <div class="product__item">
                 <div class="product__image">
                     <a><img src="` + product.image + `" alt=""></a>
@@ -358,7 +404,6 @@ function topFunction() {
     document.documentElement.scrollTop = 0;
 };
 topFunction()
-
 document.getElementById("menu0").onclick = function () {
     document.getElementById("womenFashion").style.display = "flex";
     document.getElementById("menFashion").style.display = "flex";
@@ -384,6 +429,10 @@ document.getElementById("womenFashion").onclick = function () {
     document.getElementById("womenFashion").style.display = "none";
     document.getElementById("menFashion").style.display = "none";
     document.getElementById("FCon1").style.display = "flex";
+    document.getElementById("WFcontainer1").style.display = "flex"
+    document.getElementById("WFcontainerDress").style.display = "none"
+    document.getElementById("WFcontainerJacket").style.display = "none"
+    document.getElementById("WFcontainerCoat").style.display = "none"
     document.getElementById("FCon2").style.display = "none";
 }
 
@@ -392,11 +441,18 @@ document.getElementById("menFashion").onclick = function () {
     document.getElementById("menFashion").style.display = "none";
     document.getElementById("FCon1").style.display = "none";
     document.getElementById("FCon2").style.display = "flex";
+    document.getElementById("MFcontainer1").style.display = "flex"
+    document.getElementById("MFcontainerOuterwear").style.display = "none"
+    document.getElementById("MFcontainerJacket").style.display = "none"
 }
 document.getElementById("dropMenu1").onclick = function () {
     document.getElementById("womenFashion").style.display = "none";
     document.getElementById("menFashion").style.display = "none";
     document.getElementById("FCon1").style.display = "flex";
+    document.getElementById("WFcontainer1").style.display = "flex"
+    document.getElementById("WFcontainerDress").style.display = "none"
+    document.getElementById("WFcontainerJacket").style.display = "none"
+    document.getElementById("WFcontainerCoat").style.display = "none"
     document.getElementById("FCon2").style.display = "none";
 }
 document.getElementById("dropMenu2").onclick = function () {
@@ -404,26 +460,33 @@ document.getElementById("dropMenu2").onclick = function () {
     document.getElementById("menFashion").style.display = "none";
     document.getElementById("FCon1").style.display = "none";
     document.getElementById("FCon2").style.display = "flex";
+    document.getElementById("MFcontainer1").style.display = "flex"
+    document.getElementById("MFcontainerOuterwear").style.display = "none"
+    document.getElementById("MFcontainerJacket").style.display = "none"
+
 }
 document.getElementById("dropMenu0").onclick = function () {
     document.getElementById("womenFashion").style.display = "flex";
     document.getElementById("menFashion").style.display = "flex";
     document.getElementById("FCon1").style.display = "none";
     document.getElementById("FCon2").style.display = "none";
+    
 }
 
 // DROP BAR HOVER CSS
 const dropBar = document.getElementById("filter")
     dropBar.innerHTML += `
  <span class ="drop_content1">
- <button class="dropMenu1"  href="#"> Coats </button>
- <button class="dropMenu1"  href="#"> Dresses </button>
- <button class="dropMenu1"  href="#"> Jackets </button> </span> `
+ <button class="dropMenu1" id="WAll" onclick="allW()" href="#"> All </button>
+ <button class="dropMenu1" id="WCoat" href="#"> Coats </button>
+ <button class="dropMenu1" id="WDress" href="#"> Dresses </button>
+ <button class="dropMenu1" id="WJacket" href="#"> Jackets </button> </span> `
 const dropBar2 = document.getElementById("filter2")
  dropBar2.innerHTML += `
  <span class ="drop_content2">
- <button class="dropMenu2"  href="#"> Outerwear </button>
- <button class="dropMenu2"  href="#"> Jackets </button>  </span>`
+ <button class="dropMenu1" id="MAll" href="#"> All </button>
+ <button class="dropMenu2" id="MOuterwear" href="#"> Outerwear </button>
+ <button class="dropMenu2" id="MJacket" href="#"> Jackets </button>  </span>`
 const dropBar3 = document.getElementById("sort")
     dropBar3.innerHTML += `
  <span class ="drop_content3"> 
@@ -434,6 +497,154 @@ const dropBar4 = document.getElementById("sort2")
  <span class ="drop_content4">
  <button class="dropMenu4"  href="#"> Highest Price </button>
  <button class="dropMenu4"  href="#"> Best Price </button> </span>`
+ //FUNCTION FILTER SORT
+function allW() { 
+    document.getElementById("WFcontainer1").style.display = "flex"
+    document.getElementById("WFcontainerDress").style.display = "none"
+    document.getElementById("WFcontainerJacket").style.display = "none"
+    document.getElementById("WFcontainerCoat").style.display = "none"
+    }
+
+
+ function render_section1_Wproduct1() {
+    for (let product of FashionProductListW.filter(value => value.class === 'coat')) {
+        document.getElementById("WFcontainerCoat").innerHTML += `
+            <div class="product__item">
+                <div class="product__image">
+                    <a><img src="` + product.image + `" alt=""></a>
+                </div>
+                <div class="product__info">
+                    <div class="product__name">
+                        <a>`+ product.name + `</a>
+                    </div>
+                    <div class="product__color">` + product.color + `</div>
+                    <div class="product__price">` + product.price + `</div>
+                    
+                </div>
+                <div class ="btnC"><button id="btn__cart" onclick="add_to_cart()">ADD TO CART</button></div>
+            </div> `
+    }
+}
+render_section1_Wproduct1()
+document.getElementById("WCoat").onclick = function () { 
+document.getElementById("WFcontainer1").style.display = "none"
+document.getElementById("WFcontainerDress").style.display = "none"
+document.getElementById("WFcontainerJacket").style.display = "none"
+document.getElementById("WFcontainerCoat").style.display = "flex"
+}
+
+
+    function render_section1_Wproduct2() {
+       for (let product of FashionProductListW.filter(value => value.class === 'dress')) {
+           document.getElementById("WFcontainerDress").innerHTML += `
+               <div class="product__item">
+                   <div class="product__image">
+                       <a><img src="` + product.image + `" alt=""></a>
+                   </div>
+                   <div class="product__info">
+                       <div class="product__name">
+                           <a>`+ product.name + `</a>
+                       </div>
+                       <div class="product__color">` + product.color + `</div>
+                       <div class="product__price">` + product.price + `</div>
+                       
+                   </div>
+                   <div class ="btnC"><button id="btn__cart" onclick="add_to_cart()">ADD TO CART</button></div>
+               </div> `
+       }
+   }
+   render_section1_Wproduct2()
+   document.getElementById("WDress").onclick = function () { 
+   document.getElementById("WFcontainer1").style.display = "none"
+document.getElementById("WFcontainerCoat").style.display = "none"
+document.getElementById("WFcontainerJacket").style.display = "none"
+document.getElementById("WFcontainerDress").style.display = "flex"
+   }
+
+  
+    function render_section1_Wproduct3() {
+       for (let product of FashionProductListW.filter(value => value.class === 'jacket')) {
+           document.getElementById("WFcontainerJacket").innerHTML += `
+               <div class="product__item">
+                   <div class="product__image">
+                       <a><img src="` + product.image + `" alt=""></a>
+                   </div>
+                   <div class="product__info">
+                       <div class="product__name">
+                           <a>`+ product.name + `</a>
+                       </div>
+                       <div class="product__color">` + product.color + `</div>
+                       <div class="product__price">` + product.price + `</div>
+                       
+                   </div>
+                   <div class ="btnC"><button id="btn__cart" onclick="add_to_cart()">ADD TO CART</button></div>
+               </div> `
+       }
+   }
+   render_section1_Wproduct3()
+   document.getElementById("WJacket").onclick = function () { 
+   document.getElementById("WFcontainer1").style.display = "none"
+document.getElementById("WFcontainerDress").style.display = "none"
+document.getElementById("WFcontainerCoat").style.display = "none"
+document.getElementById("WFcontainerJacket").style.display = "flex"
+   }
+
+   function render_section1_Mproduct1() {
+    for (let product of FashionProductListM.filter(value => value.class === 'jacket')) {
+        document.getElementById("MFcontainerJacket").innerHTML += `
+            <div class="product__item">
+                <div class="product__image">
+                    <a><img src="` + product.image + `" alt=""></a>
+                </div>
+                <div class="product__info">
+                    <div class="product__name">
+                        <a>`+ product.name + `</a>
+                    </div>
+                    <div class="product__color">` + product.color + `</div>
+                    <div class="product__price">` + product.price + `</div>
+                    
+                </div>
+                <div class ="btnC"><button id="btn__cart" onclick="add_to_cart()">ADD TO CART</button></div>
+            </div> `
+    }
+}
+render_section1_Mproduct1()
+document.getElementById("MJacket").onclick = function () {
+    document.getElementById("MFcontainer1").style.display = "none"
+    document.getElementById("MFcontainerOuterwear").style.display = "none"
+    document.getElementById("MFcontainerJacket").style.display = "flex"
+ }
+ function render_section1_Mproduct2() {
+    for (let product of FashionProductListM.filter(value => value.class === 'outerwear')) {
+        document.getElementById("MFcontainerOuterwear").innerHTML += `
+            <div class="product__item">
+                <div class="product__image">
+                    <a><img src="` + product.image + `" alt=""></a>
+                </div>
+                <div class="product__info">
+                    <div class="product__name">
+                        <a>`+ product.name + `</a>
+                    </div>
+                    <div class="product__color">` + product.color + `</div>
+                    <div class="product__price">` + product.price + `</div>
+                    
+                </div>
+                <div class ="btnC"><button id="btn__cart" onclick="add_to_cart()">ADD TO CART</button></div>
+            </div> `
+    }
+}
+render_section1_Mproduct2()
+document.getElementById("MOuterwear").onclick = function () {
+    document.getElementById("MFcontainer1").style.display = "none"
+    document.getElementById("MFcontainerOuterwear").style.display = "flex"
+    document.getElementById("MFcontainerJacket").style.display = "none"
+ }
+ document.getElementById("MAll").onclick = function () {
+    document.getElementById("MFcontainer1").style.display = "flex"
+    document.getElementById("MFcontainerOuterwear").style.display = "none"
+    document.getElementById("MFcontainerJacket").style.display = "none"
+ }
+
 // RENDER FOOTER
 const mainFooter = document.querySelector('#mainFooter');
 mainFooter.innerHTML += ` <div id="footer"><div class="contact__container">
@@ -475,6 +686,31 @@ const FooterList1 = [
         tag: "Corporate Governance",
     },
 ]
+function renderFooter1() {
+for (let CoList of FooterList1) {
+corpInfo.innerHTML += `
+          <div class ="coList1">`+ CoList.tag +`</div>`    
+}
+}
+renderFooter1()      
+const FooterList2 = [
+    {
+        tag: "Customer Service"
+    },
+    {
+        tag: "Privacy Notice"
+    },
+    {
+        tag: "Enable high contrast mode"
+    },
+]
+function renderFooter2() {
+    for (let CoList of FooterList2) {
+    help.innerHTML += `
+              <div class="coList2">`+ CoList.tag +`</div>`    
+    }
+    }
+    renderFooter2()  
 
 // FUNCTION ADD TO CART
 let carts = document.querySelectorAll("#btn__cart");
@@ -506,34 +742,5 @@ function keep_status_of_cart() {
     document.querySelector('.cart__number').textContent = productNumbers;
 }
 keep_status_of_cart();
-
-
-function renderFooter1() {
-for (let CoList of FooterList1) {
-corpInfo.innerHTML += `
-          <div class ="coList1">`+ CoList.tag +`</div>`    
-}
-}
-renderFooter1()      
-const FooterList2 = [
-    {
-        tag: "Customer Service"
-    },
-    {
-        tag: "Privacy Notice"
-    },
-    {
-        tag: "Enable high contrast mode"
-    },
-]
-function renderFooter2() {
-    for (let CoList of FooterList2) {
-    help.innerHTML += `
-              <div class="coList2">`+ CoList.tag +`</div>`    
-    }
-    }
-    renderFooter2()  
-
-
 
 

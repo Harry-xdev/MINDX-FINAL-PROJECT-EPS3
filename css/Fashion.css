@@ -281,7 +281,7 @@ video {
     align-items: center;
 }
 
-#MFcontainer , #WFcontainer{
+#MFcontainer , #MFcontainer1 ,#MFcontainerOuterwear , #MFcontainerJacket, #WFcontainer ,#WFcontainer1 , #WFcontainerCoat , #WFcontainerDress , #WFcontainerJacket{
     
     
     width: 100%;
@@ -291,8 +291,20 @@ video {
     color:rgb(117, 89, 19);
     font-weight: 700;
     justify-content: center;
+    -webkit-animation: slide-down .5s ease-out;
+    -moz-animation: slide-down .5s ease-out;
+    -webkit-animation: slide-down .5s ease-in;
+    -moz-animation: slide-down .5s ease-in;
 }
 
+@-webkit-keyframes slide-down {
+    0% { opacity :0;}
+    20% {opacity :1;}
+}
+
+#WFcontainerCoat , #WFcontainerDress , #WFcontainerJacket , #MFcontainerOuterwear, #MFcontainerJacket{
+    display:none
+}
 .product__item {
     font-size: 16px;
     font-family: "Circular Std",sans-serif;
