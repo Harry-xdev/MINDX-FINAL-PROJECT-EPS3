@@ -27,7 +27,7 @@ const mainPage = document.querySelector('#mainPage');
 //Render Fashion page
 mainPage.innerHTML += `
     <div id="mainPageFashion"> </div>
-    <a href="#"><button onclick="topFunction()" id="myBtn" title="Go to top">Top</button></a>`;
+    <a href="#"><button onclick="topFunction()" id="myBtn" title="Go to top">Back to top</button></a>`;
  // section Men's  Fashion, section Women's  Fashion
     const mainPageFashion = document.querySelector('#mainPageFashion');
         mainPageFashion.innerHTML += `

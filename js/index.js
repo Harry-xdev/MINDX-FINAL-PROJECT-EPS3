@@ -12,7 +12,7 @@ mainPage.innerHTML += `
         <a  class="native" href="#section4__container1">BAGS</a>
         <a id="cata" class="native" href="#">CATALOG</a>
         <span id="user__container" href="#"> </span> </div>
-    <a href="#"><button onclick="topFunction()" id="myBtn" title="Go to top">Top</button></a> `;
+    <a href="#"><button onclick="topFunction()" id="myBtn" title="Go to top">Back to top</button></a> `;
 const dropCata = document.querySelector("#cata")
 dropCata.innerHTML += ` <span class ="drop_content">
 <button class="dropMenu" onclick="location.href='./Fashion.html';" >FASHION</button>
