@@ -391,24 +391,124 @@ document.getElementById("menu1").onclick = function () {
     document.getElementById("menFashion").style.display = "none";
     document.getElementById("FCon1").style.display = "flex";
     document.getElementById("FCon2").style.display = "none";
+    
+        document.getElementById("WFcontainer1").innerHTML =""
+        function render_section1_Wproduct1() {
+            for (let product of FashionProductListW) {
+                document.getElementById("WFcontainer1").innerHTML += `
+                    <div class="product__item">
+                        <div class="product__image">
+                            <a><img src="` + product.image + `" alt=""></a>
+                        </div>
+                        <div class="product__info">
+                            <div class="product__name">
+                                <a>`+ product.name + `</a>
+                            </div>
+                            <div class="product__color">` + product.color + `</div>
+                            <div class="product__price">$` + product.price + `</div>
+                        </div>
+                        <div class ="btnC"><button id="btn__cart" onclick="add_to_cart()">ADD TO CART</button></div>
+                    </div> `
+      } }
+        render_section1_Wproduct1()
+        let carts = document.querySelectorAll("#btn__cart");
+        for (let i=0; i < carts.length; i++) {
+            carts[i].addEventListener('click', () => {
+                cart_number();  })
+        }
 }
 document.getElementById("menu2").onclick = function () {
     document.getElementById("womenFashion").style.display = "none";
     document.getElementById("menFashion").style.display = "none";
     document.getElementById("FCon1").style.display = "none";
     document.getElementById("FCon2").style.display = "flex";
+    
+ 
+    document.getElementById("MFcontainer1").innerHTML =""
+    function render_section1_Mproduct1() {
+        for (let product of FashionProductListM) {
+            document.getElementById("MFcontainer1").innerHTML += `
+                <div class="product__item">
+                    <div class="product__image">
+                        <a><img src="` + product.image + `" alt=""></a>
+                    </div>
+                    <div class="product__info">
+                        <div class="product__name">
+                            <a>`+ product.name + `</a>
+                        </div>
+                        <div class="product__color">` + product.color + `</div>
+                        <div class="product__price">$` + product.price + `</div>
+                    </div>
+                    <div class ="btnC"><button id="btn__cart" onclick="add_to_cart()">ADD TO CART</button></div>
+                </div> `
+        } }
+    render_section1_Mproduct1()
+    let carts = document.querySelectorAll("#btn__cart");
+    for (let i=0; i < carts.length; i++) {
+        carts[i].addEventListener('click', () => {
+            cart_number();})
+    }
+
 }
 document.getElementById("womenFashion").onclick = function () {
     document.getElementById("womenFashion").style.display = "none";
     document.getElementById("menFashion").style.display = "none";
     document.getElementById("FCon1").style.display = "flex";
     document.getElementById("FCon2").style.display = "none";
+    document.getElementById("WFcontainer1").innerHTML =""
+    function render_section1_Wproduct1() {
+        for (let product of FashionProductListW) {
+            document.getElementById("WFcontainer1").innerHTML += `
+                <div class="product__item">
+                    <div class="product__image">
+                        <a><img src="` + product.image + `" alt=""></a>
+                    </div>
+                    <div class="product__info">
+                        <div class="product__name">
+                            <a>`+ product.name + `</a>
+                        </div>
+                        <div class="product__color">` + product.color + `</div>
+                        <div class="product__price">$` + product.price + `</div>
+                    </div>
+                    <div class ="btnC"><button id="btn__cart" onclick="add_to_cart()">ADD TO CART</button></div>
+                </div> `
+  } }
+    render_section1_Wproduct1()
+    let carts = document.querySelectorAll("#btn__cart");
+    for (let i=0; i < carts.length; i++) {
+        carts[i].addEventListener('click', () => {
+            cart_number();  })
+    }
 }
 document.getElementById("menFashion").onclick = function () {
     document.getElementById("womenFashion").style.display = "none";
     document.getElementById("menFashion").style.display = "none";
     document.getElementById("FCon1").style.display = "none";
     document.getElementById("FCon2").style.display = "flex";
+    document.getElementById("MFcontainer1").innerHTML =""
+    function render_section1_Mproduct1() {
+        for (let product of FashionProductListM) {
+            document.getElementById("MFcontainer1").innerHTML += `
+                <div class="product__item">
+                    <div class="product__image">
+                        <a><img src="` + product.image + `" alt=""></a>
+                    </div>
+                    <div class="product__info">
+                        <div class="product__name">
+                            <a>`+ product.name + `</a>
+                        </div>
+                        <div class="product__color">` + product.color + `</div>
+                        <div class="product__price">$` + product.price + `</div>
+                    </div>
+                    <div class ="btnC"><button id="btn__cart" onclick="add_to_cart()">ADD TO CART</button></div>
+                </div> `
+        } }
+    render_section1_Mproduct1()
+    let carts = document.querySelectorAll("#btn__cart");
+    for (let i=0; i < carts.length; i++) {
+        carts[i].addEventListener('click', () => {
+            cart_number();})
+    }
 }
 document.getElementById("dropMenu1").onclick = function () {
     document.getElementById("womenFashion").style.display = "none";
@@ -476,7 +576,7 @@ const dropBar4 = document.getElementById("sort2")
      }
  }
  render_section1_Wproduct()
- let carts = document.querySelectorAll(".btnC");
+ let carts = document.querySelectorAll("#btn__cart");
 for (let i=0; i < carts.length; i++) {
     carts[i].addEventListener('click', () => {
         cart_number(); })
@@ -502,7 +602,7 @@ for (let i=0; i < carts.length; i++) {
              </div> `
      } }
  render_section1_Mproduct()
- let carts = document.querySelectorAll(".btnC");
+ let carts = document.querySelectorAll("#btn__cart");
 for (let i=0; i < carts.length; i++) {
     carts[i].addEventListener('click', () => {
         cart_number();     })
@@ -528,7 +628,7 @@ document.getElementById("bestP1").onclick = function() {
              </div> `
      } }
  render_section1_Wproduct()
- let carts = document.querySelectorAll(".btnC");
+ let carts = document.querySelectorAll("#btn__cart");
  for (let i=0; i < carts.length; i++) {
      carts[i].addEventListener('click', () => {
          cart_number(); })
@@ -554,7 +654,7 @@ document.getElementById("bestP1").onclick = function() {
              </div> `
      }}
  render_section1_Mproduct()
- let carts = document.querySelectorAll(".btnC");
+ let carts = document.querySelectorAll("#btn__cart");
 for (let i=0; i < carts.length; i++) {
     carts[i].addEventListener('click', () => {
         cart_number();    })
@@ -580,7 +680,7 @@ document.getElementById("WCoat").onclick = function () {
                 </div> `
         }}
     render_section1_Wproduct1()
-    let carts = document.querySelectorAll(".btnC");
+    let carts = document.querySelectorAll("#btn__cart");
     for (let i=0; i < carts.length; i++) {
         carts[i].addEventListener('click', () => {
             cart_number(); })
@@ -606,7 +706,7 @@ document.getElementById("WCoat").onclick = function () {
                 </div> `
         } }
     render_section1_Wproduct1()
-    let carts = document.querySelectorAll(".btnC");
+    let carts = document.querySelectorAll("#btn__cart");
     for (let i=0; i < carts.length; i++) {
         carts[i].addEventListener('click', () => {
             cart_number(); })
@@ -632,7 +732,7 @@ document.getElementById("WCoat").onclick = function () {
                 </div> `
         }  }
     render_section1_Wproduct1()
-    let carts = document.querySelectorAll(".btnC");
+    let carts = document.querySelectorAll("#btn__cart");
     for (let i=0; i < carts.length; i++) {
         carts[i].addEventListener('click', () => {
             cart_number(); })
@@ -658,7 +758,7 @@ document.getElementById("WCoat").onclick = function () {
                 </div> `
   } }
     render_section1_Wproduct1()
-    let carts = document.querySelectorAll(".btnC");
+    let carts = document.querySelectorAll("#btn__cart");
     for (let i=0; i < carts.length; i++) {
         carts[i].addEventListener('click', () => {
             cart_number();  })
@@ -684,7 +784,7 @@ document.getElementById("WCoat").onclick = function () {
                 </div> `
         }}
     render_section1_Mproduct1()
-    let carts = document.querySelectorAll(".btnC");
+    let carts = document.querySelectorAll("#btn__cart");
     for (let i=0; i < carts.length; i++) {
         carts[i].addEventListener('click', () => {
             cart_number();  })
@@ -710,7 +810,7 @@ document.getElementById("WCoat").onclick = function () {
                 </div> `
         } }
     render_section1_Mproduct1()
-    let carts = document.querySelectorAll(".btnC");
+    let carts = document.querySelectorAll("#btn__cart");
     for (let i=0; i < carts.length; i++) {
         carts[i].addEventListener('click', () => {
             cart_number(); })
@@ -736,7 +836,7 @@ document.getElementById("WCoat").onclick = function () {
                 </div> `
         } }
     render_section1_Mproduct1()
-    let carts = document.querySelectorAll(".btnC");
+    let carts = document.querySelectorAll("#btn__cart");
     for (let i=0; i < carts.length; i++) {
         carts[i].addEventListener('click', () => {
             cart_number();})
@@ -811,7 +911,7 @@ function renderFooter2() {
     renderFooter2()  
 
 // FUNCTION ADD TO CART
-let carts = document.querySelectorAll(".btnC");
+let carts = document.querySelectorAll("#btn__cart");
 for (let i=0; i < carts.length; i++) {
     carts[i].addEventListener('click', () => {
         cart_number();
