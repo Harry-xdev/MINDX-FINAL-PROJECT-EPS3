@@ -81,14 +81,6 @@ function renderFooter1() {
             <div class ="coList1">`+ CoList.tag +`</div>`    
     }
 }
-
-// FUNCTION SHOW HOW CART NUMBERS AT LOCAL STORAGE
-function keep_status_of_cart() {
-    let productNumbers = localStorage.getItem('cartNumbers');
-    document.querySelector('.cart__number').textContent = productNumbers;
-}
-keep_status_of_cart();
-
 renderFooter1()      
 const FooterList2 = [
     {
@@ -108,3 +100,10 @@ function renderFooter2() {
     }
 }
 renderFooter2()
+
+// FUNCTION SHOW HOW CART NUMBERS AT LOCAL STORAGE
+function keep_status_of_cart() {
+    let productNumbers = localStorage.getItem('cartNumbers');
+    document.querySelector('.cart__number').textContent = productNumbers;
+}
+keep_status_of_cart();
