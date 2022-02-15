@@ -68,7 +68,7 @@ const watchesProductList = [
         url: "#",
         image: "./images/section 2/1.jpg",
         image2: "./images/section 2/1.1.jpg",
-        price: "$189",
+        price: "189",
         gender: "MALE",
         color: "White",
     },
@@ -78,7 +78,7 @@ const watchesProductList = [
         url: "#",
         image: "./images/section 2/2.jpg",
         image2: "./images/section 2/2.1.jpg",
-        price: "$189",
+        price: "189",
         gender: "MALE",
         color: "Black",
     },
@@ -88,7 +88,7 @@ const watchesProductList = [
         url: "#",
         image: "./images/section 2/3.jpg",
         image2: "./images/section 2/3.1.jpg",
-        price: "$245",
+        price: "245",
         gender: "MALE",
         color: "Black and White",
     },
@@ -98,7 +98,7 @@ const watchesProductList = [
         url: "#",
         image: "./images/section 2/4.jpg",
         image2: "./images/section 2/4.1.jpg",
-        price: "$686",
+        price: "686",
         gender: "MALE",
         color: "Black and White",
     }
@@ -118,7 +118,7 @@ function render_section2_product() {
                             <a id="product__name">`+ product.name + `</a>
                         </div>
                         <div class="product__color">` + product.color + `</div>
-                        <div class="product__price">` + product.price + `</div>
+                        <div class="product__price">$` + product.price + `</div>
                        
                     </div>
                     <div><button id="btn__cart">ADD TO CART</button></div>
@@ -139,7 +139,7 @@ const shoesProductList = [
         url: "#",
         image: "./images/section 3/1.jpg",
         image2: "./images/section 3/1.1.jpg",
-        price: "$286",
+        price: "286",
         gender: "MALE",
         color: "White Mesh and Gold-Tone",
     },
@@ -149,7 +149,7 @@ const shoesProductList = [
         url: "#",
         image: "./images/section 3/2.jpg",
         image2: "./images/section 3/2.1.jpg",
-        price: "$286",
+        price: "286",
         gender: "MALE",
         color: "Red and Black Cupidon Print",
     },
@@ -159,7 +159,7 @@ const shoesProductList = [
         url: "#",
         image: "./images/section 3/3.jpg",
         image2: "./images/section 3/3.1.jpg",
-        price: "$286",
+        price: "286",
         gender: "MALE",
         color: "White and Butterfly Motif",
     },
@@ -169,7 +169,7 @@ const shoesProductList = [
         url: "#",
         image: "./images/section 3/4.jpg",
         image2: "./images/section 3/4.1.jpg",
-        price: "$286",
+        price: "286",
         gender: "MALE",
         color: "Blue and White Fabric",
     },
@@ -190,7 +190,7 @@ function render_section3_product() {
                             <a id="product__name">`+ product.name + `</a>
                         </div>
                         <div class="product__color">` + product.color + `</div>
-                        <div class="product__price">` + product.price + `</div>
+                        <div class="product__price">$` + product.price + `</div>
                        
                     </div>
                     <div><button id="btn__cart" onclick="">ADD TO CART</button></div>
@@ -206,7 +206,7 @@ const shoesProductList2 = [
         url: "#",
         image: "./images/section 3/5.jpg",
         image2: "./images/section 3/5.1.jpg",
-        price: "$286",
+        price: "286",
         gender: "MALE",
         color: "White Oblique Canvas",
     },
@@ -216,7 +216,7 @@ const shoesProductList2 = [
         url: "#",
         image: "./images/section 3/6.jpg",
         image2: "./images/section 3/6.1.jpg",
-        price: "$300",
+        price: "300",
         gender: "MALE",
         color: "Jacquard and Black Rubber",
     },
@@ -226,7 +226,7 @@ const shoesProductList2 = [
         url: "#",
         image: "./images/section 3/7.jpg",
         image2: "./images/section 3/7.1.jpg",
-        price: "$300",
+        price: "300",
         gender: "MALE",
         color: "Jacquard and White Rubber",
     },
@@ -236,7 +236,7 @@ const shoesProductList2 = [
         url: "#",
         image: "./images/section 3/8.jpg",
         image2: "./images/section 3/8.1.jpg",
-        price: "$286",
+        price: "286",
         gender: "MALE",
         color: "Black Jacquard and Rubber",
     },
@@ -256,7 +256,7 @@ function render_section3_product2() {
                             <a id="product__name">`+ product.name + `</a>
                         </div>
                         <div class="product__color">` + product.color + `</div>
-                        <div class="product__price">` + product.price + `</div>
+                        <div class="product__price">$` + product.price + `</div>
                        
                     </div>
                     <div><button id="btn__cart">ADD TO CART</button></div>
@@ -301,7 +301,7 @@ const handbagProductListM = [
         url: "#",
         image: "./images/section 4/KAMPUS TIGER BACKPACK.jpg",
         image2: "./images/section 4/KAMPUS TIGER BACKPACK 2.jpg",
-        price: "$265",
+        price: "265",
         gender: "MALE",
         color: "BLACK",
     },
@@ -311,7 +311,7 @@ const handbagProductListM = [
         url: "#",
         image: "./images/section 4/KENZO SPORT BELT BAG.jpg",
         image2: "./images/section 4/KENZO SPORT BELT BAG 2.jpg",
-        price: "$275",
+        price: "275",
         gender: "MALE",
         color: "BLACK",
     },
@@ -321,7 +321,7 @@ const handbagProductListM = [
         url: "#",
         image: "./images/section 4/KENZO Sport backpack W strap.jpg",
         image2: "./images/section 4/KENZO Sport backpack W strap 2.jpg",
-        price: "$295",
+        price: "295",
         gender: "MALE",
         color: "WHITE",
     },
@@ -331,7 +331,7 @@ const handbagProductListM = [
         url: "#",
         image: "./images/section 4/KENZO Sport tote bag.jpg",
         image2: "./images/section 4/KENZO Sport tote bag 2.jpg",
-        price: "$340",
+        price: "340",
         gender: "MALE",
         color: "BLACK",
     },
@@ -346,7 +346,7 @@ const handbagProductListW = [
         url: "#",
         image: "./images/section 4/woman/Small KENZO Kamera travel bag.jpg",
         image2: "./images/section 4/woman/Small KENZO Kamera travel bag 2.jpg",
-        price: "$200",
+        price: "200",
         gender: "FEMAL",
         color: "WHITE",
     },
@@ -356,7 +356,7 @@ const handbagProductListW = [
         url: "#",
         image: "./images/section 4/woman/Kenzogram mini messenger bag.jpg",
         image2: "./images/section 4/woman/Kenzogram mini messenger bag 2.jpg",
-        price: "$235",
+        price: "235",
         gender: "FEMAL",
         color: "BLACK",
     },
@@ -366,7 +366,7 @@ const handbagProductListW = [
         url: "#",
         image: "./images/section 4/woman/Kampus Tiger small bumbag.jpg",
         image2: "./images/section 4/woman/Kampus Tiger small bumbag 2.jpg",
-        price: "$245",
+        price: "245",
         gender: "FEMAL",
         color: "PINK",
     },
@@ -376,7 +376,7 @@ const handbagProductListW = [
         url: "#",
         image: "./images/section 4/woman/Canvas Kampus Tiger backpack.jpg",
         image2: "./images/section 4/woman/Canvas Kampus Tiger backpack 2.jpg",
-        price: "$340",
+        price: "340",
         gender: "FEMAL",
         color: "BLACK",
     },
@@ -397,7 +397,7 @@ function render_section4_product() {
                             <a href="#">`+ product.name + `</a>
                         </div>
                         <div class="product__color">` + product.color + `</div>
-                        <div class="product__price">` + product.price + `</div>
+                        <div class="product__price">$` + product.price + `</div>
                         
                     </div>
                     <div><button id="btn__cart">ADD TO CART</button></div>
@@ -423,7 +423,7 @@ function render_section4_product_2() {
                             <a href="#">`+ product2.name + `</a>
                         </div>
                         <div class="product__color">` + product2.color + `</div>
-                        <div class="product__price">` + product2.price + `</div>
+                        <div class="product__price">$` + product2.price + `</div>
                        
                     </div>
                     <div><button id="btn__cart">ADD TO CART</button></div>
@@ -434,18 +434,23 @@ function render_section4_product_2() {
 render_section4_product_2();
 
 // FUNCTION ADD TO CART
+
 let carts = document.querySelectorAll("#btn__cart");
 for (let i=0; i < carts.length; i++) {
     carts[i].addEventListener('click', () => {
-        cart_number();
-        
+        cart_number()   
     })
 }
 // function change_button_color() {
 //     document.querySelector('#btn__cart').style.background = 'gray';
 // }
+function keep_status_of_cart() {
+    let productNumbers = localStorage.getItem('cartNumbers');
+    if(productNumbers) {
+    document.querySelector('.cart__number').textContent = productNumbers;
+}}
 
-function cart_number() {
+function cart_number(product) {
     let productNumbers = localStorage.getItem('cartNumbers');
     productNumbers = parseInt(productNumbers);
 
@@ -456,12 +461,22 @@ function cart_number() {
         localStorage.setItem('cartNumbers', 1);
         document.querySelector('.cart__number').textContent = 1;
     }
+    setItems(product)
 }
-// FUNCTION SHOW HOW CART NUMBERS AT LOCAL STORAGE
-function keep_status_of_cart() {
-    let productNumbers = localStorage.getItem('cartNumbers');
-    document.querySelector('.cart__number').textContent = productNumbers;
+
+function setItems(product) {
+    let cartItems = localStorage.getItem('productsInCart');
+    localStorage.setItem("productsInCart", JSON.stringify(cartItems));
+    
+    cartItems = JSON.parse(cartItems);
+    console.log('my cart ', cartItems)
+    product.inCart = 1;
+     cartItems = {
+        [product.name] : product
+    }
+   
 }
+
 keep_status_of_cart();
 
 // RENDER FOOTER
