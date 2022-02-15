@@ -22,7 +22,7 @@ body {
     position: sticky;
     top: 0;
     z-index: 2;
-    
+    border-bottom: 1px solid rgb(160, 123, 31);;
 }
 #logo__main, #logo__main2, .native , #logo__main3, #user__container {
     text-decoration: none;
