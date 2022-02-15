@@ -328,6 +328,319 @@ let FashionProductListM = [
         color: "Navy Blue Vintage Wool Twill",
     },
 ]
+// ALL PRODUCT ARRAY
+const allProducts = [
+    {   
+        id: "JA01W",
+        inCart: 0,
+        class: "jacket",
+        name: "Marlène Jacket",
+        image: "./images/section 1/women/jackets/6.jpg",
+        price: "300",
+        color: "Navy Blue Bonded",
+    },
+    {   
+        id: "JA02W",
+        inCart: 0,
+        class: "jacket",
+        name: "Marinière Marlène Jacket",
+        image: "./images/section 1/women/jackets/5.jpg",
+        price: "300",
+        gender: "FEMAL",
+        color: "Navy Blue and Ecru",
+    },
+    {   
+        id: "JA03W",
+        inCart: 0,
+        class: "jacket",
+        name: "Marlène Belted Jacket",
+        image: "./images/section 1/women/jackets/4.jpg",
+        price: "300",
+        gender: "FEMAL",
+        color: "Blue and White Striped",
+    },
+    {   
+        id: "JA04W",
+        inCart: 0,
+        class: "jacket",
+        name: "Marlène Belted Jacket",
+        image: "./images/section 1/women/jackets/3.jpg",
+        price: "300",
+        gender: "FEMAL",
+        color: "White Wool and Silk",
+    },
+    {   
+        id: "JA05W",
+        inCart: 0,
+        class: "jacket",
+        name: "Macrocannage Bar Jacket",
+        image: "./images/section 1/women/jackets/2.jpg",
+        price: "350",
+        gender: "FEMAL",
+        color: "Black Quilted Technical Taffeta",
+    },
+    {   
+        id: "JA06W",
+        inCart: 0,
+        class: "jacket",
+        name: "Macrocannage Bar Jacket",
+        image: "./images/section 1/women/jackets/1.jpg",
+        price: "350",
+        gender: "FEMAL",
+        color: "Beige Quilted Technical Taffeta",
+    },
+    {   
+        id: "DR07W",
+        inCart: 0,
+        class: "dress",
+        name: "Mid-Length Dress",
+        image: "./images/section 1/women/dresses/5.jpg",
+        price: "400",
+        gender: "FEMAL",
+        color: "Black Technical Taffeta",
+    },
+    {   
+        id: "DR08W",
+        inCart: 0,
+        class: "dress",
+        name: "Short Hooded Dress",
+        image: "./images/section 1/women/dresses/4.jpg",
+        price: "200",
+        gender: "FEMAL",
+        color: "Gold-Tone Technical Taffeta",
+    },
+    {   
+        id: "DR09W",
+        inCart: 0,
+        class: "dress",
+        name: "Short Hooded Dress",
+        image: "./images/section 1/women/dresses/3.jpg",
+        price: "200",
+        gender: "FEMAL",
+        color: "Navy Blue Technical Taffeta",
+    },
+    {   
+        id: "DR10W",
+        inCart: 0,
+        class: "dress",
+        name: "Mid-Length Dress",
+        image: "./images/section 1/women/dresses/2.jpg",
+        price: "400",
+        gender: "FEMAL",
+        color: "White and Black Under The Sea",
+    },
+    {   
+        id: "DR11W",
+        inCart: 0,
+        class: "dress",
+        name: "Long Dress",
+        image: "./images/section 1/women/dresses/1.jpg",
+        price: "350",
+        gender: "FEMAL",
+        color: "Navy Blue Cotton with Toile de",
+    },
+    {   
+        id: "CO12W",
+        inCart: 0,
+        class: "coat",
+        name: "Sleeveless Belted Coat",
+        image: "./images/section 1/women/coats/6.jpg",
+        price: "300",
+        gender: "FEMAL",
+        color: "Navy Blue Double-Sided",
+    },
+    {   
+        id: "CO13W",
+        inCart: 0,
+        class: "coat",
+        name: "Cropped Coat with Hood and Belt",
+        image: "./images/section 1/women/coats/5.jpg",
+        price: "300",
+        gender: "FEMAL",
+        color: "Navy Blue Double-Sided Wool",
+    },
+    {   
+        id: "CO14W",
+        inCart: 0,
+        class: "coat",
+        name: "Peacoat",
+        image: "./images/section 1/women/coats/4.jpg",
+        price: "350",
+        gender: "FEMAL",
+        color: "White Double-Sided Cashmere",
+    },
+    {   
+        id: "CO15W",
+        inCart: 0,
+        class: "coat",
+        name: "Hooded Jacket Macrocannage Lining",
+        image: "./images/section 1/women/coats/3.jpg",
+        price: "350",
+        gender: "FEMAL",
+        color: "Gray Technical Cotton Drill",
+    },
+    {   
+        id: "CO16W",
+        inCart: 0,
+        class: "coat",
+        name: "Macrocannage Peacot",
+        image: "./images/section 1/women/coats/2.jpg",
+        price: "300",
+        gender: "FEMAL",
+        color: "Black Quilted Technical Taffeta",
+    },
+    {   
+        id: "CO17W",
+        inCart: 0,
+        class: "coat",
+        name: "Peacoat",
+        image: "./images/section 1/women/coats/1.jpg",
+        price: "350",
+        gender: "FEMAL",
+        color: "Navy Blue Double-Sided Wool",
+    },
+    {   
+        id: "OU18W",
+        inCart: 0,
+        class: "outerwear",
+        name: "Selvedge MKII Blouson",
+        image: "./images/section 1/men/outerwear/1.jpg",
+        price: "250",
+        gender: "FEMAL",
+        color: "Blue Raw Cotton Denim",
+    },
+    {   
+        id: "OU19W",
+        inCart: 0,
+        class: "outerwear",
+        name: "Double-Breasted Coat",
+        image: "./images/section 1/men/outerwear/2.jpg",
+        price: "550",
+        gender: "FEMAL",
+        color: "Multicolor Cotton Jacquard",
+    },
+    {   
+        id: "OU20W",
+        inCart: 0,
+        class: "outerwear",
+        name: "Blouson with Removable Collar",
+        image: "./images/section 1/men/outerwear/3.jpg",
+        price: "390",
+        gender: "FEMAL",
+        color: "Black Cashmere Cloth",
+    },
+    {   
+        id: "OU21W",
+        inCart: 0,
+        class: "outerwear",
+        name: "Fabric Overlay Coat",
+        image: "./images/section 1/men/outerwear/4.jpg",
+        price: "450",
+        gender: "FEMAL",
+        color: "Blue Wool and Mohair Canvas",
+    },
+    {   
+        id: "OU22W",
+        inCart: 0,
+        class: "outerwear",
+        name: "Hybrid Bomber Jacket",
+        image: "./images/section 1/men/outerwear/5.jpg",
+        price: "300",
+        gender: "FEMAL",
+        color: "Black Technical Twill",
+    },
+    {   
+        id: "OU23W",
+        inCart: 0,
+        class: "outerwear",
+        name: "Reversible Blouson",
+        image: "./images/section 1/men/outerwear/6.jpg",
+        price: "390",
+        gender: "FEMAL",
+        color: "Gray Technical Wool Jacquard",
+    },
+    {   
+        id: "OU24W",
+        inCart: 0,
+        class: "outerwear",
+        name: "Bomber Jacket with Sheepskin Collar",
+        image: "./images/section 1/men/outerwear/7.jpg",
+        price: "300",
+        gender: "FEMAL",
+        color: "Gray Suede Lambskin",
+    },
+    {   
+        id: "OU24W",
+        inCart: 0,
+        class: "outerwear",
+        name: "Knit Hybrid Jacket",
+        image: "./images/section 1/men/outerwear/8.jpg",
+        price: "350",
+        gender: "FEMAL",
+        color: "Cream Technical Wool",
+    },
+    {   
+        id: "OU25W",
+        inCart: 0,
+        class: "outerwear",
+        name: "Classic Coat",
+        image: "./images/section 1/men/outerwear/9.jpg",
+        price: "500",
+        gender: "FEMAL",
+        color: "Black Cashmere Cloth",
+    },
+    {   
+        id: "OU26W",
+        inCart: 0,
+        class: "outerwear",
+        name: "Peacoat",
+        image: "./images/section 1/men/outerwear/10.jpg",
+        price: "400",
+        gender: "FEMAL",
+        color: "Navy Blue Cashmere Cloth",
+    },
+    {   
+        id: "JA27W",
+        inCart: 0,
+        class: "jacket",
+        name: "Oblique Jacket",
+        image: "./images/section 1/men/jackets/1.jpg",
+        price: "300",
+        gender: "FEMAL",
+        color: "Black Wool Drill",
+    },
+    {   
+        id: "JA28W",
+        inCart: 0,
+        class: "jacket",
+        name: "Double-Breasted Jacket",
+        image: "./images/section 1/men/jackets/2.jpg",
+        price: "500",
+        gender: "FEMAL",
+        color: "Deep Blue Wool Ottoman",
+    },
+    {   
+        id: "JA29W",
+        inCart: 0,
+        class: "jacket",
+        name: "Officer Collar Jacket",
+        image: "./images/section 1/men/jackets/3.jpg",
+        price: "300",
+        gender: "FEMAL",
+        color: "Ecru Vintage Wool Twill",
+    },
+    {   
+        id: "JA30W",
+        inCart: 0,
+        class: "jacket",
+        name: "Sleeveless Jacket",
+        image: "./images/section 1/men/jackets/4.jpg",
+        price: "200",
+        gender: "FEMAL",
+        color: "Navy Blue Vintage Wool Twill",
+    },
+]
+
  function render_section1_Wproduct() {
     for (let product of FashionProductListW) {
         document.getElementById("WFcontainer1").innerHTML += `
@@ -342,7 +655,7 @@ let FashionProductListM = [
                     <div class="product__color">` + product.color + `</div>
                     <div class="product__price">$` + product.price + `</div>
                 </div>
-                <div class ="btnC"><button id="btn__cart" onclick="add_to_cart()">ADD TO CART</button></div>
+                <div class ="btnC"><button class="btn_cart" id="btn__cart" onclick="add_to_cart()">ADD TO CART</button></div>
             </div> ` }}
 render_section1_Wproduct()
 
@@ -361,7 +674,8 @@ function render_section1_Mproduct() {
                     <div class="product__price">$` + product.price + `</div>
                     
                 </div>
-                <div class ="btnC"><button id="btn__cart" onclick="add_to_cart()">ADD TO CART</button></div>
+                <div class ="btnC"><button class="btn_cart" id="btn__cart" onclick="add_to_cart()">ADD TO CART</button></div>
+            </div>
             </div> `}}
 render_section1_Mproduct()
 
@@ -407,7 +721,7 @@ document.getElementById("menu1").onclick = function () {
                             <div class="product__color">` + product.color + `</div>
                             <div class="product__price">$` + product.price + `</div>
                         </div>
-                        <div class ="btnC"><button id="btn__cart" onclick="add_to_cart()">ADD TO CART</button></div>
+                        <div class ="btnC"><button class="btn_cart" id="btn__cart" onclick="add_to_cart()">ADD TO CART</button></div>
                     </div> `
       } }
         render_section1_Wproduct1()
@@ -439,7 +753,7 @@ document.getElementById("menu2").onclick = function () {
                         <div class="product__color">` + product.color + `</div>
                         <div class="product__price">$` + product.price + `</div>
                     </div>
-                    <div class ="btnC"><button id="btn__cart" onclick="add_to_cart()">ADD TO CART</button></div>
+                    <div class ="btnC"><button class="btn_cart" id="btn__cart" onclick="add_to_cart()">ADD TO CART</button></div>
                 </div> `
         } }
     render_section1_Mproduct1()
@@ -470,7 +784,7 @@ document.getElementById("womenFashion").onclick = function () {
                         <div class="product__color">` + product.color + `</div>
                         <div class="product__price">$` + product.price + `</div>
                     </div>
-                    <div class ="btnC"><button id="btn__cart" onclick="add_to_cart()">ADD TO CART</button></div>
+                    <div class ="btnC"><button class="btn_cart"  id="btn__cart" onclick="add_to_cart()">ADD TO CART</button></div>
                 </div> `
   } }
     render_section1_Wproduct1()
@@ -500,7 +814,7 @@ document.getElementById("menFashion").onclick = function () {
                         <div class="product__color">` + product.color + `</div>
                         <div class="product__price">$` + product.price + `</div>
                     </div>
-                    <div class ="btnC"><button id="btn__cart" onclick="add_to_cart()">ADD TO CART</button></div>
+                    <div class ="btnC"><button class="btn_cart"  id="btn__cart" onclick="add_to_cart()">ADD TO CART</button></div>
                 </div> `
         } }
     render_section1_Mproduct1()
@@ -571,7 +885,7 @@ const dropBar4 = document.getElementById("sort2")
                      <div class="product__color">` + product.color + `</div>
                      <div class="product__price">$` + product.price + `</div>
                  </div>
-                 <div class ="btnC"><button id="btn__cart" onclick="add_to_cart()">ADD TO CART</button></div>
+                 <div class ="btnC"><button class="btn_cart"  id="btn__cart" onclick="add_to_cart()">ADD TO CART</button></div>
              </div> `
      }
  }
@@ -598,7 +912,7 @@ for (let i=0; i < carts.length; i++) {
                      <div class="product__color">` + product.color + `</div>
                      <div class="product__price">$` + product.price + `</div>
                  </div>
-                 <div class ="btnC"><button id="btn__cart" onclick="add_to_cart()">ADD TO CART</button></div>
+                 <div class ="btnC"><button class="btn_cart" id="btn__cart" onclick="add_to_cart()">ADD TO CART</button></div>
              </div> `
      } }
  render_section1_Mproduct()
@@ -624,7 +938,7 @@ document.getElementById("bestP1").onclick = function() {
                      <div class="product__color">` + product.color + `</div>
                      <div class="product__price">$` + product.price + `</div>
                  </div>
-                 <div class ="btnC"><button id="btn__cart" onclick="add_to_cart()">ADD TO CART</button></div>
+                 <div class ="btnC"><button class="btn_cart" id="btn__cart" onclick="add_to_cart()">ADD TO CART</button></div>
              </div> `
      } }
  render_section1_Wproduct()
@@ -650,7 +964,7 @@ document.getElementById("bestP1").onclick = function() {
                      <div class="product__color">` + product.color + `</div>
                      <div class="product__price">$` + product.price + `</div>
                  </div>
-                 <div class ="btnC"><button id="btn__cart" onclick="add_to_cart()">ADD TO CART</button></div>
+                 <div class ="btnC"><button class="btn_cart" id="btn__cart" onclick="add_to_cart()">ADD TO CART</button></div>
              </div> `
      }}
  render_section1_Mproduct()
@@ -676,15 +990,15 @@ document.getElementById("WCoat").onclick = function () {
                         <div class="product__color">` + product.color + `</div>
                         <div class="product__price">$` + product.price + `</div>
                     </div>
-                    <div class ="btnC"><button id="btn__cart" onclick="add_to_cart()">ADD TO CART</button></div>
+                    <div class ="btnC"><button class="btn_cart" id="btn__cart" onclick="add_to_cart()">ADD TO CART</button></div>
                 </div> `
         }}
     render_section1_Wproduct1()
-    let carts = document.querySelectorAll("#btn__cart");
-    for (let i=0; i < carts.length; i++) {
-        carts[i].addEventListener('click', () => {
-            cart_number(); })
-    } }
+    // let carts = document.querySelectorAll("#btn__cart");
+    // for (let i=0; i < carts.length; i++) {
+    //     carts[i].addEventListener('click', () => {
+    //         cart_number(); })
+    // } }
 
  document.getElementById("WDress").onclick = function () { 
     document.getElementById("WFcontainer1").innerHTML =""
@@ -702,7 +1016,7 @@ document.getElementById("WCoat").onclick = function () {
                         <div class="product__color">` + product.color + `</div>
                         <div class="product__price">$` + product.price + `</div>
                     </div>
-                    <div class ="btnC"><button id="btn__cart" onclick="add_to_cart()">ADD TO CART</button></div>
+                    <div class ="btnC"><button class="btn_cart" id="btn__cart" onclick="add_to_cart()">ADD TO CART</button></div>
                 </div> `
         } }
     render_section1_Wproduct1()
@@ -728,7 +1042,7 @@ document.getElementById("WCoat").onclick = function () {
                         <div class="product__color">` + product.color + `</div>
                         <div class="product__price">$` + product.price + `</div>
                     </div>
-                    <div class ="btnC"><button id="btn__cart" onclick="add_to_cart()">ADD TO CART</button></div>
+                    <div class ="btnC"><button class="btn_cart" id="btn__cart" onclick="add_to_cart()">ADD TO CART</button></div>
                 </div> `
         }  }
     render_section1_Wproduct1()
@@ -754,7 +1068,7 @@ document.getElementById("WCoat").onclick = function () {
                         <div class="product__color">` + product.color + `</div>
                         <div class="product__price">$` + product.price + `</div>
                     </div>
-                    <div class ="btnC"><button id="btn__cart" onclick="add_to_cart()">ADD TO CART</button></div>
+                    <div class ="btnC"><button class="btn_cart" id="btn__cart" onclick="add_to_cart()">ADD TO CART</button></div>
                 </div> `
   } }
     render_section1_Wproduct1()
@@ -780,7 +1094,7 @@ document.getElementById("WCoat").onclick = function () {
                         <div class="product__color">` + product.color + `</div>
                         <div class="product__price">$` + product.price + `</div>
                     </div>
-                    <div class ="btnC"><button id="btn__cart" onclick="add_to_cart()">ADD TO CART</button></div>
+                    <div class ="btnC"><button class="btn_cart" id="btn__cart" onclick="add_to_cart()">ADD TO CART</button></div>
                 </div> `
         }}
     render_section1_Mproduct1()
@@ -806,7 +1120,7 @@ document.getElementById("WCoat").onclick = function () {
                         <div class="product__color">` + product.color + `</div>
                         <div class="product__price">$` + product.price + `</div>
                     </div>
-                    <div class ="btnC"><button id="btn__cart" onclick="add_to_cart()">ADD TO CART</button></div>
+                    <div class ="btnC"><button class="btn_cart" id="btn__cart" onclick="add_to_cart()">ADD TO CART</button></div>
                 </div> `
         } }
     render_section1_Mproduct1()
@@ -832,7 +1146,7 @@ document.getElementById("WCoat").onclick = function () {
                         <div class="product__color">` + product.color + `</div>
                         <div class="product__price">$` + product.price + `</div>
                     </div>
-                    <div class ="btnC"><button id="btn__cart" onclick="add_to_cart()">ADD TO CART</button></div>
+                    <div class ="btnC"><button class="btn_cart" id="btn__cart" onclick="add_to_cart()">ADD TO CART</button></div>
                 </div> `
         } }
     render_section1_Mproduct1()
@@ -842,7 +1156,7 @@ document.getElementById("WCoat").onclick = function () {
             cart_number();})
     }}
 
- 
+}
 // RENDER FOOTER
 const mainFooter = document.querySelector('#mainFooter');
 mainFooter.innerHTML += ` <div id="footer"><div class="contact__container">
@@ -911,18 +1225,21 @@ function renderFooter2() {
     renderFooter2()  
 
 // FUNCTION ADD TO CART
-let carts = document.querySelectorAll("#btn__cart");
+
+let carts = document.querySelectorAll(".btn_cart");
 for (let i=0; i < carts.length; i++) {
     carts[i].addEventListener('click', () => {
-        cart_number();
-        
+        cart_number(allProducts[i]);
     })
 }
-// function change_button_color() {
-//     document.querySelector('#btn__cart').style.background = 'gray';
-// }
 
-function cart_number() {
+function keep_status_of_cart() {
+    let productNumbers = localStorage.getItem('cartNumbers');
+    if(productNumbers) {
+    document.querySelector('.cart__number').textContent = productNumbers;
+}}
+
+function cart_number(product) {
     let productNumbers = localStorage.getItem('cartNumbers');
     productNumbers = parseInt(productNumbers);
 
@@ -933,11 +1250,30 @@ function cart_number() {
         localStorage.setItem('cartNumbers', 1);
         document.querySelector('.cart__number').textContent = 1;
     }
+    setItems(product);
 }
-// FUNCTION SHOW HOW CART NUMBERS AT LOCAL STORAGE
 
-    let productNumbers = localStorage.getItem('cartNumbers');
-    document.querySelector('.cart__number').textContent = productNumbers;
+function setItems(product) {
+    let cartItems = localStorage.getItem('productsInCart');
+    cartItems = JSON.parse(cartItems);
+    console.log("Inside", cartItems);
+    
+    if(cartItems != null) {
 
+        if (cartItems[product.id] == undefined) {
+            cartItems = {
+                ...cartItems,
+                [product.id]: product
+            }
+        }
+        cartItems[product.id].inCart += 1;
+    } else {
+        product.inCart = 1;
+        cartItems = {
+            [product.id] : product
+        }
+    }
+    localStorage.setItem("productsInCart", JSON.stringify(cartItems));
+}
 
-
+keep_status_of_cart()
