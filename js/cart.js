@@ -162,6 +162,8 @@ document.querySelector('.cart__number').textContent = productNumbers;
 
 // ------------------------------------------------------------------
 
+// TUAN ANH CODING
+
 
 // RENDER FOOTER
 const mainFooter = document.querySelector('#mainFooter');

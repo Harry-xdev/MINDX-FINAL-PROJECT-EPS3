@@ -1230,6 +1230,7 @@ let carts = document.querySelectorAll(".btn_cart");
 for (let i=0; i < carts.length; i++) {
     carts[i].addEventListener('click', () => {
         cart_number(allProducts[i]);
+        total_cost(allProducts[i]);
     })
 }
 
@@ -1256,7 +1257,6 @@ function cart_number(product) {
 function setItems(product) {
     let cartItems = localStorage.getItem('productsInCart');
     cartItems = JSON.parse(cartItems);
-    console.log("Inside", cartItems);
     
     if(cartItems != null) {
 
@@ -1274,6 +1274,10 @@ function setItems(product) {
         }
     }
     localStorage.setItem("productsInCart", JSON.stringify(cartItems));
+}
+
+function total_cost(product) {
+    console.log("The product price is", product.price);
 }
 
 keep_status_of_cart()

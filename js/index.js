@@ -68,7 +68,7 @@ const watchesProductList = [
         url: "#",
         image: "./images/section 2/1.jpg",
         image2: "./images/section 2/1.1.jpg",
-        price: "189",
+        price: 189,
         gender: "MALE",
         color: "White",
     },
@@ -78,7 +78,7 @@ const watchesProductList = [
         url: "#",
         image: "./images/section 2/2.jpg",
         image2: "./images/section 2/2.1.jpg",
-        price: "189",
+        price: 189,
         gender: "MALE",
         color: "Black",
     },
@@ -88,7 +88,7 @@ const watchesProductList = [
         url: "#",
         image: "./images/section 2/3.jpg",
         image2: "./images/section 2/3.1.jpg",
-        price: "245",
+        price: 245,
         gender: "MALE",
         color: "Black and White",
     },
@@ -98,7 +98,7 @@ const watchesProductList = [
         url: "#",
         image: "./images/section 2/4.jpg",
         image2: "./images/section 2/4.1.jpg",
-        price: "686",
+        price: 686,
         gender: "MALE",
         color: "Black and White",
     }
@@ -140,7 +140,7 @@ const shoesProductList = [
         url: "#",
         image: "./images/section 3/1.jpg",
         image2: "./images/section 3/1.1.jpg",
-        price: "286",
+        price: 286,
         gender: "MALE",
         color: "White Mesh and Gold-Tone",
     },
@@ -151,7 +151,7 @@ const shoesProductList = [
         url: "#",
         image: "./images/section 3/2.jpg",
         image2: "./images/section 3/2.1.jpg",
-        price: "286",
+        price: 286,
         gender: "MALE",
         color: "Red and Black Cupidon Print",
     },
@@ -162,7 +162,7 @@ const shoesProductList = [
         url: "#",
         image: "./images/section 3/3.jpg",
         image2: "./images/section 3/3.1.jpg",
-        price: "286",
+        price: 286,
         gender: "MALE",
         color: "White and Butterfly Motif",
     },
@@ -173,7 +173,7 @@ const shoesProductList = [
         url: "#",
         image: "./images/section 3/4.jpg",
         image2: "./images/section 3/4.1.jpg",
-        price: "286",
+        price: 286,
         gender: "MALE",
         color: "Blue and White Fabric",
     },
@@ -211,7 +211,7 @@ const shoesProductList2 = [
         url: "#",
         image: "./images/section 3/5.jpg",
         image2: "./images/section 3/5.1.jpg",
-        price: "286",
+        price: 286,
         gender: "MALE",
         color: "White Oblique Canvas",
     },
@@ -222,7 +222,7 @@ const shoesProductList2 = [
         url: "#",
         image: "./images/section 3/6.jpg",
         image2: "./images/section 3/6.1.jpg",
-        price: "300",
+        price: 300,
         gender: "MALE",
         color: "Jacquard and Black Rubber",
     },
@@ -233,7 +233,7 @@ const shoesProductList2 = [
         url: "#",
         image: "./images/section 3/7.jpg",
         image2: "./images/section 3/7.1.jpg",
-        price: "300",
+        price: 300,
         gender: "MALE",
         color: "Jacquard and White Rubber",
     },
@@ -244,7 +244,7 @@ const shoesProductList2 = [
         url: "#",
         image: "./images/section 3/8.jpg",
         image2: "./images/section 3/8.1.jpg",
-        price: "286",
+        price: 286,
         gender: "MALE",
         color: "Black Jacquard and Rubber",
     },
@@ -310,7 +310,7 @@ const handbagProductListM = [
         url: "#",
         image: "./images/section 4/KAMPUS TIGER BACKPACK.jpg",
         image2: "./images/section 4/KAMPUS TIGER BACKPACK 2.jpg",
-        price: "265",
+        price: 265,
         gender: "MALE",
         color: "BLACK",
     },
@@ -321,7 +321,7 @@ const handbagProductListM = [
         url: "#",
         image: "./images/section 4/KENZO SPORT BELT BAG.jpg",
         image2: "./images/section 4/KENZO SPORT BELT BAG 2.jpg",
-        price: "275",
+        price: 275,
         gender: "MALE",
         color: "BLACK",
     },
@@ -332,7 +332,7 @@ const handbagProductListM = [
         url: "#",
         image: "./images/section 4/KENZO Sport backpack W strap.jpg",
         image2: "./images/section 4/KENZO Sport backpack W strap 2.jpg",
-        price: "295",
+        price: 295,
         gender: "MALE",
         color: "WHITE",
     },
@@ -343,7 +343,7 @@ const handbagProductListM = [
         url: "#",
         image: "./images/section 4/KENZO Sport tote bag.jpg",
         image2: "./images/section 4/KENZO Sport tote bag 2.jpg",
-        price: "340",
+        price: 340,
         gender: "MALE",
         color: "BLACK",
     },
@@ -359,7 +359,7 @@ const handbagProductListW = [
         url: "#",
         image: "./images/section 4/woman/Small KENZO Kamera travel bag.jpg",
         image2: "./images/section 4/woman/Small KENZO Kamera travel bag 2.jpg",
-        price: "200",
+        price: 200,
         gender: "FEMAL",
         color: "WHITE",
     },
@@ -370,7 +370,7 @@ const handbagProductListW = [
         url: "#",
         image: "./images/section 4/woman/Kenzogram mini messenger bag.jpg",
         image2: "./images/section 4/woman/Kenzogram mini messenger bag 2.jpg",
-        price: "235",
+        price: 235,
         gender: "FEMAL",
         color: "BLACK",
     },
@@ -381,7 +381,7 @@ const handbagProductListW = [
         url: "#",
         image: "./images/section 4/woman/Kampus Tiger small bumbag.jpg",
         image2: "./images/section 4/woman/Kampus Tiger small bumbag 2.jpg",
-        price: "245",
+        price: 245,
         gender: "FEMAL",
         color: "PINK",
     },
@@ -392,7 +392,7 @@ const handbagProductListW = [
         url: "#",
         image: "./images/section 4/woman/Canvas Kampus Tiger backpack.jpg",
         image2: "./images/section 4/woman/Canvas Kampus Tiger backpack 2.jpg",
-        price: "340",
+        price: 340,
         gender: "FEMAL",
         color: "BLACK",
     },
@@ -460,7 +460,7 @@ const allProducts = [
         url: "#",
         image: "./images/section 2/1.jpg",
         image2: "./images/section 2/1.1.jpg",
-        price: "189",
+        price: 189,
         gender: "MALE",
         color: "White",
     },
@@ -471,7 +471,7 @@ const allProducts = [
         url: "#",
         image: "./images/section 2/2.jpg",
         image2: "./images/section 2/2.1.jpg",
-        price: "189",
+        price: 189,
         gender: "MALE",
         color: "Black",
     },
@@ -482,7 +482,7 @@ const allProducts = [
         url: "#",
         image: "./images/section 2/3.jpg",
         image2: "./images/section 2/3.1.jpg",
-        price: "245",
+        price: 245,
         gender: "MALE",
         color: "Black and White",
     },
@@ -493,7 +493,7 @@ const allProducts = [
         url: "#",
         image: "./images/section 2/4.jpg",
         image2: "./images/section 2/4.1.jpg",
-        price: "686",
+        price: 686,
         gender: "MALE",
         color: "Black and White",
     },
@@ -504,7 +504,7 @@ const allProducts = [
         url: "#",
         image: "./images/section 3/1.jpg",
         image2: "./images/section 3/1.1.jpg",
-        price: "286",
+        price: 286,
         gender: "MALE",
         color: "White Mesh and Gold-Tone",
     },
@@ -515,7 +515,7 @@ const allProducts = [
         url: "#",
         image: "./images/section 3/2.jpg",
         image2: "./images/section 3/2.1.jpg",
-        price: "286",
+        price: 286,
         gender: "MALE",
         color: "Red and Black Cupidon Print",
     },
@@ -526,7 +526,7 @@ const allProducts = [
         url: "#",
         image: "./images/section 3/3.jpg",
         image2: "./images/section 3/3.1.jpg",
-        price: "286",
+        price: 286,
         gender: "MALE",
         color: "White and Butterfly Motif",
     },
@@ -537,7 +537,7 @@ const allProducts = [
         url: "#",
         image: "./images/section 3/4.jpg",
         image2: "./images/section 3/4.1.jpg",
-        price: "286",
+        price: 286,
         gender: "MALE",
         color: "Blue and White Fabric",
     },
@@ -548,7 +548,7 @@ const allProducts = [
         url: "#",
         image: "./images/section 3/5.jpg",
         image2: "./images/section 3/5.1.jpg",
-        price: "286",
+        price: 286,
         gender: "MALE",
         color: "White Oblique Canvas",
     },
@@ -559,7 +559,7 @@ const allProducts = [
         url: "#",
         image: "./images/section 3/6.jpg",
         image2: "./images/section 3/6.1.jpg",
-        price: "300",
+        price: 300,
         gender: "MALE",
         color: "Jacquard and Black Rubber",
     },
@@ -570,7 +570,7 @@ const allProducts = [
         url: "#",
         image: "./images/section 3/7.jpg",
         image2: "./images/section 3/7.1.jpg",
-        price: "300",
+        price: 300,
         gender: "MALE",
         color: "Jacquard and White Rubber",
     },
@@ -581,7 +581,7 @@ const allProducts = [
         url: "#",
         image: "./images/section 3/8.jpg",
         image2: "./images/section 3/8.1.jpg",
-        price: "286",
+        price: 286,
         gender: "MALE",
         color: "Black Jacquard and Rubber",
     },
@@ -592,7 +592,7 @@ const allProducts = [
         url: "#",
         image: "./images/section 4/KAMPUS TIGER BACKPACK.jpg",
         image2: "./images/section 4/KAMPUS TIGER BACKPACK 2.jpg",
-        price: "265",
+        price: 265,
         gender: "MALE",
         color: "BLACK",
     },
@@ -603,7 +603,7 @@ const allProducts = [
         url: "#",
         image: "./images/section 4/KENZO SPORT BELT BAG.jpg",
         image2: "./images/section 4/KENZO SPORT BELT BAG 2.jpg",
-        price: "275",
+        price: 275,
         gender: "MALE",
         color: "BLACK",
     },
@@ -614,7 +614,7 @@ const allProducts = [
         url: "#",
         image: "./images/section 4/KENZO Sport backpack W strap.jpg",
         image2: "./images/section 4/KENZO Sport backpack W strap 2.jpg",
-        price: "295",
+        price: 295,
         gender: "MALE",
         color: "WHITE",
     },
@@ -625,7 +625,7 @@ const allProducts = [
         url: "#",
         image: "./images/section 4/KENZO Sport tote bag.jpg",
         image2: "./images/section 4/KENZO Sport tote bag 2.jpg",
-        price: "340",
+        price: 340,
         gender: "MALE",
         color: "BLACK",
     },
@@ -636,7 +636,7 @@ const allProducts = [
         url: "#",
         image: "./images/section 4/woman/Small KENZO Kamera travel bag.jpg",
         image2: "./images/section 4/woman/Small KENZO Kamera travel bag 2.jpg",
-        price: "200",
+        price: 200,
         gender: "FEMAL",
         color: "WHITE",
     },
@@ -647,7 +647,7 @@ const allProducts = [
         url: "#",
         image: "./images/section 4/woman/Kenzogram mini messenger bag.jpg",
         image2: "./images/section 4/woman/Kenzogram mini messenger bag 2.jpg",
-        price: "235",
+        price: 235,
         gender: "FEMAL",
         color: "BLACK",
     },
@@ -658,7 +658,7 @@ const allProducts = [
         url: "#",
         image: "./images/section 4/woman/Kampus Tiger small bumbag.jpg",
         image2: "./images/section 4/woman/Kampus Tiger small bumbag 2.jpg",
-        price: "245",
+        price: 245,
         gender: "FEMAL",
         color: "PINK",
     },
@@ -669,7 +669,7 @@ const allProducts = [
         url: "#",
         image: "./images/section 4/woman/Canvas Kampus Tiger backpack.jpg",
         image2: "./images/section 4/woman/Canvas Kampus Tiger backpack 2.jpg",
-        price: "340",
+        price: 340,
         gender: "FEMAL",
         color: "BLACK",
     },
@@ -681,6 +681,7 @@ let carts = document.querySelectorAll(".btn_cart");
 for (let i=0; i < carts.length; i++) {
     carts[i].addEventListener('click', () => {
         cart_number(allProducts[i]);
+        total_cost(allProducts[i]);
     })
 }
 
@@ -707,7 +708,6 @@ function cart_number(product) {
 function setItems(product) {
     let cartItems = localStorage.getItem('productsInCart');
     cartItems = JSON.parse(cartItems);
-    console.log("Inside", cartItems);
     
     if(cartItems != null) {
 
@@ -726,7 +726,29 @@ function setItems(product) {
     }
     localStorage.setItem("productsInCart", JSON.stringify(cartItems));
 }
+// FUNCTION TOTAL PRICE
+function total_cost(product) {
+    let cartCost = localStorage.getItem('totalCost');
 
+    if (cartCost != null) {
+        cartCost = parseInt(cartCost);
+        localStorage.setItem("totalCost", cartCost + product.price);
+    } else {
+        localStorage.setItem("totalCost", product.price);
+    }
+    
+
+}
+
+// DISPLAY CART
+function display_cart() {
+    let cartItems = localStorage.getItem("productsInCart");
+    cartItems = JSON.parse(cartItems);
+
+    console.log(cartItems);
+}
+
+display_cart(); 
 keep_status_of_cart();
 
 // RENDER FOOTER
