@@ -329,7 +329,7 @@ let FashionProductListM = [
     },
 ]
 // ALL PRODUCT ARRAY
-const allProducts = [
+const allProductsF = [
     {   
         id: "JA01W",
         inCart: 0,
@@ -655,7 +655,7 @@ const allProducts = [
                     <div class="product__color">` + product.color + `</div>
                     <div class="product__price">$` + product.price + `</div>
                 </div>
-                <div class ="btnC"><button class="btn_cart" id="btn__cart" onclick="add_to_cart()">ADD TO CART</button></div>
+                <div class ="btnC"><button class="btn_cart" id="btn__cart">ADD TO CART</button></div>
             </div> ` }}
 render_section1_Wproduct()
 
@@ -674,7 +674,7 @@ function render_section1_Mproduct() {
                     <div class="product__price">$` + product.price + `</div>
                     
                 </div>
-                <div class ="btnC"><button class="btn_cart" id="btn__cart" onclick="add_to_cart()">ADD TO CART</button></div>
+                <div class ="btnC"><button class="btn_cart" id="btn__cart">ADD TO CART</button></div>
             </div>
             </div> `}}
 render_section1_Mproduct()
@@ -721,7 +721,7 @@ document.getElementById("menu1").onclick = function () {
                             <div class="product__color">` + product.color + `</div>
                             <div class="product__price">$` + product.price + `</div>
                         </div>
-                        <div class ="btnC"><button class="btn_cart" id="btn__cart" onclick="add_to_cart()">ADD TO CART</button></div>
+                        <div class ="btnC"><button class="btn_cart" id="btn__cart" >ADD TO CART</button></div>
                     </div> `
       } }
         render_section1_Wproduct1()
@@ -753,7 +753,7 @@ document.getElementById("menu2").onclick = function () {
                         <div class="product__color">` + product.color + `</div>
                         <div class="product__price">$` + product.price + `</div>
                     </div>
-                    <div class ="btnC"><button class="btn_cart" id="btn__cart" onclick="add_to_cart()">ADD TO CART</button></div>
+                    <div class ="btnC"><button class="btn_cart" id="btn__cart">ADD TO CART</button></div>
                 </div> `
         } }
     render_section1_Mproduct1()
@@ -784,7 +784,7 @@ document.getElementById("womenFashion").onclick = function () {
                         <div class="product__color">` + product.color + `</div>
                         <div class="product__price">$` + product.price + `</div>
                     </div>
-                    <div class ="btnC"><button class="btn_cart"  id="btn__cart" onclick="add_to_cart()">ADD TO CART</button></div>
+                    <div class ="btnC"><button class="btn_cart"  id="btn__cart">ADD TO CART</button></div>
                 </div> `
   } }
     render_section1_Wproduct1()
@@ -814,7 +814,7 @@ document.getElementById("menFashion").onclick = function () {
                         <div class="product__color">` + product.color + `</div>
                         <div class="product__price">$` + product.price + `</div>
                     </div>
-                    <div class ="btnC"><button class="btn_cart"  id="btn__cart" onclick="add_to_cart()">ADD TO CART</button></div>
+                    <div class ="btnC"><button class="btn_cart"  id="btn__cart">ADD TO CART</button></div>
                 </div> `
         } }
     render_section1_Mproduct1()
@@ -885,7 +885,7 @@ const dropBar4 = document.getElementById("sort2")
                      <div class="product__color">` + product.color + `</div>
                      <div class="product__price">$` + product.price + `</div>
                  </div>
-                 <div class ="btnC"><button class="btn_cart"  id="btn__cart" onclick="add_to_cart()">ADD TO CART</button></div>
+                 <div class ="btnC"><button class="btn_cart"  id="btn__cart">ADD TO CART</button></div>
              </div> `
      }
  }
@@ -912,7 +912,7 @@ for (let i=0; i < carts.length; i++) {
                      <div class="product__color">` + product.color + `</div>
                      <div class="product__price">$` + product.price + `</div>
                  </div>
-                 <div class ="btnC"><button class="btn_cart" id="btn__cart" onclick="add_to_cart()">ADD TO CART</button></div>
+                 <div class ="btnC"><button class="btn_cart" id="btn__cart">ADD TO CART</button></div>
              </div> `
      } }
  render_section1_Mproduct()
@@ -938,7 +938,7 @@ document.getElementById("bestP1").onclick = function() {
                      <div class="product__color">` + product.color + `</div>
                      <div class="product__price">$` + product.price + `</div>
                  </div>
-                 <div class ="btnC"><button class="btn_cart" id="btn__cart" onclick="add_to_cart()">ADD TO CART</button></div>
+                 <div class ="btnC"><button class="btn_cart" id="btn__cart">ADD TO CART</button></div>
              </div> `
      } }
  render_section1_Wproduct()
@@ -964,7 +964,7 @@ document.getElementById("bestP1").onclick = function() {
                      <div class="product__color">` + product.color + `</div>
                      <div class="product__price">$` + product.price + `</div>
                  </div>
-                 <div class ="btnC"><button class="btn_cart" id="btn__cart" onclick="add_to_cart()">ADD TO CART</button></div>
+                 <div class ="btnC"><button class="btn_cart" id="btn__cart">ADD TO CART</button></div>
              </div> `
      }}
  render_section1_Mproduct()
@@ -990,15 +990,15 @@ document.getElementById("WCoat").onclick = function () {
                         <div class="product__color">` + product.color + `</div>
                         <div class="product__price">$` + product.price + `</div>
                     </div>
-                    <div class ="btnC"><button class="btn_cart" id="btn__cart" onclick="add_to_cart()">ADD TO CART</button></div>
+                    <div class ="btnC"><button class="btn_cart" id="btn__cart">ADD TO CART</button></div>
                 </div> `
         }}
     render_section1_Wproduct1()
-    // let carts = document.querySelectorAll("#btn__cart");
-    // for (let i=0; i < carts.length; i++) {
-    //     carts[i].addEventListener('click', () => {
-    //         cart_number(); })
-    // } }
+    let carts = document.querySelectorAll("#btn__cart");
+    for (let i=0; i < carts.length; i++) {
+        carts[i].addEventListener('click', () => {
+            cart_number(); })
+    } }
 
  document.getElementById("WDress").onclick = function () { 
     document.getElementById("WFcontainer1").innerHTML =""
@@ -1016,7 +1016,7 @@ document.getElementById("WCoat").onclick = function () {
                         <div class="product__color">` + product.color + `</div>
                         <div class="product__price">$` + product.price + `</div>
                     </div>
-                    <div class ="btnC"><button class="btn_cart" id="btn__cart" onclick="add_to_cart()">ADD TO CART</button></div>
+                    <div class ="btnC"><button class="btn_cart" id="btn__cart">ADD TO CART</button></div>
                 </div> `
         } }
     render_section1_Wproduct1()
@@ -1042,7 +1042,7 @@ document.getElementById("WCoat").onclick = function () {
                         <div class="product__color">` + product.color + `</div>
                         <div class="product__price">$` + product.price + `</div>
                     </div>
-                    <div class ="btnC"><button class="btn_cart" id="btn__cart" onclick="add_to_cart()">ADD TO CART</button></div>
+                    <div class ="btnC"><button class="btn_cart" id="btn__cart">ADD TO CART</button></div>
                 </div> `
         }  }
     render_section1_Wproduct1()
@@ -1068,7 +1068,7 @@ document.getElementById("WCoat").onclick = function () {
                         <div class="product__color">` + product.color + `</div>
                         <div class="product__price">$` + product.price + `</div>
                     </div>
-                    <div class ="btnC"><button class="btn_cart" id="btn__cart" onclick="add_to_cart()">ADD TO CART</button></div>
+                    <div class ="btnC"><button class="btn_cart" id="btn__cart">ADD TO CART</button></div>
                 </div> `
   } }
     render_section1_Wproduct1()
@@ -1094,7 +1094,7 @@ document.getElementById("WCoat").onclick = function () {
                         <div class="product__color">` + product.color + `</div>
                         <div class="product__price">$` + product.price + `</div>
                     </div>
-                    <div class ="btnC"><button class="btn_cart" id="btn__cart" onclick="add_to_cart()">ADD TO CART</button></div>
+                    <div class ="btnC"><button class="btn_cart" id="btn__cart">ADD TO CART</button></div>
                 </div> `
         }}
     render_section1_Mproduct1()
@@ -1120,7 +1120,7 @@ document.getElementById("WCoat").onclick = function () {
                         <div class="product__color">` + product.color + `</div>
                         <div class="product__price">$` + product.price + `</div>
                     </div>
-                    <div class ="btnC"><button class="btn_cart" id="btn__cart" onclick="add_to_cart()">ADD TO CART</button></div>
+                    <div class ="btnC"><button class="btn_cart" id="btn__cart">ADD TO CART</button></div>
                 </div> `
         } }
     render_section1_Mproduct1()
@@ -1146,7 +1146,7 @@ document.getElementById("WCoat").onclick = function () {
                         <div class="product__color">` + product.color + `</div>
                         <div class="product__price">$` + product.price + `</div>
                     </div>
-                    <div class ="btnC"><button class="btn_cart" id="btn__cart" onclick="add_to_cart()">ADD TO CART</button></div>
+                    <div class ="btnC"><button class="btn_cart" id="btn__cart">ADD TO CART</button></div>
                 </div> `
         } }
     render_section1_Mproduct1()
@@ -1156,7 +1156,7 @@ document.getElementById("WCoat").onclick = function () {
             cart_number();})
     }}
 
-}
+
 // RENDER FOOTER
 const mainFooter = document.querySelector('#mainFooter');
 mainFooter.innerHTML += ` <div id="footer"><div class="contact__container">
@@ -1229,8 +1229,7 @@ function renderFooter2() {
 let carts = document.querySelectorAll(".btn_cart");
 for (let i=0; i < carts.length; i++) {
     carts[i].addEventListener('click', () => {
-        cart_number(allProducts[i]);
-        total_cost(allProducts[i]);
+        cart_number(allProductsF[i]);
     })
 }
 
@@ -1257,6 +1256,7 @@ function cart_number(product) {
 function setItems(product) {
     let cartItems = localStorage.getItem('productsInCart');
     cartItems = JSON.parse(cartItems);
+    console.log("Inside", cartItems);
     
     if(cartItems != null) {
 
@@ -1274,10 +1274,6 @@ function setItems(product) {
         }
     }
     localStorage.setItem("productsInCart", JSON.stringify(cartItems));
-}
-
-function total_cost(product) {
-    console.log("The product price is", product.price);
 }
 
 keep_status_of_cart()
