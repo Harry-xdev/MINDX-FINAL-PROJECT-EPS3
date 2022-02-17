@@ -28,28 +28,46 @@ userContainer.innerHTML += `
 `
 // RENDER MAIN BODY OF CART
 mainPage.innerHTML += `
-    <div id="main__container">
-   
-    <div class="modal-body">
-    <div class="cart-row">
-        <span class="cart-item cart-header cart-column">Product</span>
-        <span class="cart-price cart-header cart-column">Price</span>
-        <span class="cart-quantity cart-header cart-column">Quantity</span>
-    </div>
-    <div class="cart-items">
-        <div class="cart-row">
-       
-    </div>
-   
+  <div id="main__container">
   
-    <div class="cart-total">
-        <strong class="cart-total-title">Total Price:</strong>
-        <span class="cart-total-price"></span>
-    </div>
-</div>
+  <div class="modal-body">
+  <div class="cart-row">
+      <span class="cart-item cart-header cart-column">Product</span>
+      <span class="cart-price cart-header cart-column">Price</span>
+      <span class="cart-quantity cart-header cart-column">Quantity</span>
+  </div>
+  <div class="cart-items">
 
+  </div>
+  
 
-    </div>`
+  <div class="cart-total">
+      <strong class="cart-total-title">Total Price:</strong>
+      <span class="cart-total-price"></span>
+  </div>
+
+`
+// DISPLAY CART
+function display_cart() {
+  let cartItems = localStorage.getItem("productsInCart");
+  cartItems = JSON.parse(cartItems);
+  let productContainer = document.querySelector(".cart-items");
+  if(cartItems && productContainer) {
+    productContainer.innerHTML = '';
+    Object.values(cartItems).map(item => {
+      productContainer.innerHTML += `
+        <div class="product">
+          <img src="./images/images/${item.name}.jpg">
+          <span>${item.name}</span>
+          <div class="cart-row">
+        </div>
+      `
+    })
+  }
+
+  
+}
+display_cart();
 
 // RUN FUNCTIONS 
 // ------------------------------------------------------------------
@@ -161,8 +179,6 @@ let productNumbers = localStorage.getItem('cartNumbers');
 document.querySelector('.cart__number').textContent = productNumbers;
 
 // ------------------------------------------------------------------
-
-// TUAN ANH CODING
 
 
 // RENDER FOOTER

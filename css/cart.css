@@ -609,6 +609,12 @@ p, a {
   .cart-item {
     width: 45%;
   }
+  img {
+    height: auto;
+    width: 50px;
+
+  }
+
   
   .cart-price {
     width: 20%;

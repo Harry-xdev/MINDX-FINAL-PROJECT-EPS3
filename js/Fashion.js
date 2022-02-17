@@ -784,7 +784,7 @@ document.getElementById("womenFashion").onclick = function () {
                         <div class="product__color">` + product.color + `</div>
                         <div class="product__price">$` + product.price + `</div>
                     </div>
-                    <div class ="btnC"><button class="btn_cart"  id="btn__cart">ADD TO CART</button></div>
+                    <div class ="btnC"><button class="btn_cart" id="btn__cart">ADD TO CART</button></div>
                 </div> `
   } }
     render_section1_Wproduct1()
@@ -1230,6 +1230,7 @@ let carts = document.querySelectorAll(".btn_cart");
 for (let i=0; i < carts.length; i++) {
     carts[i].addEventListener('click', () => {
         cart_number(allProductsF[i]);
+        total_cost(allProductsF[i]);
     })
 }
 
@@ -1256,7 +1257,6 @@ function cart_number(product) {
 function setItems(product) {
     let cartItems = localStorage.getItem('productsInCart');
     cartItems = JSON.parse(cartItems);
-    console.log("Inside", cartItems);
     
     if(cartItems != null) {
 
@@ -1273,7 +1273,28 @@ function setItems(product) {
             [product.id] : product
         }
     }
-    localStorage.setItem("productsInCart", JSON.stringify(cartItems));
+    localStorage.setItem('productsInCart', JSON.stringify(cartItems));
+}
+// FUNCTION TOTAL PRICE
+function total_cost(product) {
+    let cartCost = localStorage.getItem('totalCost');
+
+    if (cartCost != null) {
+        cartCost = parseInt(cartCost);
+        localStorage.setItem("totalCost", cartCost + product.price);
+    } else {
+        localStorage.setItem("totalCost", product.price);
+    }
+    
+
+}
+// DISPLAY CART
+function display_cart() {
+    let cartItems = localStorage.getItem("productsInCart");
+    cartItems = JSON.parse(cartItems);
+
+    console.log(cartItems);
 }
 
+display_cart();
 keep_status_of_cart()

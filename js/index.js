@@ -62,42 +62,45 @@ sections.innerHTML += `<section id="" class="section__2">
 <div class="section2_cap"> WATCHES </div>
 <div id= "section2__container"></div> </section> `;
 const watchesProductList = [
-    {
+    {   id: "WA01",
         inCart: 0,
-        name: "Caliber 12.1, 38 mm",
+        name: "Caliber 12.1, 38 mm WHT",
         url: "#",
-        image: "./images/section 2/1.jpg",
-        image2: "./images/section 2/1.1.jpg",
+        image: "./images/section 2/Caliber 12.1, 38 mm WHT.jpg",
+        image2: "./images/section 2/Caliber 12.1, 38 mm WHT 2.jpg",
         price: 189,
         gender: "MALE",
         color: "White",
     },
-    {
+    {   
+        id: "WA02",
         inCart: 0,
-        name: "Caliber 12.1, 38 mm",
+        name: "Caliber 12.1, 38 mm BLK",
         url: "#",
-        image: "./images/section 2/2.jpg",
-        image2: "./images/section 2/2.1.jpg",
+        image: "./images/section 2/Caliber 12.1, 38 mm BLK.jpg",
+        image2: "./images/section 2/Caliber 12.1, 38 mm BLK 2.jpg",
         price: 189,
         gender: "MALE",
         color: "Black",
     },
-    {
+    {   
+        id: "WA03",
         inCart: 0,
         name: "Paradoxe caliber 12.1, 38 mm",
         url: "#",
-        image: "./images/section 2/3.jpg",
-        image2: "./images/section 2/3.1.jpg",
+        image: "./images/section 2/Paradoxe caliber 12.1, 38 mm.jpg",
+        image2: "./images/section 2/Paradoxe caliber 12.1, 38 mm 2.jpg",
         price: 245,
         gender: "MALE",
         color: "Black and White",
     },
-    {
+    {   
+        id: "WA04",
         inCart: 0,
         name: "Mademoiselle j12 acte ii, 33 mm",
         url: "#",
-        image: "./images/section 2/4.jpg",
-        image2: "./images/section 2/4.1.jpg",
+        image: "./images/section 2/Mademoiselle j12 acte ii, 33 mm.jpg",
+        image2: "./images/section 2/Mademoiselle j12 acte ii, 33 mm 2.jpg",
         price: 686,
         gender: "MALE",
         color: "Black and White",
@@ -138,8 +141,8 @@ const shoesProductList = [
         inCart: 0,
         name: "Vibe Sneaker",
         url: "#",
-        image: "./images/section 3/1.jpg",
-        image2: "./images/section 3/1.1.jpg",
+        image: "./images/section 3/Vibe Sneaker.jpg",
+        image2: "./images/section 3/Vibe Sneaker 2.jpg",
         price: 286,
         gender: "MALE",
         color: "White Mesh and Gold-Tone",
@@ -147,10 +150,10 @@ const shoesProductList = [
     {   
         id: "shoe02W",
         inCart: 0,
-        name: "D-Connect Sneaker",
+        name: "D-Connect Sneaker 1",
         url: "#",
-        image: "./images/section 3/2.jpg",
-        image2: "./images/section 3/2.1.jpg",
+        image: "./images/section 3/D-Connect Sneaker 1.jpg",
+        image2: "./images/section 3/D-Connect Sneaker 1 2.jpg",
         price: 286,
         gender: "MALE",
         color: "Red and Black Cupidon Print",
@@ -158,10 +161,10 @@ const shoesProductList = [
     {   
         id: "shoe03W",
         inCart: 0,
-        name: "D-Connect Sneaker",
+        name: "D-Connect Sneaker 2",
         url: "#",
-        image: "./images/section 3/3.jpg",
-        image2: "./images/section 3/3.1.jpg",
+        image: "./images/section 3/D-Connect Sneaker 2.jpg",
+        image2: "./images/section 3/D-Connect Sneaker 2 2.jpg",
         price: 286,
         gender: "MALE",
         color: "White and Butterfly Motif",
@@ -169,10 +172,10 @@ const shoesProductList = [
     {   
         id: "shoe04W",
         inCart: 0,
-        name: "D-Connect Sneaker",
+        name: "D-Connect Sneaker 3",
         url: "#",
-        image: "./images/section 3/4.jpg",
-        image2: "./images/section 3/4.1.jpg",
+        image: "./images/section 3/D-Connect Sneaker 3.jpg",
+        image2: "./images/section 3/D-Connect Sneaker 3 2.jpg",
         price: 286,
         gender: "MALE",
         color: "Blue and White Fabric",
@@ -209,8 +212,8 @@ const shoesProductList2 = [
         inCart: 0,
         name: "B24 Sneaker",
         url: "#",
-        image: "./images/section 3/5.jpg",
-        image2: "./images/section 3/5.1.jpg",
+        image: "./images/section 3/B24 Sneaker.jpg",
+        image2: "./images/section 3/B24 Sneaker 2.jpg",
         price: 286,
         gender: "MALE",
         color: "White Oblique Canvas",
@@ -218,10 +221,10 @@ const shoesProductList2 = [
     {   
         id: "shoe06W",
         inCart: 0,
-        name: "B28 High-Top Sneaker",
+        name: "B28 High-Top Sneaker 2",
         url: "#",
-        image: "./images/section 3/6.jpg",
-        image2: "./images/section 3/6.1.jpg",
+        image: "./images/section 3/B28 High-Top Sneaker 1.jpg",
+        image2: "./images/section 3/B28 High-Top Sneaker 1 2.jpg",
         price: 300,
         gender: "MALE",
         color: "Jacquard and Black Rubber",
@@ -231,8 +234,8 @@ const shoesProductList2 = [
         inCart: 0,
         name: "B28 High-Top Sneaker",
         url: "#",
-        image: "./images/section 3/7.jpg",
-        image2: "./images/section 3/7.1.jpg",
+        image: "./images/section 3/B28 High-Top Sneaker 2.jpg",
+        image2: "./images/section 3/B28 High-Top Sneaker 2 2.jpg",
         price: 300,
         gender: "MALE",
         color: "Jacquard and White Rubber",
@@ -242,8 +245,8 @@ const shoesProductList2 = [
         inCart: 0,
         name: "B28 Low-Top Sneaker",
         url: "#",
-        image: "./images/section 3/8.jpg",
-        image2: "./images/section 3/8.1.jpg",
+        image: "./images/section 3/B28 Low-Top Sneaker.jpg",
+        image2: "./images/section 3/B28 Low-Top Sneaker 2.jpg",
         price: 286,
         gender: "MALE",
         color: "Black Jacquard and Rubber",
@@ -280,7 +283,7 @@ sections.innerHTML += ` <section id="" class="section__4"></section> `
 // RENDER SECTION 4 ITEMS
 const section4Item1 = document.querySelector('.section__4');
 // SECTION 4 CAPTION
-section4Item1.innerHTML += ` <div id="" class="section4__cap">MEN's</div>`
+section4Item1.innerHTML += ` <div id="" class="section4__cap">MEN'S ACCESSORIES</div>`
 // SECTION 4 CONTAINER 1
 section4Item1.innerHTML += ` <div id="section4__container1" class="section4__container"></div>`
 // SECTION 4 INTRODUCE
@@ -300,7 +303,7 @@ const section4IntroItem = document.querySelector('.section4__introduce');
             </div>
         </div>`
     section4Item1.innerHTML += `
-        <div id="" class="section4__cap">WOMEN's</div> `
+        <div id="" class="section4__cap">WOMEN'S ACCESSORIES</div> `
 // CREATING MEN PRODUCT ARRAY OBJECTS
 const handbagProductListM = [
     {
@@ -453,46 +456,45 @@ render_section4_product_2();
 
 // ALL PRODUCT ARRAY
 const allProducts = [
-    {  
-        id: "watch01",
+    {   id: "WA01",
         inCart: 0,
-        name: "Caliber 12.1, 38 mm",
+        name: "Caliber 12.1, 38 mm WHT",
         url: "#",
-        image: "./images/section 2/1.jpg",
-        image2: "./images/section 2/1.1.jpg",
+        image: "./images/section 2/Caliber 12.1, 38 mm WHT.jpg",
+        image2: "./images/section 2/Caliber 12.1, 38 mm WHT 2.jpg",
         price: 189,
         gender: "MALE",
         color: "White",
     },
     {   
-        id: "watch02",
+        id: "WA02",
         inCart: 0,
-        name: "Caliber 12.1, 38 mm",
+        name: "Caliber 12.1, 38 mm BLK",
         url: "#",
-        image: "./images/section 2/2.jpg",
-        image2: "./images/section 2/2.1.jpg",
+        image: "./images/section 2/Caliber 12.1, 38 mm BLK.jpg",
+        image2: "./images/section 2/Caliber 12.1, 38 mm BLK 2.jpg",
         price: 189,
         gender: "MALE",
         color: "Black",
     },
     {   
-        id: "watch03",
+        id: "WA03",
         inCart: 0,
         name: "Paradoxe caliber 12.1, 38 mm",
         url: "#",
-        image: "./images/section 2/3.jpg",
-        image2: "./images/section 2/3.1.jpg",
+        image: "./images/section 2/Paradoxe caliber 12.1, 38 mm.jpg",
+        image2: "./images/section 2/Paradoxe caliber 12.1, 38 mm 2.jpg",
         price: 245,
         gender: "MALE",
         color: "Black and White",
     },
     {   
-        id: "watch04",
+        id: "WA04",
         inCart: 0,
         name: "Mademoiselle j12 acte ii, 33 mm",
         url: "#",
-        image: "./images/section 2/4.jpg",
-        image2: "./images/section 2/4.1.jpg",
+        image: "./images/section 2/Mademoiselle j12 acte ii, 33 mm.jpg",
+        image2: "./images/section 2/Mademoiselle j12 acte ii, 33 mm 2.jpg",
         price: 686,
         gender: "MALE",
         color: "Black and White",
@@ -502,8 +504,8 @@ const allProducts = [
         inCart: 0,
         name: "Vibe Sneaker",
         url: "#",
-        image: "./images/section 3/1.jpg",
-        image2: "./images/section 3/1.1.jpg",
+        image: "./images/section 3/Vibe Sneaker.jpg",
+        image2: "./images/section 3/Vibe Sneaker 2.jpg",
         price: 286,
         gender: "MALE",
         color: "White Mesh and Gold-Tone",
@@ -511,10 +513,10 @@ const allProducts = [
     {   
         id: "shoe02W",
         inCart: 0,
-        name: "D-Connect Sneaker",
+        name: "D-Connect Sneaker 1",
         url: "#",
-        image: "./images/section 3/2.jpg",
-        image2: "./images/section 3/2.1.jpg",
+        image: "./images/section 3/D-Connect Sneaker 1.jpg",
+        image2: "./images/section 3/D-Connect Sneaker 1 2.jpg",
         price: 286,
         gender: "MALE",
         color: "Red and Black Cupidon Print",
@@ -522,10 +524,10 @@ const allProducts = [
     {   
         id: "shoe03W",
         inCart: 0,
-        name: "D-Connect Sneaker",
+        name: "D-Connect Sneaker 2",
         url: "#",
-        image: "./images/section 3/3.jpg",
-        image2: "./images/section 3/3.1.jpg",
+        image: "./images/section 3/D-Connect Sneaker 2.jpg",
+        image2: "./images/section 3/D-Connect Sneaker 2 2.jpg",
         price: 286,
         gender: "MALE",
         color: "White and Butterfly Motif",
@@ -533,10 +535,10 @@ const allProducts = [
     {   
         id: "shoe04W",
         inCart: 0,
-        name: "D-Connect Sneaker",
+        name: "D-Connect Sneaker 3",
         url: "#",
-        image: "./images/section 3/4.jpg",
-        image2: "./images/section 3/4.1.jpg",
+        image: "./images/section 3/D-Connect Sneaker 3.jpg",
+        image2: "./images/section 3/D-Connect Sneaker 3 2.jpg",
         price: 286,
         gender: "MALE",
         color: "Blue and White Fabric",
@@ -546,8 +548,8 @@ const allProducts = [
         inCart: 0,
         name: "B24 Sneaker",
         url: "#",
-        image: "./images/section 3/5.jpg",
-        image2: "./images/section 3/5.1.jpg",
+        image: "./images/section 3/B24 Sneaker.jpg",
+        image2: "./images/section 3/B24 Sneaker 2.jpg",
         price: 286,
         gender: "MALE",
         color: "White Oblique Canvas",
@@ -555,10 +557,10 @@ const allProducts = [
     {   
         id: "shoe06W",
         inCart: 0,
-        name: "B28 High-Top Sneaker",
+        name: "B28 High-Top Sneaker 2",
         url: "#",
-        image: "./images/section 3/6.jpg",
-        image2: "./images/section 3/6.1.jpg",
+        image: "./images/section 3/B28 High-Top Sneaker 1.jpg",
+        image2: "./images/section 3/B28 High-Top Sneaker 1 2.jpg",
         price: 300,
         gender: "MALE",
         color: "Jacquard and Black Rubber",
@@ -568,8 +570,8 @@ const allProducts = [
         inCart: 0,
         name: "B28 High-Top Sneaker",
         url: "#",
-        image: "./images/section 3/7.jpg",
-        image2: "./images/section 3/7.1.jpg",
+        image: "./images/section 3/B28 High-Top Sneaker 2.jpg",
+        image2: "./images/section 3/B28 High-Top Sneaker 2 2.jpg",
         price: 300,
         gender: "MALE",
         color: "Jacquard and White Rubber",
@@ -579,8 +581,8 @@ const allProducts = [
         inCart: 0,
         name: "B28 Low-Top Sneaker",
         url: "#",
-        image: "./images/section 3/8.jpg",
-        image2: "./images/section 3/8.1.jpg",
+        image: "./images/section 3/B28 Low-Top Sneaker.jpg",
+        image2: "./images/section 3/B28 Low-Top Sneaker 2.jpg",
         price: 286,
         gender: "MALE",
         color: "Black Jacquard and Rubber",
@@ -740,15 +742,6 @@ function total_cost(product) {
 
 }
 
-// DISPLAY CART
-function display_cart() {
-    let cartItems = localStorage.getItem("productsInCart");
-    cartItems = JSON.parse(cartItems);
-
-    console.log(cartItems);
-}
-
-display_cart(); 
 keep_status_of_cart();
 
 // RENDER FOOTER
