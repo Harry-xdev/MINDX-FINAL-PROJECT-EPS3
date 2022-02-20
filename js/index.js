@@ -110,7 +110,7 @@ function render_section2_product() {
     for (let product of watchesProductList) {
         document.getElementById("section2__container").innerHTML += `
                 <div class="product__item">
-                    <div class="product__image">
+                    <div class="product__image" onclick="open_product_detail()">
                         <a><img class="product__img" src="` + product.image + `" 
                         onmouseover="this.src='`+product.image2+`'"
                         onmouseout="this.src='`+product.image+`'"
@@ -118,7 +118,7 @@ function render_section2_product() {
                     </div>
                     <div class="product__info">
                         <div >
-                            <a id="product__name">`+ product.name + `</a>
+                        <a class="product__name" href="#" onclick="open_product_detail()">`+ product.name + `</a>
                         </div>
                         <div class="product__color">` + product.color + `</div>
                         <div class="product__price">$` + product.price + `</div>
@@ -186,7 +186,7 @@ function render_section3_product() {
     for (let product of shoesProductList) {
         document.getElementById("section3__container").innerHTML += `
                 <div class="product__item">
-                    <div class="product__image">
+                    <div class="product__image" onclick="open_product_detail()">
                         <a><img class="product__img" src="` + product.image + `" 
                         onmouseover="this.src='`+product.image2+`'"
                         onmouseout="this.src='`+product.image+`'"
@@ -194,7 +194,7 @@ function render_section3_product() {
                     </div>
                     <div class="product__info">
                         <div >
-                            <a id="product__name">`+ product.name + `</a>
+                        <a class="product__name" href="#" onclick="open_product_detail()">`+ product.name + `</a>
                         </div>
                         <div class="product__color">` + product.color + `</div>
                         <div class="product__price">$` + product.price + `</div>
@@ -256,7 +256,7 @@ function render_section3_product2() {
     for (let product of shoesProductList2) {
         document.getElementById("section3__container2").innerHTML += `
                 <div class="product__item">
-                    <div class="product__image">
+                    <div class="product__image" onclick="open_product_detail()">
                         <a class="product__a"><img class="product__img" src="` + product.image + `" 
                         onmouseover="this.src='`+product.image2+`'"
                         onmouseout="this.src='`+product.image+`'"
@@ -264,7 +264,7 @@ function render_section3_product2() {
                     </div>
                     <div class="product__info">
                         <div >
-                            <a id="product__name">`+ product.name + `</a>
+                            <a class="product__name" href="#" onclick="open_product_detail()">`+ product.name + `</a>
                         </div>
                         <div class="product__color">` + product.color + `</div>
                         <div class="product__price">$` + product.price + `</div>
@@ -405,7 +405,7 @@ function render_section4_product() {
     for (let product of handbagProductListM) {
         document.getElementById("section4__container1").innerHTML += `
                 <div class="product__item">
-                    <div class="product__image">
+                    <div class="product__image" onclick="open_product_detail()">
                         <a ><img id="product__img" src="` + product.image + `" alt=""
                         onmouseover="this.src='`+product.image2+`'"
                         onmouseout="this.src='`+product.image+`'"
@@ -413,7 +413,7 @@ function render_section4_product() {
                     </div>
                     <div class="product__info">
                         <div class="product__name">
-                            <a href="#">`+ product.name + `</a>
+                            <a href="#" onclick="open_product_detail()">`+ product.name + `</a>
                         </div>
                         <div class="product__color">` + product.color + `</div>
                         <div class="product__price">$` + product.price + `</div>
@@ -431,7 +431,7 @@ function render_section4_product_2() {
     for (let product2 of handbagProductListW) {
         document.getElementById("section4__container2").innerHTML += `
                 <div class="product__item">
-                    <div class="product__image">
+                    <div class="product__image" onclick="open_product_detail()">
                         <a ><img src="` + product2.image + `" alt=""
                         onmouseover="this.src='`+product2.image2+`'"
                         onmouseout="this.src='`+product2.image+`'"
@@ -439,7 +439,7 @@ function render_section4_product_2() {
                     </div>
                     <div class="product__info">
                         <div class="product__name">
-                            <a href="#">`+ product2.name + `</a>
+                            <a class="product__name" href="#" onclick="open_product_detail()">` + product2.name + `</a>
                         </div>
                         <div class="product__color">` + product2.color + `</div>
                         <div class="product__price">$` + product2.price + `</div>
@@ -503,6 +503,7 @@ const allProducts = [
         id: "shoe01W",
         inCart: 0,
         name: "Vibe Sneaker",
+        desc: "Flagship style of the fashion show, the Dior Vibe sneaker reimagines the classic running shoe with the couture spirit of the House. Combining white mesh, gold-tone technical fabric and transparent rubber inserts, it offers a modern play of contrasts. Punctuated with iconic accents like the 3D-effect details, star charm on the back and 'Christian Dior' signature on the tongue, the contemporary sneaker will add a modern touch to any casual or elegant look.",
         url: "#",
         image: "./images/section 3/Vibe Sneaker.jpg",
         image2: "./images/section 3/Vibe Sneaker 2.jpg",
@@ -743,6 +744,30 @@ function total_cost(product) {
 }
 
 keep_status_of_cart();
+
+// FUNCTION EVENT OPEN PRODUCT DETAIL PAGE
+function open_product_detail() {
+    location.assign("./productdetail.html");
+}
+
+// SET PRODUCT AFTER CLICKED ON LOCAL STORAGE
+
+let itemclicked = document.querySelectorAll(".product__image");
+for (let j=0; j < itemclicked.length; j++) {
+    itemclicked[j].addEventListener('click', () => {
+        ItemClicked(allProducts[j]);
+    })
+}
+let itemclicked2 = document.querySelectorAll(".product__name");
+for (let z=0; z < itemclicked2.length; z++) {
+    itemclicked2[z].addEventListener('click', () => {
+        ItemClicked(allProducts[z]);
+    })
+}
+
+function ItemClicked(allProducts) {
+    localStorage.setItem("productClicked", JSON.stringify(allProducts));
+}
 
 // RENDER FOOTER
 const mainFooter = document.querySelector('#mainFooter');
