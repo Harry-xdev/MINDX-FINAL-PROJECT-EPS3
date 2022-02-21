@@ -40,7 +40,7 @@ mainPage.innerHTML += `
 
   <div class="cart-total">
       <strong class="cart-total-title">Total Price:</strong>
-      <span class="cart-total-price">$`+total+`</span>
+      <span class="cart-total-price">$</span>
   </div>
 
   <div class="cartPay">
