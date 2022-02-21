@@ -605,21 +605,30 @@ p, a {
   .cart-row {
     display: flex;
   }
+  .cart-items {
+     
+      display: flex;
+      flex-direction: column;
+  }
   
   .cart-item {
     width: 45%;
+    
   }
   img {
     height: auto;
     width: 50px;
 
   }
-
+  .img-name {
+    width: 50%;
+  }
   
   .cart-price {
     width: 20%;
     font-size: 1.2em;
     color: rgb(173, 131, 24);
+    
   }
   
   .cart-quantity {
@@ -686,7 +695,7 @@ p, a {
   
   .cart-total-price {
     color: rgb(173, 131, 24);
-    font-size: 1.1em;
+    font-size: 25px;
   }
 
 

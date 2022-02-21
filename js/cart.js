@@ -27,6 +27,7 @@ userContainer.innerHTML += `
     <a href="./cart.html" id="cart__icon"><span id = "register" class="info"><i class="material-icons">shopping_cart</i><span class="cart__number">0</span></span></a>
 `
 // RENDER MAIN BODY OF CART
+total = localStorage.getItem("totalCost");
 mainPage.innerHTML += `
   <div id="main__container">
   
@@ -43,7 +44,7 @@ mainPage.innerHTML += `
 
   <div class="cart-total">
       <strong class="cart-total-title">Total Price:</strong>
-      <span class="cart-total-price"></span>
+      <span class="cart-total-price">$`+total+`</span>
   </div>
 
 `
@@ -55,13 +56,17 @@ function display_cart() {
   if(cartItems && productContainer) {
     productContainer.innerHTML = '';
     Object.values(cartItems).map(item => {
-      productContainer.innerHTML += `
-        <div class="product">
-          <img src="./images/images/${item.name}.jpg">
-          <span>${item.name}</span>
-          <div class="cart-row">
-        </div>
-      `
+      productContainer.innerHTML +=  ` <div class=" cart-column"> <div class ="img-name">
+      <img class="cart-item-image" src="`+ item.image +`" width="100" height="100">
+      <span class="cart-item-title">`+ item.name +`</span>
+  </div>
+  <span class="cart-price cart-column">$`+ item.price +`</span>
+  <div class="cart-quantity cart-column">
+      <input class="cart-quantity-input" value="`+ item.inCart+`">
+      <button class="btn btn-danger" type="button">Delete</button>
+  </div> </div>`
+
+
     })
   }
 
@@ -72,7 +77,7 @@ display_cart();
 // RUN FUNCTIONS 
 // ------------------------------------------------------------------
 
-// nut Xoa items
+// nut Xoa items `+total+`
 let remove_cart = document.getElementsByClassName("btn-danger");
 for (let i = 0; i < remove_cart.length; i++) {
   let button = remove_cart[i]
@@ -85,8 +90,8 @@ for (let i = 0; i < remove_cart.length; i++) {
 
 // total price
 function updatecart() {
-    let cart_item = document.getElementsByClassName("cart-items")[0];
-    let cart_rows = cart_item.getElementsByClassName("cart-row");
+    let productContainer = document.getElementsByClassName("cart-items")[0];
+    let cart_rows = productContainer.getElementsByClassName("cart-row");
     let total = 0;
     for (let i = 0; i < cart_rows.length; i++) {
       let cart_row = cart_rows[i]
@@ -132,51 +137,65 @@ for (let i = 0; i < add_cart.length; i++) {
   })
 }
 
-function addItemToCart(title, price, img) {
-  var cartRow = document.createElement('div')
+function addItemToCart() {
+  let cartRow = document.createElement('div')
   cartRow.classList.add('cart-row')
-  var cartItems = document.getElementsByClassName('cart-items')[0]
-  var cart_title = cartItems.getElementsByClassName('cart-item-title')
+ // let cartItems = document.getElementsByClassName('cart-items')[0]
+  let cart_title = cartItems.getElementsByClassName('cart-item-title')
   
-  for (var i = 0; i < cart_title.length; i++) {
-    if (cart_title[i].innerText == title) {
-        input.value + 1
+ for (let i = 0; i < cart_title.length; i++) {
+   if (cart_title[i].innerText == title) {
+      input.value + 1
+  //for (let i = 0; i < localStorage.length; i++) {
+   // console.log(localStorage.getItem(localStorage.key(i)));
+  //list = JSON.parse(localStorage.getItem("productsInCart"))[i];
+     
+  
 
 
+   //   return
+   }
+ }
+//list = JSON.parse(localStorage.getItem("productsInCart"));
 
-      return
-    }
-  }
+ // console.log(localStorage.getItem(localStorage.key(i)));
+//list = localStorage.getItem('productsInCart')
 
-  var cartRowContents = `
-  <div class="cart-item cart-column">
-      <img class="cart-item-image" src="${img}" width="100" height="100">
-      <span class="cart-item-title">${title}</span>
-  </div>
-  <span class="cart-price cart-column">${price}</span>
-  <div class="cart-quantity cart-column">
-      <input class="cart-quantity-input" type="number" value="1">
-      <button class="btn btn-danger" type="button">Xóa</button>
-  </div>`
-  cartRow.innerHTML = cartRowContents
-  cartItems.append(cartRow)
-  cartRow.getElementsByClassName('btn-danger')[0].addEventListener('click', function () {
-    var button_remove = event.target
-    button_remove.parentElement.parentElement.remove()
-    updatecart()
-  })
-  cartRow.getElementsByClassName('cart-quantity-input')[0].addEventListener('change', function (event) {
-    var input = event.target
-    if (isNaN(input.value) || input.value <= 0) {
-      input.value = 1;
-    }
-    updatecart()
-  })
+    //  for (product of list){
+    
+    //  cartItems.innerHTML = `
+ //    <div class="cart-item cart-column">
+  //        <img class="cart-item-image" src="`+ product.image +`" width="100" height="100">
+ //         <span class="cart-item-title">`+ product.name +`</span>
+ //     </div>
+  //    <span class="cart-price cart-column">$`+product.price +`</span>
+  //    <div class="cart-quantity cart-column">
+  //        <input class="cart-quantity-input" type="number" value="1">
+  //        <button class="btn btn-danger" type="button">Xóa</button>
+  //    </div>`
+ //     cartRow.innerHTML = cartRowContents
+//      cartItems.append(cartRow)
+//      cartRow.getElementsByClassName('btn-danger')[0].addEventListener('click', function () {
+ //       let button_remove = event.target
+//        button_remove.parentElement.parentElement.remove()
+//        updatecart()
+ //     })
+//      cartRow.getElementsByClassName('cart-quantity-input')[0].addEventListener('change', function (event) {
+//       let input = event.target
+ //       if (isNaN(input.value) || input.value <= 0) {
+ //         input.value = 1;
+  //      }
+//        updatecart()
+ //     })
+    
+  //    }
+  
 }
 
+ 
 
-let productNumbers = localStorage.getItem('cartNumbers');
-document.querySelector('.cart__number').textContent = productNumbers;
+//let productNumbers = localStorage.getItem('cartNumbers');
+//document.querySelector('.cart__number').textContent = productNumbers;
 
 // ------------------------------------------------------------------
 
