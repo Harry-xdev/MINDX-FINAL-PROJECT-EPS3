@@ -723,12 +723,11 @@ function setItems(product) {
         cartItems[product.id].inCart += 1;
     } else {
         product.inCart = 1;
-        cartItems = {
-            [product.id] : product
-        }
+        cartItems = {[product.id]: product}
     }
     localStorage.setItem("productsInCart", JSON.stringify(cartItems));
 }
+
 // FUNCTION TOTAL PRICE
 function total_cost(product) {
     let cartCost = localStorage.getItem('totalCost');

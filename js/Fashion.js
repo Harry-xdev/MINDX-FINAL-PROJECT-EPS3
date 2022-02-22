@@ -725,11 +725,14 @@ document.getElementById("menu1").onclick = function () {
                     </div> `
       } }
         render_section1_Wproduct1()
-        let carts = document.querySelectorAll("#btn__cart");
-        for (let i=0; i < carts.length; i++) {
-            carts[i].addEventListener('click', () => {
-                cart_number();  })
-        }
+        let carts = document.querySelectorAll(".btn_cart");
+for (let i=0; i < carts.length; i++) {
+    carts[i].addEventListener('click', () => {
+        cart_number(allProductsF[i]);
+        total_cost(allProductsF[i]);
+    })
+}
+
 }
 document.getElementById("menu2").onclick = function () {
     document.getElementById("womenFashion").style.display = "none";
@@ -757,11 +760,14 @@ document.getElementById("menu2").onclick = function () {
                 </div> `
         } }
     render_section1_Mproduct1()
-    let carts = document.querySelectorAll("#btn__cart");
+    let carts = document.querySelectorAll(".btn_cart");
     for (let i=0; i < carts.length; i++) {
         carts[i].addEventListener('click', () => {
-            cart_number();})
+            cart_number(allProductsF[i]);
+            total_cost(allProductsF[i]);
+        })
     }
+    
 
 }
 document.getElementById("womenFashion").onclick = function () {
@@ -788,11 +794,14 @@ document.getElementById("womenFashion").onclick = function () {
                 </div> `
   } }
     render_section1_Wproduct1()
-    let carts = document.querySelectorAll("#btn__cart");
+    let carts = document.querySelectorAll(".btn_cart");
     for (let i=0; i < carts.length; i++) {
         carts[i].addEventListener('click', () => {
-            cart_number();  })
+            cart_number(allProductsF[i]);
+            total_cost(allProductsF[i]);
+        })
     }
+    
 }
 document.getElementById("menFashion").onclick = function () {
     document.getElementById("womenFashion").style.display = "none";
@@ -818,11 +827,14 @@ document.getElementById("menFashion").onclick = function () {
                 </div> `
         } }
     render_section1_Mproduct1()
-    let carts = document.querySelectorAll("#btn__cart");
+    let carts = document.querySelectorAll(".btn_cart");
     for (let i=0; i < carts.length; i++) {
         carts[i].addEventListener('click', () => {
-            cart_number();})
+            cart_number(allProductsF[i]);
+            total_cost(allProductsF[i]);
+        })
     }
+    
 }
 document.getElementById("dropMenu1").onclick = function () {
     document.getElementById("womenFashion").style.display = "none";
@@ -890,11 +902,14 @@ const dropBar4 = document.getElementById("sort2")
      }
  }
  render_section1_Wproduct()
- let carts = document.querySelectorAll("#btn__cart");
-for (let i=0; i < carts.length; i++) {
-    carts[i].addEventListener('click', () => {
-        cart_number(); })
-} }
+ let carts = document.querySelectorAll(".btn_cart");
+ for (let i=0; i < carts.length; i++) {
+     carts[i].addEventListener('click', () => {
+         cart_number(allProductsF[i]);
+         total_cost(allProductsF[i]);
+     })
+ }
+  }
 
  document.getElementById("highP2").onclick = function() {
     document.getElementById("MFcontainer1").innerHTML =""
@@ -916,11 +931,14 @@ for (let i=0; i < carts.length; i++) {
              </div> `
      } }
  render_section1_Mproduct()
- let carts = document.querySelectorAll("#btn__cart");
+ let carts = document.querySelectorAll(".btn_cart");
 for (let i=0; i < carts.length; i++) {
     carts[i].addEventListener('click', () => {
-        cart_number();     })
-} }
+        cart_number(allProductsF[i]);
+        total_cost(allProductsF[i]);
+    })
+}
+}
 
 document.getElementById("bestP1").onclick = function() {
     document.getElementById("WFcontainer1").innerHTML =""
@@ -942,11 +960,14 @@ document.getElementById("bestP1").onclick = function() {
              </div> `
      } }
  render_section1_Wproduct()
- let carts = document.querySelectorAll("#btn__cart");
+ let carts = document.querySelectorAll(".btn_cart");
  for (let i=0; i < carts.length; i++) {
      carts[i].addEventListener('click', () => {
-         cart_number(); })
- }}
+         cart_number(allProductsF[i]);
+         total_cost(allProductsF[i]);
+     })
+ }
+ }
 
  document.getElementById("bestP2").onclick = function() {
     document.getElementById("MFcontainer1").innerHTML =""
@@ -968,11 +989,14 @@ document.getElementById("bestP1").onclick = function() {
              </div> `
      }}
  render_section1_Mproduct()
- let carts = document.querySelectorAll("#btn__cart");
+ let carts = document.querySelectorAll(".btn_cart");
 for (let i=0; i < carts.length; i++) {
     carts[i].addEventListener('click', () => {
-        cart_number();    })
-}}
+        cart_number(allProductsF[i]);
+        total_cost(allProductsF[i]);
+    })
+}
+}
 
 document.getElementById("WCoat").onclick = function () {
     document.getElementById("WFcontainer1").innerHTML =""
@@ -994,11 +1018,14 @@ document.getElementById("WCoat").onclick = function () {
                 </div> `
         }}
     render_section1_Wproduct1()
-    let carts = document.querySelectorAll("#btn__cart");
+    let carts = document.querySelectorAll(".btn_cart");
     for (let i=0; i < carts.length; i++) {
         carts[i].addEventListener('click', () => {
-            cart_number(); })
-    } }
+            cart_number(allProductsF[i]);
+            total_cost(allProductsF[i]);
+        })
+    }
+     }
 
  document.getElementById("WDress").onclick = function () { 
     document.getElementById("WFcontainer1").innerHTML =""
@@ -1020,11 +1047,14 @@ document.getElementById("WCoat").onclick = function () {
                 </div> `
         } }
     render_section1_Wproduct1()
-    let carts = document.querySelectorAll("#btn__cart");
+    let carts = document.querySelectorAll(".btn_cart");
     for (let i=0; i < carts.length; i++) {
         carts[i].addEventListener('click', () => {
-            cart_number(); })
-    } }
+            cart_number(allProductsF[i]);
+            total_cost(allProductsF[i]);
+        })
+    }
+     }
 
  document.getElementById("WJacket").onclick = function () { 
     document.getElementById("WFcontainer1").innerHTML =""
@@ -1046,11 +1076,14 @@ document.getElementById("WCoat").onclick = function () {
                 </div> `
         }  }
     render_section1_Wproduct1()
-    let carts = document.querySelectorAll("#btn__cart");
+    let carts = document.querySelectorAll(".btn_cart");
     for (let i=0; i < carts.length; i++) {
         carts[i].addEventListener('click', () => {
-            cart_number(); })
-    } }
+            cart_number(allProductsF[i]);
+            total_cost(allProductsF[i]);
+        })
+    }
+    }
 
  document.getElementById("WAll").onclick = function () { 
     document.getElementById("WFcontainer1").innerHTML =""
@@ -1072,11 +1105,14 @@ document.getElementById("WCoat").onclick = function () {
                 </div> `
   } }
     render_section1_Wproduct1()
-    let carts = document.querySelectorAll("#btn__cart");
+    let carts = document.querySelectorAll(".btn_cart");
     for (let i=0; i < carts.length; i++) {
         carts[i].addEventListener('click', () => {
-            cart_number();  })
-    }}
+            cart_number(allProductsF[i]);
+            total_cost(allProductsF[i]);
+        })
+    }
+    }
 
  document.getElementById("MJacket").onclick = function () {
     document.getElementById("MFcontainer1").innerHTML =""
@@ -1098,11 +1134,14 @@ document.getElementById("WCoat").onclick = function () {
                 </div> `
         }}
     render_section1_Mproduct1()
-    let carts = document.querySelectorAll("#btn__cart");
+    let carts = document.querySelectorAll(".btn_cart");
     for (let i=0; i < carts.length; i++) {
         carts[i].addEventListener('click', () => {
-            cart_number();  })
-    }}
+            cart_number(allProductsF[i]);
+            total_cost(allProductsF[i]);
+        })
+    }
+    }
 
  document.getElementById("MOuterwear").onclick = function () {
     document.getElementById("MFcontainer1").innerHTML =""
@@ -1124,11 +1163,14 @@ document.getElementById("WCoat").onclick = function () {
                 </div> `
         } }
     render_section1_Mproduct1()
-    let carts = document.querySelectorAll("#btn__cart");
-    for (let i=0; i < carts.length; i++) {
-        carts[i].addEventListener('click', () => {
-            cart_number(); })
-    }}
+    let carts = document.querySelectorAll(".btn_cart");
+for (let i=0; i < carts.length; i++) {
+    carts[i].addEventListener('click', () => {
+        cart_number(allProductsF[i]);
+        total_cost(allProductsF[i]);
+    })
+}
+}
 
  document.getElementById("MAll").onclick = function () {
     document.getElementById("MFcontainer1").innerHTML =""
@@ -1150,10 +1192,13 @@ document.getElementById("WCoat").onclick = function () {
                 </div> `
         } }
     render_section1_Mproduct1()
-    let carts = document.querySelectorAll("#btn__cart");
+
+    let carts = document.querySelectorAll(".btn_cart");
     for (let i=0; i < carts.length; i++) {
         carts[i].addEventListener('click', () => {
-            cart_number();})
+            cart_number(allProductsF[i]);
+            total_cost(allProductsF[i]);
+        })
     }}
 
 
@@ -1288,13 +1333,5 @@ function total_cost(product) {
     
 
 }
-// DISPLAY CART
-function display_cart() {
-    let cartItems = localStorage.getItem("productsInCart");
-    cartItems = JSON.parse(cartItems);
 
-    console.log(cartItems);
-}
-
-display_cart();
 keep_status_of_cart()
