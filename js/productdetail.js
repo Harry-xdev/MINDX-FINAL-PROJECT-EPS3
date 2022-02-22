@@ -59,6 +59,7 @@ function display_product() {
                     <h4>DESCRIPTION</h4> `+ items.desc +`
                 </div>
             </div>
+            <div><button class="btn_cart">ADD TO CART</button></div>
         </div>
 
     `
