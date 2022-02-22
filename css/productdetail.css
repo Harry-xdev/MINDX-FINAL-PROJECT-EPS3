@@ -528,8 +528,8 @@ p, a {
 }
 .product__image {
     border: 2px solid rgb(190, 151, 51);
-    height: 400px;
-    width: 250px;
+    height: auto;
+    width: 1200px;
     border-radius: 10px;
     overflow-y: hidden;
     justify-content:center ;
